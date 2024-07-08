@@ -1,0 +1,14 @@
+.card {
+  width: 15rem;
+  .card-body {
+    .card-text {
+      display: flex;
+      flex-direction: column;
+      p {
+        text-decoration: line-through;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
+}
