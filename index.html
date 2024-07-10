@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,5 +8,10 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      import RefreshRuntime from "/@react-refresh"
+      window.__vite_plugin_react_preamble_installed__ = true
+    </script>
   </body>
 </html>
+

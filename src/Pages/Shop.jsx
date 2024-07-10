@@ -1,4 +1,3 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col, Image } from "react-bootstrap";
@@ -8,6 +7,7 @@ import "../assets/Style/Pages/Shop.scss";
 import QuantityButton from "../Components/QuantityButton";
 import { useState } from "react";
 import PopupCart from "../Components/Popup/PopupCart";
+import { Helmet } from "react-helmet-async";
 
 const Shop = () => {
   const { id } = useParams();
@@ -46,7 +46,7 @@ const Shop = () => {
   const port = window.location.port;
 
   return (
-    <HelmetProvider>
+    <>
       <Helmet>
         <title>{uniqueItem.title} - {uniqueShop.name}</title>
         <meta name="description" content={`Buy ${uniqueItem.title} from ${uniqueShop.name}. Discount ${uniqueItem.discount_percentage}%! ${uniqueItem.description}`} />
@@ -54,6 +54,8 @@ const Shop = () => {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`https://${window.location.hostname}:${port}/shop/${id}`} />
       </Helmet>
+
+
       <Container className="white">
         <Row>
           <Col lg={4} sm={12}>
@@ -133,7 +135,7 @@ const Shop = () => {
         </Row>
         <ProductCard products={uniqueShopProducts} />
       </Container>
-    </HelmetProvider>
+    </>
   );
 }
 
