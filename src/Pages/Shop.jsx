@@ -55,8 +55,7 @@ const Shop = () => {
         <link rel="canonical" href={`https://${window.location.hostname}:${port}/shop/${id}`} />
       </Helmet>
 
-
-      <Container className="white">
+      <Container >
         <Row>
           <Col lg={4} sm={12}>
             <h1 className="title-product">{uniqueItem.title}</h1>

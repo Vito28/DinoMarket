@@ -18,7 +18,7 @@ const Navigation = () => {
       </nav>
       <nav className="navbar-bottom" aria-label="Bottom Navigation">
         <div className="logo-website">
-          <img src="path-to-your-image.jpg" alt="Logo Tokovito" />
+          <img src="./src/assets/Image/logo.png" alt="Logo Tokovito" />
         </div>
         <Search />
         <button
