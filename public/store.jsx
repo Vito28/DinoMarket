@@ -13,6 +13,10 @@ const initialDataState = {
                   index === self.findIndex(s => s.id === shop.id))
 }
 
+const initialProductId = {
+  id: null,
+}
+
 // const initialCartState = {
 //   quantity: JSON.parse.getItem("")
 // }
@@ -42,6 +46,16 @@ const dataSlice = createSlice({
   name: "data",
   initialState: initialDataState,
   reducers: {}
+})
+
+const productIdSlice = createSlice({
+  name: "productId",
+  initialState: initialProductId,
+  reducers: {
+    setProductId: state => {
+      localStorage.setItem("")
+    }
+  }
 })
 
 const store = configureStore({
