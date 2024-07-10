@@ -1,16 +1,23 @@
 import { Card, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "../assets/Style/Components/ProductCard.scss"
 
 const ProductCard = ({ products }) => {
+  const [data, setData] = useState(products || []);
+
+  useEffect(() => {
+    setData(products);
+  }, [products]);
+
   const navigate = useNavigate()
   const handleProduct = (id) => {
     navigate(`/shop/${id}`)
   }
   return (
     <Row>
-      {products.map(product => (
+      {data.map(product => (
         <Col lg={3} md={4} sm={6} xs={12} key={product.id}>
           <Card onClick={() => handleProduct(product.id)}>
             <Card.Img variant="top" src={product.images[0]} />
