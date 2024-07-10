@@ -8,15 +8,8 @@ const Navigation = () => {
   const navigate = useNavigate();
   return (
     <nav className="main" aria-label="Main Navigation">
-      <nav className="navbar-top" aria-label="Top Navigation">
-        <Link to="/">Tentang Tokovito</Link>
-        <Link to="/">Produk</Link>
-        <Link to="/">Promo</Link>
-        <Link to="/">Kontak</Link>
-        <Link to="/">Tentang Kami</Link>
-        <Link to="/">Bantuan</Link>
-      </nav>
-      <nav className="navbar-bottom" aria-label="Bottom Navigation">
+      
+      <nav className="navbar-top" aria-label="Bottom Navigation">
         <div className="logo-website">
           <img src="path-to-your-image.jpg" alt="Logo Tokovito" />
         </div>
@@ -29,6 +22,14 @@ const Navigation = () => {
           <FaShoppingCart />
         </button>
         <AuthButton />
+      </nav>
+      <nav className="navbar-bottom" aria-label="Top Navigation">
+        {/* <Link to="/">Tentang Tokovito</Link> */}
+        <Link to="/">Produk</Link>
+        <Link to="/">Promo</Link>
+        <Link to="/">Kontak</Link>
+        <Link to="/">Tentang Kami</Link>
+        <Link to="/">Bantuan</Link>
       </nav>
     </nav>
   );
