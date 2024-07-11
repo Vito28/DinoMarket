@@ -96,15 +96,22 @@
     align-items: center;
   }
 
-  .add-item {}
+  // .add-item {}
 
   .bought-btn {
     button {
+      border-radius: 5px;
       background-color: white;
       color: #50B1FF;
       font-weight: bold;
+      padding: 2px 8px;
+      &.keranjang{
+        background: #50B1FF;
+        color: white;
+      }
       &:hover {
         background: transparent;
+        border: 1px solid white;
         color: white;
       }
     }

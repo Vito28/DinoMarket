@@ -166,7 +166,7 @@ const Shop = () => {
         </div>
         <div className="bought-btn">
           <button type="button" aria-label={`Beli ${uniqueItem.title}`}>Beli</button>
-          <button type="button" onClick={addToCart} aria-label={`Tambah ${uniqueItem.title} ke Keranjang`}>+ Keranjang</button>
+          <button className="keranjang" type="button" onClick={addToCart} aria-label={`Tambah ${uniqueItem.title} ke Keranjang`}>+ Keranjang</button>
         </div>
       </div>
     </>
