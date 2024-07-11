@@ -15,8 +15,7 @@ const ProductsInCart = () => {
   const [checkedAll, setCheckedAll] = useState(true);
   const [checkedShops, setCheckedShops] = useState({});
   const [checkedProducts, setCheckedProducts] = useState({});
-  const [priceCart, setPriceCart] = useState (0);
-  const [note, setNote] = useState("");
+  const [priceCart, setPriceCart] = useState(0);
   const [popupNote, setPopupNote] = useState(false);
 
   const textRef = useRef(null);
@@ -52,14 +51,15 @@ const ProductsInCart = () => {
     });
     setCheckedShops(newCheckedShops);
     setCheckedProducts(newCheckedProducts);
+
     calculateTotalPrice(newCheckedProducts);
   }, [getProducts, products]);
 
-
   const [quantity, setQuantity] = useState(1);
   const handleQuantity = (cartQuantity) => {
-    setQuantity(cartQuantity)
-  }
+    setQuantity(cartQuantity);
+    calculateTotalPrice(checkedProducts);
+  };
 
   const handleCheckAll = () => {
     const newCheckedAll = !checkedAll;
@@ -77,7 +77,6 @@ const ProductsInCart = () => {
     setCheckedShops(newCheckedShops);
     setCheckedProducts(newCheckedProducts);
     calculateTotalPrice(newCheckedProducts);
-    console.log(newCheckedProducts);
   };
 
   const handleCheckShop = (shopId) => {
@@ -91,7 +90,6 @@ const ProductsInCart = () => {
 
     setCheckedProducts(newCheckedProducts);
     calculateTotalPrice(newCheckedProducts);
-    console.log(checkedShops);
   };
 
   const handleCheckProduct = (productId) => {
@@ -101,50 +99,39 @@ const ProductsInCart = () => {
   };
 
   const calculateTotalPrice = (checkedProducts) => {
-    console.log("hELLO wORLD");
     let totalPrice = 0;
     Object.keys(cart).forEach((shopId) => {
       cart[shopId].forEach((product) => {
         if (checkedProducts[product.id]) {
           const getQuantity = JSON.parse(localStorage.getItem(`quantities_${product.id}`)) || 1;
           const quantity = getQuantity[0];
-          console.log(quantity);
-          totalPrice += (product.price * quantity);
-          console.log(product.price)
+          totalPrice += product.price * quantity;
+          localStorage.setItem("price_cart", JSON.stringify(totalPrice));
           setPriceCart(totalPrice);
-          
         }
       });
     });
-    localStorage.setItem("price_cart", JSON.stringify(totalPrice));
-    console.log(totalPrice)
-
   };
 
   const deleteSelectedProducts = () => {
-    const newGetProducts = getProducts.filter(p => !checkedProducts[p.id]
-    );
+    const newGetProducts = getProducts.filter(p => !checkedProducts[p.id]);
     setGetProducts(newGetProducts);
     localStorage.setItem("stored_products", JSON.stringify(newGetProducts));
   };
 
   const popupNotes = () => {
     setPopupNote(true);
-  }
+  };
 
   const onCancelNote = () => {
     setPopupNote(false);
-  }
+  };
 
   const onSubmitNote = (id) => {
-    if(textRef.current) {
-      localStorage.setItem(`addNote_${id}`, JSON.stringify(textRef.current.value)); 
+    if (textRef.current) {
+      localStorage.setItem(`addNote_${id}`, JSON.stringify(textRef.current.value));
     }
-  }
-
-
-  console.log(checkedProducts);
-  console.log(checkedShops);
+  };
 
   return (
     <Container>
@@ -152,7 +139,7 @@ const ProductsInCart = () => {
         <Col sm="8">
           <input
             type="checkbox"
-            checked={checkedAll ? true : false}
+            checked={checkedAll}
             onChange={handleCheckAll}
           />
           <h1 onClick={deleteSelectedProducts}>
@@ -177,46 +164,39 @@ const ProductsInCart = () => {
                     onChange={() => handleCheckProduct(product.id)}
                   />
                   <div className="container-cart-2">
-                    <Image src={product.image} style={{width: '80px', height:
-                    "80px"}}/>
+                    <Image src={product.image} style={{ width: '80px', height: '80px' }} />
                     <p>Title: {product.title}</p>
                   </div>
                   <div className="container-cart-3">
                     <p className="discount">
-                      Discount Percentage: $
-                      {(product.price - product.price * (product.discount_percentage / 100)).toFixed(2)}
+                      Discount Percentage: ${((product.price - product.price * (product.discount_percentage / 100))).toFixed(2)}
                     </p>
                     <p className="price">Price: ${product.price}</p>
                     <div className="container-cart-3-bottom">
                       <div className="add-item">
-                        {
-                          JSON.parse(localStorage.getItem(`addNote_${product.id}`)) ?
-                            <div className="input-note" onClick={popupNotes}>
-                              <div>{JSON.parse(localStorage.getItem(`addNote_${product.id}`))}
-                              </div>
-                              <div className="note-design">
-                                <FiFileText className="doc" />
-                                <BiPencil className="pencil" />
-                              </div>
-                            </div> :
+                        {JSON.parse(localStorage.getItem(`addNote_${product.id}`)) ?
+                          <div className="input-note" onClick={popupNotes}>
+                            <div>{JSON.parse(localStorage.getItem(`addNote_${product.id}`))}</div>
                             <div className="note-design">
                               <FiFileText className="doc" />
                               <BiPencil className="pencil" />
                             </div>
+                          </div> :
+                          <div className="note-design">
+                            <FiFileText className="doc" />
+                            <BiPencil className="pencil" />
+                          </div>
                         }
-
-                        {
-                          popupNote && 
+                        {popupNote &&
                           <div className="container-popup-note">
                             <h1>Notes Product</h1>
-                            <textarea ref={textRef} maxLength={144}/>
+                            <textarea ref={textRef} maxLength={144} />
                             <div>
                               <button onClick={onCancelNote}>Batal</button>
                               <button onClick={() => onSubmitNote(product.id)}>Simpan</button>
                             </div>
                           </div>
                         }
-
                         <GoTrash onClick={() => deleteSelectedProducts()} />
                         <QuantityButton id={product.id} onQuantityChange={handleQuantity} />
                       </div>
@@ -228,7 +208,7 @@ const ProductsInCart = () => {
           ))}
         </Col>
         <Col sm="4">
-          <div>{priceCart}</div>
+          <div>{checkedAll ? parseFloat(priceCart.toFixed(2)) : "-"}</div>
         </Col>
       </Row>
     </Container>

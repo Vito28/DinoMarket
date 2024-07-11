@@ -18,7 +18,6 @@ const QuantityButton = ({ id, onQuantityChange, type }) => {
     } else {
       setQuantity(storedQuantity ? storedQuantity[0] : 1);
       seta(storedQuantity ? storedQuantity[1] : 1);
-
     }
   }, [id, type]);
 
