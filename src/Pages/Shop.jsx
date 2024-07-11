@@ -3,11 +3,11 @@ import { useParams } from "react-router-dom";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { BiPencil } from "react-icons/bi";
 import ProductCard from "../Components/ProductCard";
-import "../assets/Style/Pages/Shop.scss";
 import QuantityButton from "../Components/QuantityButton";
-import { useRef, useState } from "react";
 import PopupCart from "../Components/Popup/PopupCart";
+import { useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import "../assets/Style/Pages/Shop.scss";
 
 const Shop = () => {
   const { id } = useParams();
@@ -18,9 +18,10 @@ const Shop = () => {
   const [showPopupCart, setShowPopupCart] = useState(false);
   const [showPopupAddNote, setShowPopupAddNote] = useState(false);
   const uniqueItem = products.find(product => product.id === parseInt(id));
-  const uniqueShop = shops.find(shop => shop.id === uniqueItem.shop.id);
-  const uniqueShopProducts = products.filter(product => product.shop.id == uniqueItem.shop.id && product.id !== parseInt(id));
-  const noteRef = useRef(null)
+  const uniqueShop = uniqueItem ? shops.find(shop => shop.id === uniqueItem.shop.id) : null;
+  const uniqueShopProducts = uniqueItem ? products.filter(product => product.shop.id === uniqueItem.shop.id && product.id !== parseInt(id)) : [];
+
+  const noteRef = useRef(null);
 
   const addToCart = () => {
     setShowPopupCart(true);
@@ -33,11 +34,9 @@ const Shop = () => {
       storedProducts[existingIndex].quantities = quantity;
     }
 
-    if (noteRef.current.value) {
-    // console.log(noteRef.current.value)
-    if(noteRef.current) {
+    if (noteRef.current && noteRef.current.value) {
       const values = noteRef.current.value;
-      localStorage.setItem(`addNote_${id}`, JSON.stringify(values))
+      localStorage.setItem(`addNote_${id}`, JSON.stringify(values));
       console.log(values);
       console.log(JSON.parse(localStorage.getItem(`addNote_${id}`)));
     }
@@ -51,134 +50,123 @@ const Shop = () => {
   };
 
   const addNote = () => {
-    setShowPopupAddNote(true)
+    setShowPopupAddNote(true);
   };
 
   const cancelNote = () => {
     setShowPopupAddNote(false);
-  }
+  };
 
   const handleClosePopup = () => {
-    setShowPopupCart(false)
-  }
-
-  const port = window.location.port;
+    setShowPopupCart(false);
+  };
 
   return (
     <>
       <Helmet>
-        <title>{uniqueItem.title} - {uniqueShop.name}</title>
-        <meta name="description" content={`Buy ${uniqueItem.title} from ${uniqueShop.name}. Discount ${uniqueItem.discount_percentage}%! ${uniqueItem.description}`} />
-        <meta name="keywords" content={`${uniqueItem.title}, ${uniqueShop.name}, buy ${uniqueItem.title}, discount ${uniqueItem.title}`} />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`https://${window.location.hostname}:${port}/shop/${id}`} />
+        <title>{uniqueItem ? `${uniqueItem.title} - ${uniqueShop.name}` : "Shop Not Found"}</title>
+        {uniqueItem && (
+          <>
+            <meta name="description" content={`Buy ${uniqueItem.title} from ${uniqueShop.name}. Discount ${uniqueItem.discount_percentage}%! ${uniqueItem.description}`} />
+            <meta name="keywords" content={`${uniqueItem.title}, ${uniqueShop.name}, buy ${uniqueItem.title}, discount ${uniqueItem.title}`} />
+            <link rel="canonical" href={`https://${window.location.hostname}:${window.location.port}/shop/${id}`} />
+          </>
+        )}
       </Helmet>
 
-      <Container >
-        <Row className="product" >
-          <Col lg={6} sm={12} className="info-product">
-            <h1 className="title-product">{uniqueItem.title}</h1>
-            <p className="description">{uniqueItem.description}</p>
+      {uniqueItem && uniqueShop && (
+        <Container>
+          <Row className="product">
+            <Col lg={6} sm={12} className="info-product">
+              <h1 className="title-product">{uniqueItem.title}</h1>
+              <p className="description">{uniqueItem.description}</p>
 
-            <div className="wrapper-item">
-              {/* <div className="title">
-                <h2>{uniqueItem.title}</h2>
-              </div> */}
-              <div className="price">
-                <h6 className="real-price">$ {uniqueItem.price}</h6>
-                <h1 className="discount-price">${(uniqueItem.price - (uniqueItem.price * (uniqueItem.discount_percentage / 100))).toFixed(2)}</h1>
+              <div className="wrapper-item">
+                <div className="price">
+                  <h6 className="real-price">$ {uniqueItem.price}</h6>
+                  <h1 className="discount-price">${(uniqueItem.price - (uniqueItem.price * (uniqueItem.discount_percentage / 100))).toFixed(2)}</h1>
+                </div>
+                <div className="price">
+                  <h5>Deskripsi</h5>
+                  <p>{uniqueItem.description}</p>
+                </div>
               </div>
-              <div className="price">
-                <h5>Deskripsi</h5>
-                <p>{uniqueItem.description}</p>
+            </Col>
+            <Col lg={6} sm={12}>
+              <Image src={uniqueItem.images[1]} alt={`${uniqueItem.title} image`} className="img-product" />
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12} sm={12}>
+              <div className="container-cart">
+                <div className="card-cart">
+                  <Image src={uniqueItem.images[2]} alt={`${uniqueItem.title} image`} />
+                  <h1>{uniqueShop.name}</h1>
+                </div>
+                <div className="subtotal">
+                  <QuantityButton id={uniqueItem.id} onQuantityChange={handleQuantity} type={"cart"} />
+                  <h4>${uniqueItem.price * quantity}</h4>
+                </div>
+                <div className="bought-btn">
+                  <button type="button" aria-label={`Beli ${uniqueItem.title}`}>Beli</button>
+                  <button type="button" onClick={addToCart} aria-label={`Tambah ${uniqueItem.title} ke Keranjang`}>+ Keranjang</button>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col lg={6} sm={12}>
-            <Image src={uniqueItem.images[1]} alt={`${uniqueItem.title} image`} className="img-product" />
-          </Col>
-        </Row>
-        <Row>
-          <Col lg={12} sm={12}>
-            <div className="container-cart">
-              {/* <h1>Shopify</h1> */}
-              <div className="card-cart">
+            </Col>
+          </Row>
+        </Container>
+      )}
 
-                <Image src={uniqueItem.images[2]} alt={`${uniqueItem.title} image`} />
-                <h1>{uniqueShop.name}</h1>
-              </div>
-
-
-
-              <div className="subtotal">
-                <QuantityButton id={uniqueItem.id} onQuantityChange={handleQuantity} type={"cart"} />
-                {/* <p>Subtotal</p> */}
-                <h4>${uniqueItem.price * quantity}</h4>
-              </div>
-              <div className="bought-btn">
-                <button type="button" aria-label={`Beli ${uniqueItem.title}`}>Beli</button>
-                <button type="button" onClick={addToCart} aria-label={`Tambah ${uniqueItem.title} ke Keranjang`}>+ Keranjang</button>
-              </div>
-            </div>
-
-            
-
-          </Col>
-        </Row>
-      </Container >
       <div className="add-note">
-              {/* <h2>Sesuaikan Jumlah dan Catatan</h2> */}
+        {showPopupAddNote && <input ref={noteRef} type="text" placeholder="Ex. Color White, Size M" />}
+        {!showPopupAddNote ? <div className="add-note-pencil" onClick={addNote}><BiPencil aria-label="Tambah Catatan" /><span>Tambah Catatan</span></div> : <p onClick={cancelNote}>Cancel Note</p>}
+      </div>
 
-              {showPopupAddNote && <input ref={noteRef} type="text" placeholder="Ex. Color White, Size M" />}
-              {!showPopupAddNote ? <div className="add-note-pencil" onClick={addNote}><BiPencil aria-label="Tambah Catatan" /><span>Tambah Catatan</span></div> : <p onClick={cancelNote}>Cancel Note</p>}
-            </div>
+      {showPopupCart && <PopupCart id={uniqueItem.id} shopId={uniqueItem.shop.id} image={uniqueItem.images[1]} alt={uniqueItem.title} onClose={handleClosePopup} />}
 
-
-      {showPopupCart ? <PopupCart /> : null
-      }
-
-      {showPopupCart ? <PopupCart id={uniqueItem.id} shopId={uniqueItem.shop.id} image={uniqueItem.images[1]} alt={uniqueItem.title} onClose={handleClosePopup}/> : null}
-
-
-
-      <Container className="white">
-        <Row>
-          <Col xs="auto">
-            <Image src={uniqueItem.images[0]} alt={`${uniqueShop.name} logo`} />
-            <div className="container-shop-identity">
-              <h2>{uniqueShop.name}</h2>
-              <div className="">
-                <button>Chat Sekarang</button>
-                <button>Kunjungi Toko</button>
+      {uniqueShop && (
+        <Container className="white">
+          <Row>
+            <Col xs="auto">
+              <Image src={uniqueItem.images[0]} alt={`${uniqueShop.name} logo`} />
+              <div className="container-shop-identity">
+                <h2>{uniqueShop.name}</h2>
+                <div className="">
+                  <button>Chat Sekarang</button>
+                  <button>Kunjungi Toko</button>
+                </div>
               </div>
-            </div>
-            <div className="rate">
-              <div className="x-shopify">
-                <label>Rating</label>
-                <span>15,5rb</span>
+              <div className="rate">
+                <div className="x-shopify">
+                  <label>Rating</label>
+                  <span>15,5rb</span>
+                </div>
+                <div className="x-shopify">
+                  <label>Persentase Chat</label>
+                  <span>76%</span>
+                </div>
+                <div className="x-shopify">
+                  <label>Waktu Balas Chat</label>
+                  <span>2 jam</span>
+                </div>
               </div>
-              <div className="x-shopify">
-                <label>Persentase Chat</label>
-                <span>76%</span>
-              </div>
-              <div className="x-shopify">
-                <label>Waktu Balas Chat</label>
-                <span>2 jam</span>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-      <Container>
-        <Row>
-          <Col>
-            <h2>Produk Lainnya</h2>
-          </Col>
-        </Row>
-        <ProductCard products={uniqueShopProducts} />
-      </Container>
+            </Col>
+          </Row>
+        </Container>
+      )}
+
+      {uniqueShopProducts.length > 0 && (
+        <Container>
+          <Row>
+            <Col>
+              <h2>Produk Lainnya</h2>
+            </Col>
+          </Row>
+          <ProductCard products={uniqueShopProducts} />
+        </Container>
+      )}
     </>
   );
-}
+};
 
 export default Shop;
