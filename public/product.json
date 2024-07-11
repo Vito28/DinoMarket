@@ -6,73 +6,14 @@
         "description": "A high-precision wireless mouse with ergonomic design.",
         "images": [
             "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/3/9/417846ff-dcb2-4cf1-bb95-ad8424628431.jpg.webp?ect=4g",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/9/33ce8e88-13e9-4d2a-9db0-b144d1fcee2f.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2018/3/13/2642798/2642798_9ecf817b-e928-45e8-a36e-4fab10514133.png" 
         ],
         "shop": {
             "id": 101,
-            "name": "Tech Store"
+            "name": "Logitech Official Store"
         },
         "discount_percentage": 10
-    },
-    {
-        "id": 2,
-        "price": 25.99,
-        "title": "Laptop Stand",
-        "description": "Adjustable laptop stand for better posture.",
-        "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
-        ],
-        "shop": {
-            "id": 101,
-            "name": "Tech Store"
-        },
-        "discount_percentage": 5
-    },
-    {
-        "id": 3,
-        "price": 15.99,
-        "title": "USB-C Cable",
-        "description": "Durable USB-C to USB-A cable.",
-        "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
-        ],
-        "shop": {
-            "id": 101,
-            "name": "Tech Store"
-        },
-        "discount_percentage": 10
-    },
-    {
-        "id": 4,
-        "price": 49.99,
-        "title": "Portable SSD",
-        "description": "Fast and compact portable SSD.",
-        "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
-        ],
-        "shop": {
-            "id": 101,
-            "name": "Tech Store"
-        },
-        "discount_percentage": 15
-    },
-    {
-        "id": 5,
-        "price": 89.99,
-        "title": "Smartphone Gimbal",
-        "description": "3-axis gimbal for smartphone video stabilization.",
-        "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
-        ],
-        "shop": {
-            "id": 101,
-            "name": "Tech Store"
-        },
-        "discount_percentage": 20
     },
     {
         "id": 6,
@@ -80,29 +21,15 @@
         "title": "Noise Cancelling Headphones",
         "description": "Over-ear noise cancelling headphones.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2020/12/23/459f3135-4ab7-4cc9-a1fa-3539e4fa89fc.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/12/23/459f3135-4ab7-4cc9-a1fa-3539e4fa89fc.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2018/3/13/2642798/2642798_9ecf817b-e928-45e8-a36e-4fab10514133.png"
         ],
         "shop": {
             "id": 101,
-            "name": "Tech Store"
+            "name": "Logitech Official Store"
         },
         "discount_percentage": 15
-    },
-    {
-        "id": 7,
-        "price": 19.99,
-        "title": "Bluetooth Adapter",
-        "description": "USB Bluetooth 5.0 adapter.",
-        "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
-        ],
-        "shop": {
-            "id": 101,
-            "name": "Tech Store"
-        },
-        "discount_percentage": 10
     },
     {
         "id": 8,
@@ -110,12 +37,46 @@
         "title": "Webcam Cover",
         "description": "Privacy webcam cover for laptops and desktops.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/4/1/d4f2d714-07dc-4a64-a404-55e89588e26a.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/1/19/6f10f5e4-f258-472f-b118-28f83a6cfbc1.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2018/3/13/2642798/2642798_9ecf817b-e928-45e8-a36e-4fab10514133.png"
         ],
         "shop": {
             "id": 101,
-            "name": "Tech Store"
+            "name": "Logitech Official Store"
+        },
+        "discount_percentage": 5
+    },
+    {
+        "id": 11,
+        "price": 49.99,
+        "title": "Ergonomic Keyboard",
+        "description": "Split ergonomic keyboard for better posture.",
+        "images": [
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/1/2/69c2c1cc-3cfd-4a99-80e3-976c79d61b80.jpg",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/1/2/69c2c1cc-3cfd-4a99-80e3-976c79d61b80.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2018/3/13/2642798/2642798_9ecf817b-e928-45e8-a36e-4fab10514133.png"
+        ],
+        "shop": {
+            "id": 101,
+            "name": "Logitech Official Store"
+        },
+        "discount_percentage": 10
+    },
+    
+    {
+        "id": 2,
+        "price": 25.99,
+        "title": "Laptop Stand",
+        "description": "Adjustable laptop stand for better posture.",
+        "images": [
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/11/1/2a6d6e02-52f8-4a6e-8ebe-754048a73574.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/1/c6259488-b3b4-49fc-b3eb-6ad23f628040.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2022/8/30/2006aa02-d9ea-49cd-bda5-002ca83b6505.png"
+        ],
+        "shop": {
+            "id": 102,
+            "name": "Press Play"
         },
         "discount_percentage": 5
     },
@@ -125,44 +86,15 @@
         "title": "Mechanical Keyboard",
         "description": "A mechanical keyboard with customizable RGB lighting.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/1/17/e3e0d684-1f2c-452c-9e6c-e01dbecf1bc9.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/1/17/e3e0d684-1f2c-452c-9e6c-e01dbecf1bc9.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2022/8/30/2006aa02-d9ea-49cd-bda5-002ca83b6505.png"
         ],
         "shop": {
             "id": 102,
-            "name": "Keyboard World"
+            "name": "Press Play"
         },
         "discount_percentage": 15
-    },
-    {
-        "id": 10,
-        "price": 59.99,
-        "title": "Gaming Keyboard",
-        "description": "Mechanical gaming keyboard with macro keys.",
-        "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
-        ],
-        "shop": {
-            "id": 102,
-            "name": "Keyboard World"
-        },
-        "discount_percentage": 20
-    },
-    {
-        "id": 11,
-        "price": 49.99,
-        "title": "Ergonomic Keyboard",
-        "description": "Split ergonomic keyboard for better posture.",
-        "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
-        ],
-        "shop": {
-            "id": 102,
-            "name": "Keyboard World"
-        },
-        "discount_percentage": 10
     },
     {
         "id": 12,
@@ -170,12 +102,13 @@
         "title": "Wireless Mechanical Keyboard",
         "description": "Wireless mechanical keyboard with long battery life.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/1/17/7387ecae-5a4f-4ad4-bcb5-55ffba478929.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/1/17/7387ecae-5a4f-4ad4-bcb5-55ffba478929.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2022/8/30/2006aa02-d9ea-49cd-bda5-002ca83b6505.png"
         ],
         "shop": {
             "id": 102,
-            "name": "Keyboard World"
+            "name": "Press Play"
         },
         "discount_percentage": 5
     },
@@ -185,29 +118,15 @@
         "title": "Compact Mechanical Keyboard",
         "description": "Compact mechanical keyboard with red switches.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/7/22/86adcd0d-fcf4-4469-9b96-c8acfb78e92a.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/9/25/b6bfe7c2-e72a-485e-9b42-94286e187b1b.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2022/8/30/2006aa02-d9ea-49cd-bda5-002ca83b6505.png"
         ],
         "shop": {
             "id": 102,
-            "name": "Keyboard World"
+            "name": "Press Play"
         },
         "discount_percentage": 10
-    },
-    {
-        "id": 14,
-        "price": 49.99,
-        "title": "RGB Keyboard",
-        "description": "RGB backlit keyboard with customizable lighting.",
-        "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
-        ],
-        "shop": {
-            "id": 102,
-            "name": "Keyboard World"
-        },
-        "discount_percentage": 15
     },
     {
         "id": 15,
@@ -215,12 +134,13 @@
         "title": "Low-Profile Mechanical Keyboard",
         "description": "Low-profile mechanical keyboard with quiet keys.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/11/25/79f13508-c506-41f5-8eb6-f260643d9654.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/27/7beff31d-8abe-4694-8766-0df3a1466b85.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2022/8/30/2006aa02-d9ea-49cd-bda5-002ca83b6505.png"
         ],
         "shop": {
             "id": 102,
-            "name": "Keyboard World"
+            "name": "Press Play"
         },
         "discount_percentage": 20
     },
@@ -230,27 +150,159 @@
         "title": "Custom Mechanical Keyboard",
         "description": "Customizable mechanical keyboard with hot-swappable switches.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/12/6/50232ca4-46ab-4254-8a54-97fb0019e938.jpg",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/17/1aa92479-a7eb-48e6-9754-b41adb111457.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2022/8/30/2006aa02-d9ea-49cd-bda5-002ca83b6505.png"
         ],
         "shop": {
             "id": 102,
-            "name": "Keyboard World"
+            "name": "Press Play"
         },
         "discount_percentage": 25
     },
+
+    {
+        "id": 7,
+        "price": 19.99,
+        "title": "Bluetooth Adapter",
+        "description": "USB Bluetooth 5.0 adapter.",
+        "images": [
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/6/14/afd8349f-f679-4590-a8b6-ff6d6e08e728.png.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/15/b5c4bf58-17ab-4ee5-94f4-f4377a8cea51.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/8/3/6514734/6514734_a37c1537-75ca-40f9-b18f-d165713df4fe.png"
+        ],
+        "shop": {
+            "id": 103,
+            "name": "KoboiTech"
+        },
+        "discount_percentage": 10
+    },
+    {
+        "id": 10,
+        "price": 59.99,
+        "title": "Gaming Keyboard",
+        "description": "Mechanical gaming keyboard with macro keys.",
+        "images": [
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/4/20/8414219e-bd87-4483-b480-cd4655385886.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/5/31/508c8667-f594-4129-a3d6-ab9ab62ddd5d.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/8/3/6514734/6514734_a37c1537-75ca-40f9-b18f-d165713df4fe.png"
+        ],
+        "shop": {
+            "id": 103,
+            "name": "KoboiTech"
+        },
+        "discount_percentage": 20
+    },
+    {
+        "id": 14,
+        "price": 49.99,
+        "title": "RGB Keyboard",
+        "description": "RGB backlit keyboard with customizable lighting.",
+        "images": [
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/11/9/545550ac-1916-4e30-a17d-2865a3ea53a9.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/9/545550ac-1916-4e30-a17d-2865a3ea53a9.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/8/3/6514734/6514734_a37c1537-75ca-40f9-b18f-d165713df4fe.png"
+        ],
+        "shop": {
+            "id": 103,
+            "name": "KoboiTech"
+        },
+        "discount_percentage": 15
+    },
+    {
+        "id": 3,
+        "price": 15.99,
+        "title": "USB-C Cable",
+        "description": "Durable USB-C to USB-A cable.",
+        "images": [
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/1/19/a1146b26-be0e-40ce-aa55-de1ed96ff495.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/1/19/a1146b26-be0e-40ce-aa55-de1ed96ff495.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/8/3/6514734/6514734_a37c1537-75ca-40f9-b18f-d165713df4fe.png"
+        ],
+        "shop": {
+            "id": 103,
+            "name": "KoboiTech"
+        },
+        "discount_percentage": 10
+    },
+    {
+        "id": 22,
+        "price": 29.99,
+        "title": "Wireless Earphones",
+        "description": "In-ear wireless earphones with good bass.",
+        "images": [
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/7/1/a966ea51-7e4b-4521-b79d-7012b0a082c5.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/7/1/a966ea51-7e4b-4521-b79d-7012b0a082c5.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/8/3/6514734/6514734_a37c1537-75ca-40f9-b18f-d165713df4fe.png"
+        ],
+        "shop": {
+            "id": 103,
+            "name": "KoboiTech"
+        },
+        "discount_percentage": 10
+    },
+    {
+        "id": 4,
+        "price": 49.99,
+        "title": "Portable SSD",
+        "description": "Fast and compact portable SSD.",
+        "images": [
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/7/31/175290f3-cb7c-4a60-bbed-cecb8504fb87.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/31/175290f3-cb7c-4a60-bbed-cecb8504fb87.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/8/3/6514734/6514734_a37c1537-75ca-40f9-b18f-d165713df4fe.png"
+        ],
+        "shop": {
+            "id": 103,
+            "name": "KoboiTech"
+        },
+        "discount_percentage": 15
+    },
+    {
+        "id": 19,
+        "price": 129.99,
+        "title": "Home Theater System",
+        "description": "5.1 surround sound home theater system.",
+        "images": [
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/5/8/6a875cc2-6c81-4477-bcb8-954fd419994a.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/5/8/6a875cc2-6c81-4477-bcb8-954fd419994a.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2022/5/31/0894454d-5c06-4f17-a14c-0eb47d60d884.jpg"
+        ],
+        "shop": {
+            "id": 104,
+            "name": "Crucial Authorized Store"
+        },
+        "discount_percentage": 15
+    },
+    {
+        "id": 5,
+        "price": 89.99,
+        "title": "Smartphone Gimbal",
+        "description": "3-axis gimbal for smartphone video stabilization.",
+        "images": [
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/7/20/182e98c3-9430-4958-b30c-b425d1ed83f3.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/6/22/3265d348-ecce-4c8f-bf57-2d6a694d3360.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/8/3/6514734/6514734_a37c1537-75ca-40f9-b18f-d165713df4fe.png"
+        ],
+        "shop": {
+            "id": 103,
+            "name": "KoboiTech"
+        },
+        "discount_percentage": 20
+    },
+
     {
         "id": 17,
         "price": 49.99,
         "title": "Bluetooth Speaker",
         "description": "A portable Bluetooth speaker with superior sound quality.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/3/14/09779bcb-e69f-4b6e-a001-1f57b26b494a.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/3/14/09779bcb-e69f-4b6e-a001-1f57b26b494a.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/1/20/210cc9e7-3c40-4f25-90f6-aad529ca8dab.jpg"
         ],
         "shop": {
-            "id": 103,
-            "name": "Sound Hub"
+            "id": 104,
+            "name": "DJI Official Store"
         },
         "discount_percentage": 5
     },
@@ -260,44 +312,15 @@
         "title": "Smart Speaker",
         "description": "Voice-controlled smart speaker with great sound.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/5/21/0784f1fb-969c-4c87-ba70-3923923b2edd.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/5/21/b426fd6f-91b3-4750-bf41-33491d974648.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/1/20/210cc9e7-3c40-4f25-90f6-aad529ca8dab.jpg"
         ],
         "shop": {
-            "id": 103,
-            "name": "Sound Hub"
+            "id": 104,
+            "name": "DJI Official Store"
         },
         "discount_percentage": 10
-    },
-    {
-        "id": 19,
-        "price": 129.99,
-        "title": "Home Theater System",
-        "description": "5.1 surround sound home theater system.",
-        "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
-        ],
-        "shop": {
-            "id": 103,
-            "name": "Sound Hub"
-        },
-        "discount_percentage": 15
-    },
-    {
-        "id": 20,
-        "price": 199.99,
-        "title": "Soundbar",
-        "description": "High-quality soundbar with subwoofer.",
-        "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
-        ],
-        "shop": {
-            "id": 103,
-            "name": "Sound Hub"
-        },
-        "discount_percentage": 20
     },
     {
         "id": 21,
@@ -305,29 +328,31 @@
         "title": "Portable PA System",
         "description": "Portable PA system with wireless microphone.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/5/5/a9ed53a2-a418-4f0f-a9c4-acc852245969.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/5/5/a9ed53a2-a418-4f0f-a9c4-acc852245969.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/1/20/210cc9e7-3c40-4f25-90f6-aad529ca8dab.jpg"
         ],
         "shop": {
-            "id": 103,
-            "name": "Sound Hub"
+            "id": 104,
+            "name": "DJI Official Store"
         },
         "discount_percentage": 5
     },
     {
-        "id": 22,
-        "price": 29.99,
-        "title": "Wireless Earphones",
-        "description": "In-ear wireless earphones with good bass.",
+        "id": 20,
+        "price": 199.99,
+        "title": "Soundbar",
+        "description": "High-quality soundbar with subwoofer.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/1/19/27a4f7bf-86ba-4ac7-bfeb-6d61031a32d2.png.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/24/e0e43ddc-ffa3-42c9-8583-f50dfd7bec83.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/1/20/210cc9e7-3c40-4f25-90f6-aad529ca8dab.jpg"
         ],
         "shop": {
-            "id": 103,
-            "name": "Sound Hub"
+            "id": 104,
+            "name": "DJI Official Store"
         },
-        "discount_percentage": 10
+        "discount_percentage": 20
     },
     {
         "id": 23,
@@ -335,12 +360,13 @@
         "title": "Noise Cancelling Earbuds",
         "description": "Earbuds with active noise cancelling technology.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/10/7/1f74396c-08ef-4212-9931-9568f0950424.png.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/10/7/807c09fc-c622-416c-81be-5b62556b5486.png",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/1/20/210cc9e7-3c40-4f25-90f6-aad529ca8dab.jpg"
         ],
         "shop": {
-            "id": 103,
-            "name": "Sound Hub"
+            "id": 104,
+            "name": "DJI Official Store"
         },
         "discount_percentage": 15
     },
@@ -350,27 +376,30 @@
         "title": "Wireless Speaker System",
         "description": "Multi-room wireless speaker system.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/1/8/40ff49cc-2c6c-4377-8a71-aabe37d5ff8e.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/product-1/2020/6/26/3583595/3583595_8a00c164-9221-4459-89ad-1015bfc19bb5_1000_1000",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/1/20/210cc9e7-3c40-4f25-90f6-aad529ca8dab.jpg"
         ],
         "shop": {
-            "id": 103,
-            "name": "Sound Hub"
+            "id": 104,
+            "name": "DJI Official Store"
         },
         "discount_percentage": 20
     },
+
     {
         "id": 25,
         "price": 29.99,
         "title": "USB-C Hub",
         "description": "A versatile USB-C hub with multiple ports for connectivity.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/5/30/8f983eaf-8121-4f5d-9304-e2f32787e0b3.png.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/6/24/fc42ea7f-18db-42ce-bf5b-6fbe6a58a7de.png",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/1/1/1624191/1624191_c1bf938e-b55a-4eae-a45a-1ed0bc1e06e9.jpg"
         ],
         "shop": {
-            "id": 104,
-            "name": "Accessory Depot"
+            "id": 105,
+            "name": "Digital Shop Solution"
         },
         "discount_percentage": 20
     },
@@ -380,12 +409,13 @@
         "title": "USB Flash Drive",
         "description": "32GB USB 3.0 flash drive.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/product-1/2019/6/19/25568009/25568009_33677f1e-2ede-4617-b5b2-82f64aee323a_800_800.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/product-1/2019/6/19/25568009/25568009_6176a472-b655-4c72-86da-b35b0cdeefba_800_800",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/1/1/1624191/1624191_c1bf938e-b55a-4eae-a45a-1ed0bc1e06e9.jpg"
         ],
         "shop": {
-            "id": 104,
-            "name": "Accessory Depot"
+            "id": 105,
+            "name": "Digital Shop Solution"
         },
         "discount_percentage": 5
     },
@@ -395,12 +425,13 @@
         "title": "Memory Card Reader",
         "description": "All-in-one memory card reader.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/3/25/e0323f6e-38d4-4a30-8cc0-57a93ddeaf56.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/3/25/429cfd95-6ef3-4952-8c6a-dcae31be4d63.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/1/1/1624191/1624191_c1bf938e-b55a-4eae-a45a-1ed0bc1e06e9.jpg"
         ],
         "shop": {
-            "id": 104,
-            "name": "Accessory Depot"
+            "id": 105,
+            "name": "Digital Shop Solution"
         },
         "discount_percentage": 10
     },
@@ -410,12 +441,13 @@
         "title": "Wireless Charger",
         "description": "Qi wireless charger for smartphones.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/8/31/7280d6a5-26db-44f3-8e2e-a82eb5970be1.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/31/38b85a37-08a5-41fc-9d56-cc835ed27047.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/1/1/1624191/1624191_c1bf938e-b55a-4eae-a45a-1ed0bc1e06e9.jpg"
         ],
         "shop": {
-            "id": 104,
-            "name": "Accessory Depot"
+            "id": 105,
+            "name": "Digital Shop Solution"
         },
         "discount_percentage": 15
     },
@@ -425,12 +457,13 @@
         "title": "Power Bank",
         "description": "20000mAh power bank with fast charging.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/10/23/081dc690-6279-4791-9699-ce1e34f09efa.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/17/62fccfcb-2ff4-4b84-9299-23e498e31106.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/1/1/1624191/1624191_c1bf938e-b55a-4eae-a45a-1ed0bc1e06e9.jpg"
         ],
         "shop": {
-            "id": 104,
-            "name": "Accessory Depot"
+            "id": 105,
+            "name": "Digital Shop Solution"
         },
         "discount_percentage": 20
     },
@@ -440,12 +473,13 @@
         "title": "Cable Organizer",
         "description": "Magnetic cable organizer for desks.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/2/3/3d4f9f4c-de3c-4d45-bf6d-1346797d80d3.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/product-1/2019/7/6/492619524/492619524_392efc8f-b913-4452-827a-29d9b805422f_930_930.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/1/1/1624191/1624191_c1bf938e-b55a-4eae-a45a-1ed0bc1e06e9.jpg"
         ],
         "shop": {
-            "id": 104,
-            "name": "Accessory Depot"
+            "id": 105,
+            "name": "Digital Shop Solution"
         },
         "discount_percentage": 5
     },
@@ -455,12 +489,13 @@
         "title": "Laptop Sleeve",
         "description": "Protective laptop sleeve for 13-inch laptops.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/8/24/52665a24-cedd-4ebe-b2ac-d39f1eee4c9b.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/24/9c9126a4-645a-435f-98ad-5d064299c9c9.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/1/1/1624191/1624191_c1bf938e-b55a-4eae-a45a-1ed0bc1e06e9.jpg"
         ],
         "shop": {
-            "id": 104,
-            "name": "Accessory Depot"
+            "id": 105,
+            "name": "Digital Shop Solution"
         },
         "discount_percentage": 10
     },
@@ -470,27 +505,30 @@
         "title": "Tablet Stand",
         "description": "Adjustable stand for tablets and e-readers.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/12/5/cfaa2c03-a6fc-4855-add3-293ca94f8bcf.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/12/5/cabb4665-a6a3-4c06-891e-e5807b926f49.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2019/1/1/1624191/1624191_c1bf938e-b55a-4eae-a45a-1ed0bc1e06e9.jpg"
         ],
         "shop": {
-            "id": 104,
-            "name": "Accessory Depot"
+            "id": 105,
+            "name": "Digital Shop Solution"
         },
         "discount_percentage": 15
     },
+
     {
         "id": 33,
         "price": 59.99,
         "title": "Gaming Headset",
         "description": "A comfortable gaming headset with noise-cancelling microphone.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/6/21/b61eb636-7658-49f2-9574-eb31a67aef6b.png.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/3/20/50385fda-0527-4db4-a82b-fd2c99d0f311.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/10/29/125023/125023_8f1e16c1-4b3c-4d94-9e69-aeaede74802b.jpg"
         ],
         "shop": {
-            "id": 105,
-            "name": "Gamer's Paradise"
+            "id": 106,
+            "name": "Sinarmulia Sukses Makmur"
         },
         "discount_percentage": 25
     },
@@ -500,12 +538,13 @@
         "title": "Gaming Chair",
         "description": "Ergonomic gaming chair with lumbar support.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/12/28/7d12df08-88fb-411a-b4b8-b0ca92f7da81.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/product-1/2019/12/4/batch-upload/batch-upload_3c00d004-8481-4469-88d0-d897220f502d.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/10/29/125023/125023_8f1e16c1-4b3c-4d94-9e69-aeaede74802b.jpg"
         ],
         "shop": {
-            "id": 105,
-            "name": "Gamer's Paradise"
+            "id": 106,
+            "name": "Sinarmulia Sukses Makmur"
         },
         "discount_percentage": 20
     },
@@ -515,12 +554,13 @@
         "title": "Gaming Monitor",
         "description": "27-inch gaming monitor with 144Hz refresh rate.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/5/14/cb9e6f10-213e-4080-802b-1a6e10fd15fc.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/5/14/e050d1f3-3392-44e1-b393-631637918625.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/10/29/125023/125023_8f1e16c1-4b3c-4d94-9e69-aeaede74802b.jpg"
         ],
         "shop": {
-            "id": 105,
-            "name": "Gamer's Paradise"
+            "id": 106,
+            "name": "Sinarmulia Sukses Makmur"
         },
         "discount_percentage": 15
     },
@@ -530,12 +570,13 @@
         "title": "Gaming Mouse",
         "description": "High-DPI gaming mouse with customizable buttons.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/6/7/441c9870-2943-4823-88b4-afd4a3465299.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/7/23/26174c67-80ea-476d-9828-7e5f20af1b57.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/10/29/125023/125023_8f1e16c1-4b3c-4d94-9e69-aeaede74802b.jpg"
         ],
         "shop": {
-            "id": 105,
-            "name": "Gamer's Paradise"
+            "id": 106,
+            "name": "Sinarmulia Sukses Makmur"
         },
         "discount_percentage": 10
     },
@@ -545,12 +586,13 @@
         "title": "Gaming Mouse Pad",
         "description": "Large gaming mouse pad with RGB lighting.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/4/6/ccd814cf-4a5b-4478-9d39-7f6e0182956b.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/5/22/75c31efe-bf27-4e86-9b2d-d93ad4af8a46.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/10/29/125023/125023_8f1e16c1-4b3c-4d94-9e69-aeaede74802b.jpg"
         ],
         "shop": {
-            "id": 105,
-            "name": "Gamer's Paradise"
+            "id": 106,
+            "name": "Sinarmulia Sukses Makmur"
         },
         "discount_percentage": 5
     },
@@ -560,12 +602,13 @@
         "title": "Streaming Webcam",
         "description": "1080p streaming webcam with ring light.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/7/17/ba1fd5bb-32c6-4453-8f24-deb01b6856a1.png.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/17/ba1fd5bb-32c6-4453-8f24-deb01b6856a1.png",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/10/29/125023/125023_8f1e16c1-4b3c-4d94-9e69-aeaede74802b.jpg"
         ],
         "shop": {
-            "id": 105,
-            "name": "Gamer's Paradise"
+            "id": 106,
+            "name": "Sinarmulia Sukses Makmur"
         },
         "discount_percentage": 20
     },
@@ -575,12 +618,13 @@
         "title": "VR Headset",
         "description": "Virtual reality headset with motion controllers.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/6/29/90490198-925b-45f5-b3cc-925ef93bf208.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/6/29/90490198-925b-45f5-b3cc-925ef93bf208.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/10/29/125023/125023_8f1e16c1-4b3c-4d94-9e69-aeaede74802b.jpg"
         ],
         "shop": {
-            "id": 105,
-            "name": "Gamer's Paradise"
+            "id": 106,
+            "name": "Sinarmulia Sukses Makmur"
         },
         "discount_percentage": 25
     },
@@ -590,27 +634,30 @@
         "title": "Game Controller",
         "description": "Wireless game controller for PC and console.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/7/11/f2342184-628d-43da-8de0-e126bb111ca5.png.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/7/11/f2342184-628d-43da-8de0-e126bb111ca5.png",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/10/29/125023/125023_8f1e16c1-4b3c-4d94-9e69-aeaede74802b.jpg"
         ],
         "shop": {
-            "id": 105,
-            "name": "Gamer's Paradise"
+            "id": 106,
+            "name": "Sinarmulia Sukses Makmur"
         },
         "discount_percentage": 10
     },
+
     {
         "id": 41,
         "price": 79.99,
         "title": "Smartwatch",
         "description": "A stylish smartwatch with health tracking features.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/11/22/461d4f28-9465-464b-a0db-1cfd4fa7911f.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/4/16/7912303f-e9a9-4043-a0df-42c8b51825f0.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2023/3/2/42b9ea76-41c7-4823-8538-534727aaf131.jpg"
         ],
         "shop": {
             "id": 106,
-            "name": "Watch Store"
+            "name": "QUEEN id Official"
         },
         "discount_percentage": 10
     },
@@ -620,12 +667,13 @@
         "title": "Fitness Tracker",
         "description": "Advanced fitness tracker with heart rate monitor.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/7/8/1b24ba78-27e0-40d4-bd6b-529310a881bf.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/7/8/1b24ba78-27e0-40d4-bd6b-529310a881bf.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2023/3/2/42b9ea76-41c7-4823-8538-534727aaf131.jpg"
         ],
         "shop": {
             "id": 106,
-            "name": "Watch Store"
+            "name": "QUEEN id Official"
         },
         "discount_percentage": 15
     },
@@ -635,12 +683,13 @@
         "title": "Luxury Smartwatch",
         "description": "High-end smartwatch with premium materials.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/6/8/216c004d-24aa-4817-a05d-99519d4e98a3.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/6/8/216c004d-24aa-4817-a05d-99519d4e98a3.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2023/3/2/42b9ea76-41c7-4823-8538-534727aaf131.jpg"
         ],
         "shop": {
             "id": 106,
-            "name": "Watch Store"
+            "name": "QUEEN id Official"
         },
         "discount_percentage": 20
     },
@@ -650,12 +699,13 @@
         "title": "Hybrid Smartwatch",
         "description": "Hybrid smartwatch with traditional watch hands.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/11/8/c779b983-cdc8-4244-8c8a-b4469d654114.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/26/9d293802-8d49-4f85-aad1-0b47edcc809c.png",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2023/3/2/42b9ea76-41c7-4823-8538-534727aaf131.jpg"
         ],
         "shop": {
             "id": 106,
-            "name": "Watch Store"
+            "name": "QUEEN id Official"
         },
         "discount_percentage": 10
     },
@@ -665,12 +715,13 @@
         "title": "Kid's Smartwatch",
         "description": "Smartwatch designed for kids with parental controls.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/3/30/62cb41d9-aa01-415c-afa8-d6d04f94c490.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/27/576e2cb3-92ce-47d2-8102-304386a57a8a.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2023/3/2/42b9ea76-41c7-4823-8538-534727aaf131.jpg"
         ],
         "shop": {
             "id": 106,
-            "name": "Watch Store"
+            "name": "QUEEN id Official"
         },
         "discount_percentage": 5
     },
@@ -680,12 +731,13 @@
         "title": "GPS Smartwatch",
         "description": "Smartwatch with built-in GPS for tracking runs.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/5/24/c4ae148a-73c3-4d29-9ed1-5baaa1adb1bb.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/5/24/c4ae148a-73c3-4d29-9ed1-5baaa1adb1bb.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2023/3/2/42b9ea76-41c7-4823-8538-534727aaf131.jpg"
         ],
         "shop": {
             "id": 106,
-            "name": "Watch Store"
+            "name": "QUEEN id Official"
         },
         "discount_percentage": 15
     },
@@ -695,12 +747,13 @@
         "title": "Diving Smartwatch",
         "description": "Smartwatch designed for underwater activities.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/12/31/b7956bf0-fb17-420e-b183-f31b43eea02c.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/12/31/d0a07143-59e0-4865-b8c0-fd8ef5cdde18.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2023/3/2/42b9ea76-41c7-4823-8538-534727aaf131.jpg"
         ],
         "shop": {
             "id": 106,
-            "name": "Watch Store"
+            "name": "QUEEN id Official"
         },
         "discount_percentage": 20
     },
@@ -710,27 +763,30 @@
         "title": "Classic Smartwatch",
         "description": "Smartwatch with classic design and smart features.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/product-1/2018/1/9/664240/664240_7162ab9b-120f-478a-9b37-3548eb5faef6_653_653.png.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/product-1/2018/1/9/664240/664240_7162ab9b-120f-478a-9b37-3548eb5faef6_653_653.png",
+            "https://images.tokopedia.net/img/cache/215-square/GAnVPX/2023/3/2/42b9ea76-41c7-4823-8538-534727aaf131.jpg"
         ],
         "shop": {
-            "id": 106,
-            "name": "Watch Store"
+            "id": 107,
+            "name": "QUEEN id Official"
         },
         "discount_percentage": 10
     },
+
     {
         "id": 49,
         "price": 39.99,
         "title": "External Hard Drive",
         "description": "A 1TB external hard drive with fast data transfer speeds.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/10/24/8652e850-0ca9-4299-a005-51f668985cd0.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/8/ee6c1843-8067-4884-acb8-d41d260afd77.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/11/18/1376074/1376074_7a5c9f3d-fd49-4bde-8260-e2f4bf192983.jpg"
         ],
         "shop": {
-            "id": 107,
-            "name": "Storage Solutions"
+            "id": 108,
+            "name": "The Kingdom Shop"
         },
         "discount_percentage": 5
     },
@@ -740,12 +796,13 @@
         "title": "SSD External Drive",
         "description": "500GB SSD external drive with high-speed data transfer.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/6/25/64ce6939-3d89-4c19-a98b-96261ed0942c.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/hDjmkQ/2024/6/19/794036c5-6421-4159-8693-3316349efc00.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/11/18/1376074/1376074_7a5c9f3d-fd49-4bde-8260-e2f4bf192983.jpg"
         ],
         "shop": {
-            "id": 107,
-            "name": "Storage Solutions"
+            "id": 108,
+            "name": "The Kingdom Shop"
         },
         "discount_percentage": 10
     },
@@ -755,12 +812,13 @@
         "title": "Network Attached Storage",
         "description": "2-bay NAS for home and small office use.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/hDjmkQ/2023/8/19/45fe84bc-3f23-4690-990d-d73a464f1846.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/8/19/45fe84bc-3f23-4690-990d-d73a464f1846.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/11/18/1376074/1376074_7a5c9f3d-fd49-4bde-8260-e2f4bf192983.jpg"
         ],
         "shop": {
-            "id": 107,
-            "name": "Storage Solutions"
+            "id": 108,
+            "name": "The Kingdom Shop"
         },
         "discount_percentage": 15
     },
@@ -770,12 +828,13 @@
         "title": "Portable SSD",
         "description": "1TB portable SSD with USB 3.1 interface.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/6/26/75873c97-557c-465d-9ba9-989ce0834626.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/6/26/7c4a001c-e6bd-4df5-b522-f28af0499cad.png",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/11/18/1376074/1376074_7a5c9f3d-fd49-4bde-8260-e2f4bf192983.jpg"
         ],
         "shop": {
-            "id": 107,
-            "name": "Storage Solutions"
+            "id": 108,
+            "name": "The Kingdom Shop"
         },
         "discount_percentage": 20
     },
@@ -785,12 +844,13 @@
         "title": "USB Flash Drive Set",
         "description": "Set of 3 USB 3.0 flash drives (32GB each).",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/hDjmkQ/2023/10/9/457bd57e-2d9d-4902-9025-cc88786f4e6f.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/10/9/b243b57a-1469-48f3-9e6e-ab385013c0ce.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/11/18/1376074/1376074_7a5c9f3d-fd49-4bde-8260-e2f4bf192983.jpg"
         ],
         "shop": {
-            "id": 107,
-            "name": "Storage Solutions"
+            "id": 108,
+            "name": "The Kingdom Shop"
         },
         "discount_percentage": 10
     },
@@ -800,12 +860,13 @@
         "title": "Wireless Backup Drive",
         "description": "Wireless backup drive for automatic backups.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/hDjmkQ/2024/6/11/962a572c-0ecb-490e-b220-9a22a76e98fe.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/hDjmkQ/2024/6/11/962a572c-0ecb-490e-b220-9a22a76e98fe.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/11/18/1376074/1376074_7a5c9f3d-fd49-4bde-8260-e2f4bf192983.jpg"
         ],
         "shop": {
-            "id": 107,
-            "name": "Storage Solutions"
+            "id": 108,
+            "name": "The Kingdom Shop"
         },
         "discount_percentage": 15
     },
@@ -815,12 +876,13 @@
         "title": "Secure USB Drive",
         "description": "USB drive with hardware encryption.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/2/2/9a84dbb4-65dc-4c2c-aa39-5deabf35d81d.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/2/2/76aa70df-92d5-4e57-821c-28ec78ed91d0.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/11/18/1376074/1376074_7a5c9f3d-fd49-4bde-8260-e2f4bf192983.jpg"
         ],
         "shop": {
-            "id": 107,
-            "name": "Storage Solutions"
+            "id": 108,
+            "name": "The Kingdom Shop"
         },
         "discount_percentage": 20
     },
@@ -830,27 +892,30 @@
         "title": "Memory Card",
         "description": "128GB microSD memory card with adapter.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/7/13/7b2eb3a6-d5cc-4eda-bac6-8544a6df7b10.png.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/13/7b2eb3a6-d5cc-4eda-bac6-8544a6df7b10.png",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2016/11/18/1376074/1376074_7a5c9f3d-fd49-4bde-8260-e2f4bf192983.jpg"
         ],
         "shop": {
-            "id": 107,
-            "name": "Storage Solutions"
+            "id": 108,
+            "name": "The Kingdom Shop"
         },
         "discount_percentage": 5
     },
+
     {
         "id": 57,
         "price": 89.99,
         "title": "HD Webcam",
         "description": "A high-definition webcam with built-in microphone.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/7/30/d0eefbcb-b607-46f5-9ccb-3b725d7237a2.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/7/30/1fe6d801-a0ca-4647-899d-cc1fb7f628bd.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2020/11/15/4643339/4643339_09ba8727-238b-406f-a303-a1bffa826040.jpg"
         ],
         "shop": {
-            "id": 108,
-            "name": "Camera World"
+            "id": 109,
+            "name": "GAP TECH OFFICIAL"
         },
         "discount_percentage": 15
     },
@@ -860,12 +925,13 @@
         "title": "Digital Camera",
         "description": "Compact digital camera with 20MP sensor.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/2/12/d235c3db-522f-43c3-b1c1-580a1b202a36.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/product-1/2019/8/3/30475910/30475910_1d384f0f-43f3-4e28-817c-b77b62bebd73_700_700",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2020/11/15/4643339/4643339_09ba8727-238b-406f-a303-a1bffa826040.jpg"
         ],
         "shop": {
-            "id": 108,
-            "name": "Camera World"
+            "id": 109,
+            "name": "GAP TECH OFFICIAL"
         },
         "discount_percentage": 10
     },
@@ -875,12 +941,13 @@
         "title": "Webcam for Streaming",
         "description": "HD webcam designed for streaming with autofocus.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/product-1/2019/7/20/9276546/9276546_04162b19-65e5-4dc6-970a-458e4fc1d4ee_700_700.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/product-1/2019/7/20/9276546/9276546_ea40c750-965f-411e-ad3c-be9bf79fbcde_700_700",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2020/11/15/4643339/4643339_09ba8727-238b-406f-a303-a1bffa826040.jpg"
         ],
         "shop": {
-            "id": 108,
-            "name": "Camera World"
+            "id": 109,
+            "name": "GAP TECH OFFICIAL"
         },
         "discount_percentage": 5
     },
@@ -890,12 +957,13 @@
         "title": "DSLR Camera",
         "description": "Entry-level DSLR camera with 18-55mm lens.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2023/5/30/00faad18-5ddd-4773-813e-2a78295fa0c9.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/5/30/00faad18-5ddd-4773-813e-2a78295fa0c9.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2020/11/15/4643339/4643339_09ba8727-238b-406f-a303-a1bffa826040.jpg"
         ],
         "shop": {
-            "id": 108,
-            "name": "Camera World"
+            "id": 109,
+            "name": "GAP TECH OFFICIAL"
         },
         "discount_percentage": 15
     },
@@ -905,12 +973,13 @@
         "title": "Camera Tripod",
         "description": "Lightweight and portable camera tripod.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/8/2/7e679c6c-01d6-4592-b157-38d431a57c71.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/2/7e679c6c-01d6-4592-b157-38d431a57c71.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2020/11/15/4643339/4643339_09ba8727-238b-406f-a303-a1bffa826040.jpg"
         ],
         "shop": {
-            "id": 108,
-            "name": "Camera World"
+            "id": 109,
+            "name": "GAP TECH OFFICIAL"
         },
         "discount_percentage": 10
     },
@@ -920,12 +989,13 @@
         "title": "Action Camera",
         "description": "Waterproof action camera with 4K recording.",
         "images": [
-            "https://via.placeholder.com/100",
-            "https://via.placeholder.com/200"
+            "https://images.tokopedia.net/img/cache/200-square/product-1/2020/5/9/96049351/96049351_1862d826-a102-4333-95a5-bf4d5e615c61_684_684.jpg.webp?ect=4g",
+            "https://images.tokopedia.net/img/cache/900/product-1/2020/5/9/96049351/96049351_8809dc86-dd93-45a5-bd78-3c03cf206334_684_684.jpg",
+            "https://images.tokopedia.net/img/cache/215-square/shops-1/2020/11/15/4643339/4643339_09ba8727-238b-406f-a303-a1bffa826040.jpg"
         ],
         "shop": {
-            "id": 108,
-            "name": "Camera World"
+            "id": 109,
+            "name": "GAP TECH OFFICIAL"
         },
         "discount_percentage": 20
     }
