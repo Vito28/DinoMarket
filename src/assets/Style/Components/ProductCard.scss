@@ -29,7 +29,6 @@
 .product {
   background: #fafafa;
   padding: 15px 0;
-  padding-bottom: 0;
   border-radius: 15px;
 
   .info-product {
@@ -51,9 +50,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgb(80, 177, 255,.4);
-  border-radius: 0 0 10px 10px ;
+  background: rgb(109, 188, 252);
+  border-radius: 10px 10px 0 0;
   padding: 0 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
   .card-cart {
     display: flex;
     align-items: center;
@@ -64,12 +67,20 @@
       border-radius: 100%;
       margin: 10px;
     }
+
+    h3 {
+      width: 200px;
+      // text-overflow: ellipsis;
+      // overflow: hidden;
+      white-space: nowrap;
+    }
   }
 
 
   .subtotal {
     display: flex;
     gap: 15px;
+    align-self: center;
 
     p {
       margin: 0;
@@ -79,10 +90,39 @@
 
   }
 
+  button {
+    margin: 5px;
+    border: none;
+    align-items: center;
+  }
+
+  .add-item {}
+
   .bought-btn {
     button {
-      margin: 5px;
+      background-color: white;
+      color: #50B1FF;
+      font-weight: bold;
+      &:hover {
+        background: transparent;
+        color: white;
+      }
     }
   }
-  
+
+}
+
+.aaa {
+  display: flex;
+  gap: 12px;
+
+  img {
+    border-radius: 5px;
+  }
+
+  .container-shop-identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
