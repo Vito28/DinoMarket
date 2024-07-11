@@ -5,7 +5,7 @@ import { BiPencil } from "react-icons/bi";
 import ProductCard from "../Components/ProductCard";
 import "../assets/Style/Pages/Shop.scss";
 import QuantityButton from "../Components/QuantityButton";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import PopupCart from "../Components/Popup/PopupCart";
 import { Helmet } from "react-helmet-async";
 
@@ -15,13 +15,15 @@ const Shop = () => {
   const [quantity, setQuantity] = useState(() => {
     return JSON.parse(localStorage.getItem(`quantities_${id}`)) || 1;
   });
-  const [showPopup, setShowPopup] = useState(false);
+  const [showPopupCart, setShowPopupCart] = useState(false);
+  const [showPopupAddNote, setShowPopupAddNote] = useState(false);
   const uniqueItem = products.find(product => product.id === parseInt(id));
   const uniqueShop = shops.find(shop => shop.id === uniqueItem.shop.id);
   const uniqueShopProducts = products.filter(product => product.shop.id == uniqueItem.shop.id && product.id !== parseInt(id));
+  const noteRef = useRef(null)
 
   const addToCart = () => {
-    setShowPopup(true);
+    setShowPopupCart(true);
     const storedProducts = JSON.parse(localStorage.getItem("stored_products")) || [];
     const existingIndex = storedProducts.findIndex(product => product.id === uniqueItem.id);
 
@@ -31,8 +33,15 @@ const Shop = () => {
       storedProducts[existingIndex].quantities = quantity;
     }
 
+    if(noteRef.current.value) {
+      const values = noteRef.current.value;
+      localStorage.setItem(`addNote_${id}`, JSON.stringify(values))
+      console.log(values);
+      console.log(JSON.parse(localStorage.getItem(`addNote_${id}`)));
+    }
+    
     localStorage.setItem("stored_products", JSON.stringify(storedProducts));
-    localStorage.setItem(`quantities_${id}`, JSON.stringify(quantity));
+    localStorage.setItem(`quantities_${id}`, JSON.stringify([quantity, quantity]));
   };
 
   const handleQuantity = (newQuantity) => {
@@ -40,8 +49,12 @@ const Shop = () => {
   };
 
   const addNote = () => {
-    console.log("Add Note");
+    setShowPopupAddNote(true)
   };
+
+  const cancelNote = () => {
+    setShowPopupAddNote(false);
+  }
 
   const port = window.location.port;
 
@@ -82,10 +95,18 @@ const Shop = () => {
                 <QuantityButton id={uniqueItem.id} onQuantityChange={handleQuantity} type={"cart"} />
               </div>
             </div>
+
+
+
             <div className="add-note">
-              <BiPencil aria-label="Tambah Catatan" onClick={addNote} />
-              <span>Tambah Catatan</span>
+              {showPopupAddNote && <input ref={noteRef} type="text" placeholder="Ex. Color White, Size M"/>}
+              {!showPopupAddNote ? <div className="add-note-pencil" onClick={addNote}><BiPencil aria-label="Tambah Catatan"  /><span>Tambah Catatan</span></div> : <p onClick={cancelNote}>Cancel Note</p>}
+              
+              
             </div>
+
+
+
             <div className="subtotal">
               <p>Subtotal</p>
               <h4>${uniqueItem.price * quantity}</h4>
@@ -97,7 +118,13 @@ const Shop = () => {
           </Col>
         </Row>
       </Container>
-      {showPopup ? <PopupCart /> : null}
+
+
+
+      {showPopupCart ? <PopupCart /> : null}
+
+
+
       <Container className="white">
         <Row>
           <Col xs="auto">

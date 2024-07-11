@@ -24,7 +24,7 @@ const ProductCard = ({ products }) => {
             <Card.Body>
               <Card.Title>{product.title}</Card.Title>
               <Card.Text>
-                <b>${product.price} </b><span>${(product.price - (product.price * (product.discount_percentage / 100))).toFixed(2)}</span>
+                <b>${product.price} </b> <span>${(product.price - (product.price * (product.discount_percentage / 100))).toFixed(2)}</span>
               </Card.Text>
             </Card.Body>
             <Card.Body>

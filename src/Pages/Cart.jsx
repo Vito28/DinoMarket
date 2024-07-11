@@ -16,6 +16,7 @@ const Cart = () => {
   const [checkedShops, setCheckedShops] = useState({});
   const [checkedProducts, setCheckedProducts] = useState({});
   const [priceCart, setPriceCart] = useState(0);
+  const [note, setNote] = useState("");
 
   useEffect(() => {
     const carts = products.reduce((acc, p) => {
@@ -39,10 +40,11 @@ const Cart = () => {
     setCart(carts);
   }, [getProducts, products]);
 
+
+
   const [quantity, setQuantity] = useState(1);
   const handleQuantity = (cartQuantity) => {
     setQuantity(cartQuantity)
-    
   }
 
   const handleCheckAll = () => {
@@ -145,10 +147,22 @@ const Cart = () => {
                     <p className="price">Price: ${product.price}</p>
                     <div className="container-cart-3-bottom">
                       <div className="add-item">
-                        <div className="note-design">
-                          <FiFileText className="doc" />
-                          <BiPencil className="pencil" />
-                        </div>
+                        {
+                          JSON.parse(localStorage.getItem(`addNote_${product.id}`)) ?
+                            <div className="input-note">
+                              <div>{JSON.parse(localStorage.getItem(`addNote_${product.id}`))}
+                              </div>
+                              <div className="note-design">
+                                <FiFileText className="doc" />
+                                <BiPencil className="pencil" />
+                              </div>
+                            </div> :
+                            <div className="note-design">
+                                <FiFileText className="doc" />
+                                <BiPencil className="pencil" />
+                              </div>
+                        }
+
 
                         <GoTrash onClick={() => deleteSelectedProducts()} />
                         <QuantityButton id={product.id} onQuantityChange={handleQuantity} />
