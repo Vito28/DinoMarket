@@ -76,6 +76,7 @@ const Cart = () => {
 
     setCheckedProducts(newCheckedProducts);
     calculateTotalPrice(newCheckedProducts);
+    console.log(checkedShops);
   };
 
   const handleCheckProduct = (productId) => {
@@ -98,8 +99,7 @@ const Cart = () => {
   };
 
   const deleteSelectedProducts = () => {
-    const newGetProducts = getProducts.filter(
-      (p) => !checkedProducts[p.id]
+    const newGetProducts = getProducts.filter(p => !checkedProducts[p.id]
     );
     setGetProducts(newGetProducts);
     localStorage.setItem("stored_products", JSON.stringify(newGetProducts));
