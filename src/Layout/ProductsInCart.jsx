@@ -17,6 +17,9 @@ const ProductsInCart = () => {
   const [checkedProducts, setCheckedProducts] = useState({});
   const [priceCart, setPriceCart] = useState (0);
   const [note, setNote] = useState("");
+  const [popupNote, setPopupNote] = useState(false);
+
+  const textRef = useRef(null);
 
   useEffect(() => {
     const carts = products.reduce((acc, p) => {
@@ -125,6 +128,20 @@ const ProductsInCart = () => {
     localStorage.setItem("stored_products", JSON.stringify(newGetProducts));
   };
 
+  const popupNotes = () => {
+    setPopupNote(true);
+  }
+
+  const onCancelNote = () => {
+    setPopupNote(false);
+  }
+
+  const onSubmitNote = (id) => {
+    if(textRef.current) {
+      localStorage.setItem(`addNote_${id}`, JSON.stringify(textRef.current.value)); 
+    }
+  }
+
 
   console.log(checkedProducts);
   console.log(checkedShops);
@@ -160,7 +177,8 @@ const ProductsInCart = () => {
                     onChange={() => handleCheckProduct(product.id)}
                   />
                   <div className="container-cart-2">
-                    <Image src={product.image} />
+                    <Image src={product.image} style={{width: '80px', height:
+                    "80px"}}/>
                     <p>Title: {product.title}</p>
                   </div>
                   <div className="container-cart-3">
@@ -173,7 +191,7 @@ const ProductsInCart = () => {
                       <div className="add-item">
                         {
                           JSON.parse(localStorage.getItem(`addNote_${product.id}`)) ?
-                            <div className="input-note">
+                            <div className="input-note" onClick={popupNotes}>
                               <div>{JSON.parse(localStorage.getItem(`addNote_${product.id}`))}
                               </div>
                               <div className="note-design">
@@ -187,6 +205,17 @@ const ProductsInCart = () => {
                             </div>
                         }
 
+                        {
+                          popupNote && 
+                          <div className="container-popup-note">
+                            <h1>Notes Product</h1>
+                            <textarea ref={textRef} maxLength={144}/>
+                            <div>
+                              <button onClick={onCancelNote}>Batal</button>
+                              <button onClick={() => onSubmitNote(product.id)}>Simpan</button>
+                            </div>
+                          </div>
+                        }
 
                         <GoTrash onClick={() => deleteSelectedProducts()} />
                         <QuantityButton id={product.id} onQuantityChange={handleQuantity} />

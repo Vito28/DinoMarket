@@ -33,7 +33,7 @@ const PopupCart = ({ id, shopId, image, alt, onClose }) => {
           <Col>
 
             <div className="other-product">
-              <ProductCard products={otherProducts} />
+              <ProductCard products={otherProducts} onClick={onClose}/>
             </div>
 
           </Col>
