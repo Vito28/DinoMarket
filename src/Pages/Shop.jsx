@@ -34,6 +34,8 @@ const Shop = () => {
     }
 
     if (noteRef.current.value) {
+    // console.log(noteRef.current.value)
+    if(noteRef.current) {
       const values = noteRef.current.value;
       localStorage.setItem(`addNote_${id}`, JSON.stringify(values))
       console.log(values);
@@ -54,6 +56,10 @@ const Shop = () => {
 
   const cancelNote = () => {
     setShowPopupAddNote(false);
+  }
+
+  const handleClosePopup = () => {
+    setShowPopupCart(false)
   }
 
   const port = window.location.port;
@@ -130,6 +136,8 @@ const Shop = () => {
 
       {showPopupCart ? <PopupCart /> : null
       }
+
+      {showPopupCart ? <PopupCart id={uniqueItem.id} shopId={uniqueItem.shop.id} image={uniqueItem.images[1]} alt={uniqueItem.title} onClose={handleClosePopup}/> : null}
 
 
 
