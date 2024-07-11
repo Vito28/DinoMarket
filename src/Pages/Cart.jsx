@@ -12,7 +12,7 @@ const Cart = () => {
   const storedProducts = JSON.parse(localStorage.getItem("stored_products")) || [];
   const [getProducts, setGetProducts] = useState(storedProducts);
   const [cart, setCart] = useState({});
-  const [checkedAll, setCheckedAll] = useState(false);
+  const [checkedAll, setCheckedAll] = useState(true);
   const [checkedShops, setCheckedShops] = useState({});
   const [checkedProducts, setCheckedProducts] = useState({});
   const [priceCart, setPriceCart] = useState(0);
@@ -46,7 +46,9 @@ const Cart = () => {
   const handleQuantity = (cartQuantity) => {
     setQuantity(cartQuantity)
   }
-
+  useEffect(() => {
+    handleCheckAll()
+  }, [handleCheckAll])
   const handleCheckAll = () => {
     const newCheckedAll = !checkedAll;
     setCheckedAll(newCheckedAll);
@@ -104,6 +106,10 @@ const Cart = () => {
     setGetProducts(newGetProducts);
     localStorage.setItem("stored_products", JSON.stringify(newGetProducts));
   };
+
+
+  console.log(checkedProducts);
+  console.log(checkedShops);
 
   return (
     <Container>
