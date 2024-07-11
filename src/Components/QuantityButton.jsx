@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const QuantityButton = ({ id, onQuantityChange, type }) => {
-  const [a] = useState(() => {
+  const [a, seta] = useState(() => {
     const storedQuantity = JSON.parse(localStorage.getItem(`quantities_${id}`));
     return type === "cart" ? 1 : storedQuantity[1];
   });
@@ -14,8 +14,11 @@ const QuantityButton = ({ id, onQuantityChange, type }) => {
     const storedQuantity = JSON.parse(localStorage.getItem(`quantities_${id}`));
     if (type === "cart") {
       setQuantity(1);
+      seta(1)
     } else {
       setQuantity(storedQuantity ? storedQuantity[0] : 1);
+      seta(storedQuantity ? storedQuantity[0] : 1);
+
     }
   }, [id, type]);
 
@@ -26,6 +29,7 @@ const QuantityButton = ({ id, onQuantityChange, type }) => {
   const onIncrease = () => {
     const storedQuantity = JSON.parse(localStorage.getItem(`quantities_${id}`));
     setQuantity(prev => (type === "cart" ? (prev === 100 ? 100 : prev + 1) : (prev === storedQuantity[1] ? storedQuantity[1] : prev + 1)));
+    seta(prev => type == "cart" ? prev + 1 : prev + 0)
     console.log(storedQuantity[1])
     console.log(storedQuantity[0])
   };

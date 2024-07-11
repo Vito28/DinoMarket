@@ -5,7 +5,7 @@ const Home = () => {
   const { products } = useSelector(state => state.data);
   return (
     <Container>
-
+      
       <ProductCard products={products} />
 
 
