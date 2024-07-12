@@ -1,8 +1,20 @@
 .card {
+  position: relative;
   width: 100%;
   margin: 12px 0;
-
+  &:hover{
+    // position: absolute;
+    left: -5%;
+    top:-2.5%;
+    width: 110%;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 5px rgb(80, 177, 255,0.5);
+  }
+  img{
+    box-shadow:0px 2px 2px -1px #50B1FF;
+  }
   .card-body {
+    // box-shadow:0px -1px 0.5px#50B1FF;
     .h5 {
       height: 48px;
       display: -webkit-box;
@@ -23,14 +35,22 @@
       }
     }
   }
-
+  .card-footer{
+    background-color: #50B1FF;
+    display: flex;
+    justify-content: space-evenly;
+    a{
+      color:white;
+      text-decoration: none;
+    }
+  }
 }
 
 .product {
   background: #fafafa;
   padding: 15px 0;
   border-radius: 15px;
-
+  margin-top: 100px;
   .info-product {
     .real-price {
       text-decoration: line-through;

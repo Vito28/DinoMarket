@@ -12,6 +12,7 @@ nav {
     position: fixed;
     background: #fefefe;
     box-shadow: 1px 0 3px #50B1FF;
+    top: 0;
     nav {
       display: flex;
       align-items: center;
@@ -25,8 +26,12 @@ nav {
         padding-right: 23px;
         background: #50B1FF;
         a {
-          color: #000;
-          
+          position: relative;
+          color: #fff;
+          text-decoration: none;
+          &:hover{
+            font-weight: bold;
+          }
         }
       }
       &.navbar-bottom {

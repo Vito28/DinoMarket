@@ -75,7 +75,7 @@ const Shop = () => {
       </Helmet>
 
       {uniqueItem && uniqueShop && (
-        <Container className="product">
+        <Container className="product page">
           <Row >
             <Col lg={6} sm={12} className="info-product">
               <h1 className="title-product">{uniqueItem.title}</h1>

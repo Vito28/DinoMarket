@@ -147,7 +147,7 @@ const ProductsInCart = () => {
   console.log(checkedShops);
 
   return (
-    <Container>
+    <Container className="page">
       <Row>
         <Col sm="8">
           <input
