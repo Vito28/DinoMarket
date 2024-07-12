@@ -198,7 +198,9 @@ const ProductsInCart = () => {
                   onChange={() => handleCheckShop(shopId)}
                   aria-label={`Select products from shop ${shopId}`}
                 />
-                <div>{shops.filter(shop => shop.id === shopId ? shop.name : "Shop Not Found")}</div> 
+                {console.log(shops)}
+                {console.log(shopId)}
+                <div>{shops.find(shop => shop.id == shopId)?.name || 'Shop not found'}</div> 
               </div>
 
               {cart[shopId].map((product) => (
