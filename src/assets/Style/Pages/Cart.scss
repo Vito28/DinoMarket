@@ -251,21 +251,21 @@
 }
 
 .button-plus-min {
-  border: 1px solid #50B1FF;
-  box-shadow: 0 0 2px #50B1FF;
+  border: 1px solid #068323;
+  box-shadow: 0 0 2px #068323;
   // background: #fefefe;
   border-radius: 10px;
   padding: 3px 8px;
   align-items: center;
-
+  
   button {
     border: none;
     background: transparent;
-
     p {
       margin: 0;
       margin-top: -2px;
       font-size: large;
+      color: #068323;
     }
   }
 }
