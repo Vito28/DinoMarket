@@ -75,8 +75,8 @@ const Shop = () => {
       </Helmet>
 
       {uniqueItem && uniqueShop && (
-        <Container>
-          <Row className="product">
+        <Container className="product page">
+          <Row >
             <Col lg={6} sm={12} className="info-product">
               <h1 className="title-product">{uniqueItem.title}</h1>
               <p className="description">{uniqueItem.description}</p>
@@ -91,6 +91,7 @@ const Shop = () => {
                   <p>{uniqueItem.description}</p>
                 </div>
               </div>
+
             </Col>
             <Col lg={6} sm={12}>
               <Image src={uniqueItem.images[1]} alt={`${uniqueItem.title} image`} className="img-product" />
@@ -98,45 +99,28 @@ const Shop = () => {
           </Row>
           <Row>
             <Col lg={12} sm={12}>
-              <div className="container-cart">
-                <div className="card-cart">
-                  <Image src={uniqueItem.images[2]} alt={`${uniqueItem.title} image`} />
-                  <h1>{uniqueShop.name}</h1>
-                </div>
-                <div className="subtotal">
-                  <QuantityButton id={uniqueItem.id} onQuantityChange={handleQuantity} type={"cart"} />
-                  <h4>${uniqueItem.price * quantity}</h4>
-                </div>
-                <div className="bought-btn">
-                  <button type="button" aria-label={`Beli ${uniqueItem.title}`}>Beli</button>
-                  <button type="button" onClick={addToCart} aria-label={`Tambah ${uniqueItem.title} ke Keranjang`}>+ Keranjang</button>
-                </div>
+              <div className="add-note">
+                {showPopupAddNote && <input ref={noteRef} type="text" placeholder="Ex. Color White, Size M" />}
+                {!showPopupAddNote ? <div className="add-note-pencil" onClick={addNote}><BiPencil aria-label="Tambah Catatan" /><span>Tambah Catatan</span></div> : <p onClick={cancelNote}>Cancel Note</p>}
               </div>
             </Col>
           </Row>
         </Container>
       )}
 
-      <div className="add-note">
-        {showPopupAddNote && <input ref={noteRef} type="text" placeholder="Ex. Color White, Size M" />}
-        {!showPopupAddNote ? <div className="add-note-pencil" onClick={addNote}><BiPencil aria-label="Tambah Catatan" /><span>Tambah Catatan</span></div> : <p onClick={cancelNote}>Cancel Note</p>}
-      </div>
+
 
       {showPopupCart && <PopupCart id={uniqueItem.id} shopId={uniqueItem.shop.id} image={uniqueItem.images[1]} alt={uniqueItem.title} onClose={handleClosePopup} />}
 
       {uniqueShop && (
         <Container className="white">
           <Row>
-            <Col xs="auto">
+            <Col xs="auto" className="aaa">
               <Image src={uniqueItem.images[0]} alt={`${uniqueShop.name} logo`} />
               <div className="container-shop-identity">
+                
+                <div className="rate">
                 <h2>{uniqueShop.name}</h2>
-                <div className="">
-                  <button>Chat Sekarang</button>
-                  <button>Kunjungi Toko</button>
-                </div>
-              </div>
-              <div className="rate">
                 <div className="x-shopify">
                   <label>Rating</label>
                   <span>15,5rb</span>
@@ -145,11 +129,17 @@ const Shop = () => {
                   <label>Persentase Chat</label>
                   <span>76%</span>
                 </div>
-                <div className="x-shopify">
+                {/* <div className="x-shopify">
                   <label>Waktu Balas Chat</label>
                   <span>2 jam</span>
+                </div> */}
+              </div>
+                <div className="">
+                  <button>Chat Sekarang</button>
+                  <button>Kunjungi Toko</button>
                 </div>
               </div>
+              
             </Col>
           </Row>
         </Container>
@@ -165,6 +155,20 @@ const Shop = () => {
           <ProductCard products={uniqueShopProducts} />
         </Container>
       )}
+      <div className="container-cart">
+        <div className="card-cart">
+          <Image src={uniqueItem.images[2]} alt={`${uniqueItem.title} image`} />
+          <h3>{uniqueShop.name}</h3>
+        </div>
+        <div className="subtotal">
+          <QuantityButton id={uniqueItem.id} onQuantityChange={handleQuantity} type={"cart"} />
+          <h4>${uniqueItem.price * quantity}</h4>
+        </div>
+        <div className="bought-btn">
+          <button type="button" aria-label={`Beli ${uniqueItem.title}`}>Beli</button>
+          <button className="keranjang" type="button" onClick={addToCart} aria-label={`Tambah ${uniqueItem.title} ke Keranjang`}>+ Keranjang</button>
+        </div>
+      </div>
     </>
   );
 };

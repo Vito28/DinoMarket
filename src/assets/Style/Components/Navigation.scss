@@ -23,8 +23,12 @@ nav {
         padding-right: 23px;
         background: #50B1FF;
         a {
-          color: #000;
-          
+          position: relative;
+          color: #fff;
+          text-decoration: none;
+          &:hover{
+            font-weight: bold;
+          }
         }
       }
       &.navbar-bottom {
@@ -32,7 +36,7 @@ nav {
           text-align: right;
           padding-left: 23px;
           img {
-            width: 200px;
+            width: 220px;
             height:65px;
           }
         }
@@ -53,7 +57,7 @@ nav {
               
             }
             input {
-              border: 1px solid lightskyblue;
+              border: 1px solid #50B1FF;
               width: 100%;
               padding: 10px 20px 10px 60px;
               border-radius: 10px;
@@ -77,22 +81,30 @@ nav {
           border-left: 1px solid rgb(10, 10,10,.5);
           padding: 0.5% 1.5%;
           button{
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 5px 10px;
-            &:hover{
-              background: transparent;
-            }
+            
           }
           .active {
-            background-color: green;
-            border: 2px solid green;
+            background:transparent;
+            border: 2px solid #50B1FF;
+            color: #50B1FF;
+            &:hover{
+              background-color: #50B1FF;
+              color: white;
+            }
           }
           // .signin {
           //   background-color: #000;
 
           .login {
-            background-color: red;
-            border: 2px solid red;
+            background-color: #50B1FF;
+            border: 2px solid #50B1FF;
+            color: white;
+            &:hover{
+              background: transparent;
+              color: #50B1FF;
+            }
           }
           // }
         }

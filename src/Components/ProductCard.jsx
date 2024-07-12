@@ -16,6 +16,7 @@ const ProductCard = ({ products }) => {
     navigate(`/shop/${id}`)
   }
   return (
+    <div>
     <Row>
       {data.map(product => (
         <Col lg={3} md={4} sm={6} xs={12} key={product.id}>
@@ -27,16 +28,16 @@ const ProductCard = ({ products }) => {
                 <b>${product.price} </b> <span>${parseFloat((product.price - (product.price * (product.discount_percentage / 100))).toFixed(2))}</span>
               </Card.Text>
             </Card.Body>
-            <Card.Body>
+            <Card.Footer>
               <Card.Link to="/">Card Link</Card.Link>
               <Card.Link to="/">Another Link</Card.Link>
-            </Card.Body>
+            </Card.Footer>
           </Card>
         </Col>
       ))}
 
 
-    </Row>
+    </Row></div>
   );
 };
 

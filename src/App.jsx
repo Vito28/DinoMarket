@@ -13,7 +13,6 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Navigation />
-        {/* <button style={{marginTop: '200px', zIndex: '999'}} onClick={() => localStorage.clear()}>Clear</button> */}
         <Routes>
           <Route index element={<Home />} />
           <Route path="/search/:value" element={<SearchResult />} />

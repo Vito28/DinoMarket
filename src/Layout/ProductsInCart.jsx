@@ -134,7 +134,7 @@ const ProductsInCart = () => {
   };
 
   return (
-    <Container>
+    <Container className="page">
       <Row>
         <Col sm="8">
           <input

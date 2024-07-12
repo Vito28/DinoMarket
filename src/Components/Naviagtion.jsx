@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <nav className="main" aria-label="Main Navigation">
       <nav className="navbar-top" aria-label="Top Navigation">
-        {/* <Link to="/">Tentang Tokovito</Link> */}
+        <Link to="/">Tentang shopify</Link>
         <Link to="/">Produk</Link>
         <Link to="/">Promo</Link>
         <Link to="/">Kontak</Link>
