@@ -62,7 +62,7 @@ const Shop = () => {
   };
 
   return (
-    <>
+    <div className="container-shopify">
       <Helmet>
         <title>{uniqueItem ? `${uniqueItem.title} - ${uniqueShop.name}` : "Shop Not Found"}</title>
         {uniqueItem && (
@@ -75,7 +75,7 @@ const Shop = () => {
       </Helmet>
 
       {uniqueItem && uniqueShop && (
-        <Container className="product page">
+        <div className="product">
           <Row >
             <Col lg={6} sm={12} className="info-product">
               <h1 className="title-product">{uniqueItem.title}</h1>
@@ -105,7 +105,7 @@ const Shop = () => {
               </div>
             </Col>
           </Row>
-        </Container>
+        </div>
       )}
 
 
@@ -113,7 +113,7 @@ const Shop = () => {
       {showPopupCart && <PopupCart id={uniqueItem.id} shopId={uniqueItem.shop.id} image={uniqueItem.images[1]} alt={uniqueItem.title} onClose={handleClosePopup} />}
 
       {uniqueShop && (
-        <Container className="white">
+        <div className="container-shopify" style={{marginTop: '4rem', marginBottom: '4rem'}}>
           <Row>
             <Col xs="auto" className="aaa">
               <Image src={uniqueItem.images[0]} alt={`${uniqueShop.name} logo`} />
@@ -142,18 +142,18 @@ const Shop = () => {
               
             </Col>
           </Row>
-        </Container>
+        </div>
       )}
 
       {uniqueShopProducts.length > 0 && (
-        <Container>
+        <div className="container-shopify" style={{marginTop: '4rem', marginBottom: '0'}}>
           <Row>
             <Col>
               <h2>Produk Lainnya</h2>
             </Col>
           </Row>
           <ProductCard products={uniqueShopProducts} />
-        </Container>
+        </div>
       )}
       <div className="container-cart">
         <div className="card-cart">
@@ -169,7 +169,7 @@ const Shop = () => {
           <button className="keranjang" type="button" onClick={addToCart} aria-label={`Tambah ${uniqueItem.title} ke Keranjang`}>+ Keranjang</button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

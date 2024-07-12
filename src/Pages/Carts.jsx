@@ -119,10 +119,7 @@ const Cart = () => {
   }
 
   const deleteProduct = (id) => {
-    const filterId = storedProducts.filter(p_id => p_id.id !== id);
-    console.log(filterId);
-    setGetProducts(filterId)
-    localStorage.setItem("stored_products", JSON.stringify(filterId));
+    
   }
   
   const onDelete = () => {
@@ -136,7 +133,7 @@ const Cart = () => {
   }
 
   return (
-    <Container>
+    <div className="container-shopify">
       <Row>
         <Col sm="8">
         {}
