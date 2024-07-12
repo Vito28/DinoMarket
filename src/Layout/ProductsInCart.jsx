@@ -18,7 +18,7 @@ const ProductsInCart = () => {
   const [checkedShops, setCheckedShops] = useState({});
   const [checkedProducts, setCheckedProducts] = useState({});
 
-  const { products } = useSelector((state) => state.data);
+  const { products, shops } = useSelector((state) => state.data);
   const storedProducts = JSON.parse(localStorage.getItem("stored_products")) || [];
   const [getProducts, setGetProducts] = useState(storedProducts);
 
@@ -121,8 +121,9 @@ const ProductsInCart = () => {
         }
       });
     });
-    setPriceCart(parseFloat(totalPrice.toFixed(2)));
-    localStorage.setItem("price_cart", JSON.stringify(totalPrice));
+    const roundedPrice = parseFloat(totalPrice.toFixed(2));
+    setPriceCart(roundedPrice);
+    localStorage.setItem("price_cart", JSON.stringify(roundedPrice));
     setTotalQuantities(totalQuantities);
   };
 
@@ -197,7 +198,9 @@ const ProductsInCart = () => {
                   onChange={() => handleCheckShop(shopId)}
                   aria-label={`Select products from shop ${shopId}`}
                 />
-                <p>Shop Name Here</p> {/* Ganti dengan nama toko */}
+                {console.log(shops)}
+                {console.log(shopId)}
+                <div>{shops.find(shop => shop.id == shopId)?.name || 'Shop not found'}</div> 
               </div>
 
               {cart[shopId].map((product) => (
@@ -236,7 +239,7 @@ const ProductsInCart = () => {
                           </div>
                         }
                         {popupNote &&
-                          <div style={{position:"absolute", zIndex:"9999", top:"0"}} className="container-popup-note">
+                          <div style={{ position: "absolute", zIndex: "9999", top: "0" }} className="container-popup-note">
                             <h1>Notes Product</h1>
                             <textarea ref={textRef} maxLength={144} />
                             <div>
