@@ -79,17 +79,20 @@ const Shop = () => {
           <Row >
             <Col lg={6} sm={12} className="info-product">
               <h1 className="title-product">{uniqueItem.title}</h1>
-              <p className="description">{uniqueItem.description}</p>
-
+              {/* <p className="description">{uniqueItem.description}</p> */}
+              <div className="price">
+                  <h5>Deskripsi</h5>
+                  <p>{uniqueItem.description}</p>
+                </div>
               <div className="wrapper-item">
                 <div className="price">
                   <h6 className="real-price">$ {uniqueItem.price}</h6>
                   <h1 className="discount-price">${(uniqueItem.price - (uniqueItem.price * (uniqueItem.discount_percentage / 100))).toFixed(2)}</h1>
                 </div>
-                <div className="price">
+                {/* <div className="price">
                   <h5>Deskripsi</h5>
                   <p>{uniqueItem.description}</p>
-                </div>
+                </div> */}
               </div>
 
             </Col>
