@@ -22,7 +22,6 @@ const Shop = () => {
   const uniqueShopProducts = uniqueItem ? products.filter(product => product.shop.id === uniqueItem.shop.id && product.id !== parseInt(id)) : [];
 
   const noteRef = useRef(null);
-
   const addToCart = () => {
     setShowPopupCart(true);
     const storedProducts = JSON.parse(localStorage.getItem("stored_products")) || [];
@@ -157,7 +156,6 @@ const Shop = () => {
               <h2>Produk Lainnya</h2>
             </Col>
           </Row>
-          <ProductCard products={uniqueShopProducts} />
         </div>
       )}
       <div className="container-cart">

@@ -23,7 +23,6 @@ const ProductsInCart = () => {
   const [getProducts, setGetProducts] = useState(storedProducts);
 
   const textRef = useRef(null);
-
   useEffect(() => {
     const carts = products.reduce((acc, p) => {
       getProducts.forEach((a) => {

@@ -18,13 +18,11 @@ const ProductCard = ({ products }) => {
   return (
     <Row>
       {data.map(product => (
-        <Col lg={2} md={4} sm={6} xs={12} key={product.id}>
           <Card onClick={() => handleProduct(product.id)}>
             <Card.Img variant="top" src={product.images[0]} />
             <Card.Body>
               <Card.Title>{product.title}</Card.Title>
               <Card.Text>
-                <b>${product.price} </b> <span>${parseFloat((product.price - (product.price * (product.discount_percentage / 100))).toFixed(2))}</span>
               </Card.Text>
             </Card.Body>
           </Card>
