@@ -192,14 +192,19 @@
   background: #fff;
   .goto{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    // align-items: start;
     gap: 0 20px;
     p{
       margin: 0
     };
   button{
-    width: 10px;
+    width: auto;
     height: 10px;
+    border: none;
+    background: transparent;
+    color: rgb(1, 88, 129);
+    font-weight: bold;
   }}
 
 }
