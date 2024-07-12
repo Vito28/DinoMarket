@@ -8,16 +8,20 @@ import "../assets/Style/Pages/Cart.scss";
 import QuantityButton from "../Components/QuantityButton";
 
 const ProductsInCart = () => {
+  const [priceCart, setPriceCart] = useState(0);
+  const [totalQuantities, setTotalQuantities] = useState(0);
+
+  const [checkedAll, setCheckedAll] = useState(true);
+  const [popupNote, setPopupNote] = useState(false);
+
+  const [cart, setCart] = useState({});
+  const [checkedShops, setCheckedShops] = useState({});
+  const [checkedProducts, setCheckedProducts] = useState({});
+
   const { products } = useSelector((state) => state.data);
   const storedProducts = JSON.parse(localStorage.getItem("stored_products")) || [];
   const [getProducts, setGetProducts] = useState(storedProducts);
-  const [cart, setCart] = useState({});
-  const [checkedAll, setCheckedAll] = useState(true);
-  const [checkedShops, setCheckedShops] = useState({});
-  const [checkedProducts, setCheckedProducts] = useState({});
-  const [priceCart, setPriceCart] = useState(0);
-  const [popupNote, setPopupNote] = useState(false);
-  const [totalQuantities, setTotalQuantities] = useState(0);
+
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -56,15 +60,15 @@ const ProductsInCart = () => {
     totalQuantity(newCheckedProducts);
   }, [getProducts, products]);
 
-  const handleQuantity = (cartQuantity) => {
-    calculateTotalPrice(checkedProducts, cartQuantity);
-  };
-
   useEffect(() => {
     const allShopsChecked = Object.values(checkedShops).every((checked) => checked);
     const allProductsChecked = Object.values(checkedProducts).every((checked) => checked);
     setCheckedAll(allShopsChecked && allProductsChecked);
   }, [checkedShops, checkedProducts]);
+
+  const handleQuantity = (cartQuantity) => {
+    calculateTotalPrice(checkedProducts, cartQuantity);
+  };
 
   const handleCheckAll = () => {
     const newCheckedAll = !checkedAll;
@@ -163,7 +167,7 @@ const ProductsInCart = () => {
   };
 
   return (
-    <div className="container-shopify">
+    <main className="container-shopify">
       <Row>
         <Col lg={8} sm={8}>
           <div className="selected-all-container">
@@ -172,46 +176,48 @@ const ProductsInCart = () => {
                 type="checkbox"
                 checked={checkedAll}
                 onChange={handleCheckAll}
+                aria-label="Select all products"
               />
               <div>Selected All ({totalQuantities})</div>
             </div>
 
-            <h4 onClick={deleteSelectedProducts}>
+            <h4 onClick={deleteSelectedProducts} aria-label="Delete selected products">
               {checkedAll || Object.values(checkedShops).some((checked) => checked) || Object.values(checkedProducts).some((checked) => checked)
-                ? "HAPUS"
+                ? "DELETE"
                 : null}
             </h4>
           </div>
 
           {Object.keys(cart).map((shopId) => (
-            <div key={shopId} className="shop-cart-container">
+            <section key={shopId} className="shop-cart-container">
               <div className="shop-cart">
                 <input
                   type="checkbox"
                   checked={checkedShops[shopId]}
                   onChange={() => handleCheckShop(shopId)}
+                  aria-label={`Select products from shop ${shopId}`}
                 />
-                {/* <div className="shop_cart_name">aapa</div> */}
-                <p>aapa</p>
+                <p>Shop Name Here</p> {/* Ganti dengan nama toko */}
               </div>
 
               {cart[shopId].map((product) => (
-                <div key={product.id} className="product-cart-container">
+                <article key={product.id} className="product-cart-container">
                   <div className="wrapper-image-cart">
                     <input
                       type="checkbox"
                       checked={checkedProducts[product.id]}
                       onChange={() => handleCheckProduct(product.id)}
+                      aria-label={`Select product ${product.title}`}
                     />
                     <div className="container-cart-2">
-                      <Image src={product.image}  />
+                      <Image src={product.image} alt={product.title} />
                       <p>Title: {product.title}</p>
                     </div>
                   </div>
 
                   <div className="container-cart-3">
                     <p className="discount">
-                      ${((product.price - product.price * (product.discount_percentage / 100))).toFixed(2)}
+                      ${parseFloat((product.price - product.price * (product.discount_percentage / 100))).toFixed(2)}
                     </p>
                     <p className="price">${product.price}</p>
                     <div className="container-cart-3-bottom">
@@ -230,36 +236,34 @@ const ProductsInCart = () => {
                           </div>
                         }
                         {popupNote &&
-                          <div className="container-popup-note">
+                          <div style={{position:"absolute", zIndex:"9999", top:"0"}} className="container-popup-note">
                             <h1>Notes Product</h1>
                             <textarea ref={textRef} maxLength={144} />
                             <div>
-                              <button onClick={onCancelNote}>Batal</button>
-                              <button onClick={() => onSubmitNote(product.id)}>Simpan</button>
+                              <button onClick={onCancelNote}>Cancel</button>
+                              <button onClick={() => onSubmitNote(product.id)}>Save</button>
                             </div>
                           </div>
                         }
-                        <GoTrash onClick={() => deleteSingleProduct(product.id)} />
+                        <GoTrash onClick={() => deleteSingleProduct(product.id)} aria-label={`Delete product ${product.title}`} />
                         <QuantityButton id={product.id} onQuantityChange={handleQuantity} />
                       </div>
                     </div>
                   </div>
-
-                </div>
+                </article>
               ))}
-            </div>
+            </section>
           ))}
         </Col>
         <Col sm="4">
-        <div className="card-beli">
-          <h1>Ringkasan Belanja</h1>
-          <p>Total <span>${checkedAll ? parseFloat(priceCart.toFixed(2)) : "-"}</span></p>
-          <button>Buy</button>
-        </div>
-          
+          <div className="card-beli">
+            <h1>Shopping Summary</h1>
+            <p>Total <span>${checkedAll ? parseFloat(priceCart.toFixed(2)) : "-"}</span></p>
+            <button>Buy</button>
+          </div>
         </Col>
       </Row>
-    </div>
+    </main>
   );
 };
 

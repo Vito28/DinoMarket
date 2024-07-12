@@ -1,22 +1,20 @@
-import { useNavigate } from 'react-router-dom'
-import { Image } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom';
 
 const ProductsNotInCart = () => {
   const navigate = useNavigate();
+
   return (
-    <>
+    <div role="main">
       <div>
+        <div></div>
         <div>
-          {/* <Image src={s} alt={s}/> */}
-        </div>
-        <div>
-          <h1>Wah, keranjang belanjamu ksong</h1>
-          <p>Yuk isi dengan barang impian mu</p>
-          <button onClick={() => navigate('/')}/>
+          <h1>Your shopping cart is empty</h1>
+          <p>Lets fill it with your dream items</p>
+          <button onClick={() => navigate('/')} aria-label="Go back to Homepage">Go back to Homepage</button>
         </div>
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default ProductsNotInCart
+export default ProductsNotInCart;
