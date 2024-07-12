@@ -3,14 +3,28 @@
   width: 80%;
   height: 90vh;
   top: 40px;
-  left: 190px;
-  background-color: red;
+  left: 150px;
+  background-color: #fff;
   overflow-x: hidden;
   overflow-y: scroll;
   z-index: 999;
+  border-radius: 8px;
 
   .popup-cart {
     margin: 3rem;
+
+    .wrapper-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      svg {
+        font-size: 2.6rem;
+      }
+    }
 
     .product-card {
       display: flex;
@@ -18,7 +32,9 @@
       align-items: center;
       margin: 20px 0;
       padding: 20px;
-      background-color: blue;
+      background-color: #fff;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      border-radius: 8px;
       
       img {
         width: 56px;
@@ -27,6 +43,15 @@
 
       p {
         font-weight: 500;
+      }
+
+      button {
+        border: none;
+        border-radius: 8px;
+        background-color: #50B1FF;
+        color: #fff;
+        padding: 0.8rem 2.5rem;
+        font-weight: 700;
       }
 
 

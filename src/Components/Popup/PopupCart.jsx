@@ -15,8 +15,10 @@ const PopupCart = ({ id, shopId, image, alt, onClose }) => {
   return (
     <div className="container-popup-cart">
       <div className="popup-cart">
-        <h1>Item Successfully Added</h1>
-        <FaTimes onClick={onClose} />
+        <div className="wrapper-header">
+          <h1>Item Successfully Added</h1>
+          <FaTimes onClick={onClose} />
+        </div>
         <Row>
           <Col>
 
@@ -25,17 +27,14 @@ const PopupCart = ({ id, shopId, image, alt, onClose }) => {
               <p>{alt}</p>
               <button onClick={() => navigate('/cart')}>View Cart</button>
             </div>
-
-
           </Col>
         </Row>
         <Row>
           <Col>
-
+          <h1 style={{margin:"1.5rem 0"}}>Products You Might Like</h1>
             <div className="other-product">
-              <ProductCard products={otherProducts} onClick={onClose}/>
+              <ProductCard products={otherProducts} onClick={onClose} />
             </div>
-
           </Col>
         </Row>
       </div>

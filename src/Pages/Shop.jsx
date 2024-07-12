@@ -62,7 +62,9 @@ const Shop = () => {
   };
 
   return (
+    
     <div className="container-shopify">
+      <div className={`overlay ${showPopupCart ? "active" : ""}`}></div>
       <Helmet>
         <title>{uniqueItem ? `${uniqueItem.title} - ${uniqueShop.name}` : "Shop Not Found"}</title>
         {uniqueItem && (
