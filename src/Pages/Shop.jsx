@@ -113,40 +113,40 @@ const Shop = () => {
       {showPopupCart && <PopupCart id={uniqueItem.id} shopId={uniqueItem.shop.id} image={uniqueItem.images[1]} alt={uniqueItem.title} onClose={handleClosePopup} />}
 
       {uniqueShop && (
-        <div className="container-shopify" style={{marginTop: '4rem', marginBottom: '4rem'}}>
-          <Row>
-            <Col xs="auto" className="aaa">
+        <div className="container-shopify" style={{ marginTop: '4rem', marginBottom: '4rem' }}>
+          <Row className="container-toko">
+            <Col xs="auto" className="toko">
               <Image src={uniqueItem.images[0]} alt={`${uniqueShop.name} logo`} />
               <div className="container-shop-identity">
-                
+
                 <div className="rate">
-                <h2>{uniqueShop.name}</h2>
-                <div className="x-shopify">
-                  <label>Rating</label>
-                  <span>15,5rb</span>
-                </div>
-                <div className="x-shopify">
-                  <label>Persentase Chat</label>
-                  <span>76%</span>
-                </div>
-                {/* <div className="x-shopify">
+                  <h2>{uniqueShop.name}</h2>
+                  <div className="x-shopify">
+                    <label>Rating</label>
+                    <span>15,5rb</span>
+                  </div>
+                  <div className="x-shopify">
+                    <label>Persentase Chat</label>
+                    <span>76%</span>
+                  </div>
+                  {/* <div className="x-shopify">
                   <label>Waktu Balas Chat</label>
                   <span>2 jam</span>
                 </div> */}
-              </div>
-                <div className="">
-                  <button>Chat Sekarang</button>
-                  <button>Kunjungi Toko</button>
+                </div>
+                <div className="go">
+                  <button className="chat">Chat Sekarang</button>
+                  <button className="kunjungi">Kunjungi Toko</button>
                 </div>
               </div>
-              
+
             </Col>
           </Row>
         </div>
       )}
 
       {uniqueShopProducts.length > 0 && (
-        <div className="container-shopify" style={{marginTop: '4rem', marginBottom: '0'}}>
+        <div className="container-shopify" style={{ marginTop: '4rem', marginBottom: '0' }}>
           <Row>
             <Col>
               <h2>Produk Lainnya</h2>
