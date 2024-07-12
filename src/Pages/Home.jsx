@@ -4,11 +4,8 @@ import { useSelector } from "react-redux"
 const Home = () => {
   const { products } = useSelector(state => state.data);
   return (
-    <Container>
-      
+    <Container >
       <ProductCard products={products} />
-
-
     </Container>
 
   )
