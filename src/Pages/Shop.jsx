@@ -7,7 +7,7 @@ import QuantityButton from "../Components/QuantityButton";
 import PopupCart from "../Components/Popup/PopupCart";
 import { useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import "../assets/Style/Pages/Shop.scss";
+
 
 const Shop = () => {
   const { id } = useParams();
