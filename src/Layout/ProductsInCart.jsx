@@ -214,7 +214,7 @@ const ProductsInCart = () => {
                     />
                     <div className="container-cart-2">
                       <Image src={product.image} alt={product.title} />
-                      <p>Title: {product.title}</p>
+                      <p>{product.title}</p>
                     </div>
                   </div>
 
