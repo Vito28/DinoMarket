@@ -225,30 +225,26 @@ const ProductsInCart = () => {
                     <p className="price">${product.price}</p>
                     <div className="container-cart-3-bottom">
                       <div className="add-item">
-                        {JSON.parse(localStorage.getItem(`addNote_${product.id}`)) ?
+  
                           <div className="input-note" onClick={popupNotes}>
                             <div>{JSON.parse(localStorage.getItem(`addNote_${product.id}`))}</div>
                             <div className="note-design">
                               <FiFileText className="doc" />
                               <BiPencil className="pencil" />
                             </div>
-                          </div> :
-                          <div className="note-design">
-                            <FiFileText className="doc" />
-                            <BiPencil className="pencil" />
-                          </div>
-                        }
+                          </div> 
+                        
                         {popupNote &&
-                          <div style={{ position: "absolute", zIndex: "9999", top: "0" }} className="container-popup-note">
+                          <div className="container-popup-note">
                             <h1>Notes Product</h1>
                             <textarea ref={textRef} maxLength={144} />
-                            <div>
-                              <button onClick={onCancelNote}>Cancel</button>
-                              <button onClick={() => onSubmitNote(product.id)}>Save</button>
+                            <div className="condition-note">
+                              <button onClick={onCancelNote} className="cancel">Cancel</button>
+                              <button onClick={() => onSubmitNote(product.id)} className="save">Save</button>
                             </div>
                           </div>
                         }
-                        <GoTrash onClick={() => deleteSingleProduct(product.id)} aria-label={`Delete product ${product.title}`} />
+                        <GoTrash onClick={() => deleteSingleProduct(product.id)} aria-label={`Delete product ${product.title}`} style={{fontSize:'1.4rem'}}/>
                         <QuantityButton id={product.id} onQuantityChange={handleQuantity} />
                       </div>
                     </div>

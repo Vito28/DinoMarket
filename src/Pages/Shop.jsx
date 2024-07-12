@@ -116,7 +116,7 @@ const Shop = () => {
         <div className="container-shopify" style={{ marginTop: '4rem', marginBottom: '4rem' }}>
           <Row className="container-toko">
             <Col xs="auto" className="toko">
-              <Image src={uniqueItem.images[0]} alt={`${uniqueShop.name} logo`} />
+              <Image src={uniqueItem.images[2]} alt={`${uniqueShop.name} logo`} />
               <div className="container-shop-identity">
 
                 <div className="rate">
