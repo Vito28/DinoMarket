@@ -17,9 +17,10 @@ const Navigation = () => {
         <Link to="/">Bantuan</Link>
       </nav>
       <nav className="navbar-bottom" aria-label="Bottom Navigation">
-        <div className="logo-website">
+        <Link to="/" className="logo-website">
           <img src="../src/assets/Image/logo.png" alt="Logo Tokovito" />
-        </div>
+        </Link>
+
         <Search />
         <button
           className="cart"
@@ -30,7 +31,7 @@ const Navigation = () => {
         </button>
         <AuthButton />
       </nav>
-      
+
     </nav>
   );
 };

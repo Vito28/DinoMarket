@@ -5,8 +5,9 @@
   background-color: #fff;
   width: 100%;
   height: auto;
-  margin: 20px 0;
+  margin: 1rem 0;
   padding: 10px 20px;
+  border-radius: 13px 13px 0 0;
 
   input[type="checkbox"] {
     width: 20px; 
@@ -28,7 +29,7 @@
 
 }
 .shop-cart-container {
-  margin: 20px 0;
+  margin: 1rem 0;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
@@ -110,11 +111,38 @@
 }
 
 .card-beli {
-  margin-top: 4rem;
+  margin-top: 1.08rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #fff;
-  
+  border-radius: 13px;
+  padding: 2rem;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 1.5rem 0;
+
+    span {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+  }
+  button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 13px;
+    background-color: #50B1FF;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+  }
 }
 
 
