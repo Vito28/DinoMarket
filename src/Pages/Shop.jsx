@@ -162,11 +162,10 @@ const Shop = () => {
         </div>
         <div className="subtotal">
           <QuantityButton id={uniqueItem.id} onQuantityChange={handleQuantity} type={"cart"} />
-  
         </div>
         
         <div className="bought-btn">
-        <h4>${uniqueItem.price * quantity}</h4>
+        <h4>${parseFloat((uniqueItem.price * quantity).toFixed(2))}</h4>
           <button type="button" aria-label={`Beli ${uniqueItem.title}`}>Beli</button>
           <button className="keranjang" type="button" onClick={addToCart} aria-label={`Tambah ${uniqueItem.title} ke Keranjang`}>+ Keranjang</button>
         </div>

@@ -1,13 +1,18 @@
+import { useEffect, useState } from "react";
 import ProductsInCart from "../Layout/ProductsInCart";
 import ProductsNotInCart from "../Layout/ProductsNotInCart";
 
 const Cart = () => {
-  const getProducts = JSON.parse(localStorage.getItem("stored_products")) || [];
-  console.log(getProducts);
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    const getProducts = JSON.parse(localStorage.getItem("stored_products")) || [];
+    setProducts(getProducts);
+  }, [products])
+
   return (
     <>
       {
-        getProducts.length !== 0 ? <ProductsInCart /> : <ProductsNotInCart />
+        products.length !== 0 ? <ProductsInCart /> : <ProductsNotInCart />
       }
     </>
   )

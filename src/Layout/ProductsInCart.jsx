@@ -117,7 +117,7 @@ const ProductsInCart = () => {
         }
       });
     });
-    setPriceCart(totalPrice);
+    setPriceCart(parseFloat(totalPrice.toFixed(2)));
     localStorage.setItem("price_cart", JSON.stringify(totalPrice));
     setTotalQuantities(totalQuantities);
   };
