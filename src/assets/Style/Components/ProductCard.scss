@@ -93,10 +93,7 @@
 
 
   .subtotal {
-    display: flex;
-    gap: 15px;
     align-self: center;
-
     p {
       margin: 0;
       padding: 0;
@@ -114,6 +111,11 @@
   // .add-item {}
 
   .bought-btn {
+    display: flex;
+    align-items: center;
+    h4{
+      margin: 0 12px;
+    }
     button {
       border-radius: 5px;
       background-color: white;
@@ -136,25 +138,31 @@
 .container-toko{
   background: white;
   padding: 24px 12px;
+  img{
+    width: 100px;
+  }
 .toko {
   display: flex;
   gap: 12px;
 
-  img {
-    border-radius: 5px;
-  }
+  width: 100%;
+  
   .container-shop-identity {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
     .go{
       display: flex;
+      height: 100%;
+      justify-content: space-evenly;
       gap: 12px;
       button{
         border: 1px solid #50B1FF;
         border-radius: 5px;
+        padding: 5px 16px;
         &.chat{
-          
           background: transparent;
           color: #50B1FF;
         }
