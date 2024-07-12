@@ -18,7 +18,7 @@ const ProductCard = ({ products }) => {
   return (
     <Row>
       {data.map(product => (
-        <Col lg={3} md={4} sm={6} xs={12} key={product.id}>
+        <Col lg={2} md={4} sm={6} xs={12} key={product.id}>
           <Card onClick={() => handleProduct(product.id)}>
             <Card.Img variant="top" src={product.images[0]} />
             <Card.Body>
