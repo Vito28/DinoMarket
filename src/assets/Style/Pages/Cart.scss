@@ -187,3 +187,19 @@
   }
 }
 
+.not-cart{
+  padding: 20px;
+  background: #fff;
+  .goto{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    p{
+      margin: 0
+    };
+  button{
+    width: 10px;
+    height: 10px;
+  }}
+
+}
