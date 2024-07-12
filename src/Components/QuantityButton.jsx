@@ -41,7 +41,7 @@ const QuantityButton = ({ id, onQuantityChange, type }) => {
   }, [quantity, id, onQuantityChange, a]);
 
   return (
-    <div className="add-item">
+    <div className="add-item button-plus-min">
       <button
         type="button"
         onClick={onDecrease}
@@ -50,7 +50,7 @@ const QuantityButton = ({ id, onQuantityChange, type }) => {
         disabled={quantity === 1}
       >
         {" "}
-        -{" "}
+        <p>-</p>{" "}
       </button>
       <span>{quantity}</span>
       <button
@@ -61,7 +61,7 @@ const QuantityButton = ({ id, onQuantityChange, type }) => {
         disabled={quantity === 100}
       >
         {" "}
-        +{" "}
+        <p>+</p>{" "}
       </button>
     </div>
   );

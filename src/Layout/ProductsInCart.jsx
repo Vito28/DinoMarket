@@ -165,7 +165,7 @@ const ProductsInCart = () => {
   return (
     <div className="container-shopify">
       <Row>
-        <Col sm="8">
+        <Col lg={8} sm={8}>
           <div className="selected-all-container">
             <div className="selected-all">
               <input
@@ -191,7 +191,8 @@ const ProductsInCart = () => {
                   checked={checkedShops[shopId]}
                   onChange={() => handleCheckShop(shopId)}
                 />
-                <div className="shop_cart">aapap</div>
+                {/* <div className="shop_cart_name">aapa</div> */}
+                <p>aapa</p>
               </div>
 
               {cart[shopId].map((product) => (
@@ -203,7 +204,7 @@ const ProductsInCart = () => {
                       onChange={() => handleCheckProduct(product.id)}
                     />
                     <div className="container-cart-2">
-                      <Image src={product.image} style={{ width: '80px', height: '80px' }} />
+                      <Image src={product.image}  />
                       <p>Title: {product.title}</p>
                     </div>
                   </div>

@@ -34,40 +34,63 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
-
+  input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
   .shop-cart {
     display: flex;
-    align-items: end;
+    align-items: center;
+    
+
+    p{
+      align-self: center;
+      margin-bottom: 2px;
+    }
+
   }
 
   .product-cart-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 12px 0;
     height: auto;
     .wrapper-image-cart {
-      width: 80%;
+      width:auto;
       display: flex;
+      align-items:start;
+      
       input {
-        width: 3%;
-        margin: 10px;
+        margin: 0 10px;
       }
       .container-cart-2 {
         display: flex;
+        height: 100%;
+        gap: 24px;
+        img{
+          width: 100px;
+          height: 100px;
+        }
+        p{
+          margin: 0;
+          font-weight: 600;
+        }
       }
     }
     
 
     .container-cart-3 {
-      width: 20%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-
+      align-items: end;
       p {
+
         &.discount {
           font-weight: bold;
           font-size: 1rem;
+          margin: 0;
         }
 
         &.price {
@@ -79,15 +102,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        
         .add-item {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          gap: 0 15px;
           .note-design {
             position: relative;
-            display: inline-block;
-
+            display: flex;
+            gap: 15px;
             svg {
               &.doc {
                 font-size: 1.2rem;
@@ -145,5 +169,20 @@
   }
 }
 
-
+.button-plus-min{
+  border: 1px solid #50B1FF;
+  box-shadow: 0 0 2px #50B1FF;
+  border-radius: 10px;
+  padding: 3px 8px;
+  align-items: center;
+  button{
+    border: none;
+    background: transparent;
+    p{
+      margin: 0;
+      margin-top: -2px;
+      font-size: large;
+    }
+  }
+}
 
