@@ -90,8 +90,9 @@ nav {
             border: 2px solid #50B1FF;
             color: #50B1FF;
             &:hover{
-              background-color: #50B1FF;
+              background-color: #38db5e;
               color: white;
+              border: 2px solid #50B1FF;
             }
           }
           // .signin {
@@ -103,7 +104,8 @@ nav {
             color: white;
             &:hover{
               background: transparent;
-              color: #50B1FF;
+              color: #38db5e;
+              border: 2px solid #38db5e;
             }
           }
           // }

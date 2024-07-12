@@ -117,6 +117,7 @@
       margin: 0 12px;
     }
     button {
+      border: 1px solid white;
       border-radius: 5px;
       background-color: white;
       color: #50B1FF;
@@ -125,10 +126,14 @@
       &.keranjang{
         background: #50B1FF;
         color: white;
+        &:hover {
+          border: 1px solid #38db5e;
+          background: white;
+          color: #38db5e;
+        }
       }
       &:hover {
-        background: transparent;
-        border: 1px solid white;
+        background: #38db5e;
         color: white;
       }
     }
