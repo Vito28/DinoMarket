@@ -252,7 +252,7 @@ const ProductsInCart = () => {
         <Col sm="4">
         <div className="card-beli">
           <h1>Ringkasan Belanja</h1>
-          <p>Total <span>{checkedAll ? parseFloat(priceCart.toFixed(2)) : "-"}</span></p>
+          <p>Total <span>${checkedAll ? parseFloat(priceCart.toFixed(2)) : "-"}</span></p>
           <button>Buy</button>
         </div>
           
