@@ -1,49 +1,46 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaSearch } from 'react-icons/fa';
+import { Button, Form, InputGroup } from "react-bootstrap";
+import { FiSearch } from "react-icons/fi";
+import PropTypes from "prop-types";
 
-const Search = () => {
+const Search = ({ placeholder = "Cari produk teknologi..." }) => {
   const navigate = useNavigate();
-  const searchRef = useRef(null);
+  const inputRef = useRef(null);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const search = searchRef.current;
-    if (search) {
-      const value = search.value.toLowerCase();
-      if (value) {
-        navigate(`search/${value}`);
-      } else {
-        navigate(`search/notFound`);
-      }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const { current } = inputRef;
+    if (!current) {
+      return;
     }
-  };
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (e.key === "Enter") {
-      handleSubmit(e);
-    }
+    const value = current.value.trim().toLowerCase();
+    navigate(value ? `search/${value}` : "search/notFound");
   };
 
   return (
-    <div className="search-input">
-      <form id="search" action="#" onSubmit={handleSubmit} role="search">
-        <button aria-label="Search" type="submit">
-          <FaSearch aria-hidden="true" />
-        </button>
-        <input
-          aria-label="Search input"
-          ref={searchRef}
-          type="text"
-          placeholder="Type Something"
-          id="searchText"
-          name="searchKeyword"
-          onKeyUp={handleSearch}
+    <Form className="w-100" role="search" onSubmit={handleSubmit}>
+      <InputGroup>
+        <InputGroup.Text className="bg-white border-end-0">
+          <FiSearch />
+        </InputGroup.Text>
+        <Form.Control
+          ref={inputRef}
+          type="search"
+          placeholder={placeholder}
+          aria-label="Kolom pencarian produk"
         />
-      </form>
-    </div>
+        <Button type="submit" variant="primary">
+          Cari
+        </Button>
+      </InputGroup>
+    </Form>
   );
+};
+
+Search.propTypes = {
+  placeholder: PropTypes.string,
 };
 
 export default Search;

@@ -1,85 +1,59 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons';
+import { Col, Container, Nav, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          <div className="footer-section about">
-            <h2 className="logo">
-              <span>YourShop</span>
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum consectetur elit sit amet.
-            </p>
-            <div className="contact">
-              <span>
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
-                Jakarta, Indonesia
-              </span>
-              <span>
-                <FontAwesomeIcon icon={faEnvelope} />
-                info@yourshop.com
-              </span>
-            </div>
-            <div className="socials">
-              <a href="#">
-                <FontAwesomeIcon icon={faFacebookF} />
-              </a>
-              <a href="#">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a href="#">
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-              <a href="#">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </div>
+const Footer = () => (
+  <footer className="bg-dark text-light pt-5 pb-4 mt-auto">
+    <Container>
+      <Row className="gy-4">
+        <Col md={4}>
+          <h5 className="fw-bold">DinoMarket</h5>
+          <p className="text-white-50">
+            Platform e-commerce terpercaya untuk kebutuhan perangkat teknologi kamu.
+            Belanja aman, cepat, dan bergaransi resmi.
+          </p>
+        </Col>
+        <Col md={4}>
+          <h6 className="fw-semibold">Jelajahi</h6>
+          <Nav className="flex-column text-white-50">
+            <Nav.Link as={Link} to="/#about" className="text-white-50 px-0">
+              Tentang Kami
+            </Nav.Link>
+            <Nav.Link as={Link} to="/#support" className="text-white-50 px-0">
+              Pusat Bantuan
+            </Nav.Link>
+            <Nav.Link as={Link} to="/#terms" className="text-white-50 px-0">
+              Syarat & Ketentuan
+            </Nav.Link>
+            <Nav.Link as={Link} to="/#privacy" className="text-white-50 px-0">
+              Kebijakan Privasi
+            </Nav.Link>
+          </Nav>
+        </Col>
+        <Col md={4}>
+          <h6 className="fw-semibold">Terhubung</h6>
+          <div className="d-flex gap-3">
+            <a href="https://facebook.com" className="text-white-50 fs-5" aria-label="Facebook">
+              <FaFacebookF />
+            </a>
+            <a href="https://twitter.com" className="text-white-50 fs-5" aria-label="Twitter">
+              <FaTwitter />
+            </a>
+            <a href="https://instagram.com" className="text-white-50 fs-5" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+            <a href="https://linkedin.com" className="text-white-50 fs-5" aria-label="LinkedIn">
+              <FaLinkedinIn />
+            </a>
           </div>
-          <div className="footer-section links">
-            <h2>Useful Links</h2>
-            <ul>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#">Terms & Conditions</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-section contact-form">
-            <h2>Contact Us</h2>
-            <form action="#">
-              <input type="email" name="email" className="text-input contact-input" placeholder="Your email address" />
-              <textarea rows="4" name="message" className="text-input contact-input" placeholder="Your message"></textarea>
-              <button type="submit" className="btn btn-big contact-btn">
-                <FontAwesomeIcon icon={faEnvelope} />
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
+        </Col>
+      </Row>
+      <hr className="border-secondary my-4" />
+      <div className="text-center text-white-50">
+        &copy; {new Date().getFullYear()} DinoMarket. All rights reserved.
       </div>
-      <div className="footer-bottom">
-        <p>&copy; YourShop 2024. All Rights Reserved.</p>
-      </div>
-    </footer>
-  );
-};
+    </Container>
+  </footer>
+);
 
 export default Footer;

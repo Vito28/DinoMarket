@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/Style/index.scss'
+import './assets/Style/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <HelmetProvider>
@@ -11,9 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <App />
     </React.StrictMode>
   </HelmetProvider>
-
 )
-
 
 
 

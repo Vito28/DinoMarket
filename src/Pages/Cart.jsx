@@ -1,21 +1,35 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import ProductsInCart from "../Layout/ProductsInCart";
 import ProductsNotInCart from "../Layout/ProductsNotInCart";
+import { CART_UPDATED_EVENT, getCartItems } from "../storage/cartStorage";
 
 const Cart = () => {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    const getProducts = JSON.parse(localStorage.getItem("stored_products")) || [];
-    setProducts(getProducts);
-  }, [products])
+  const [items, setItems] = useState(() => getCartItems());
 
-  return (
-    <>
-      {
-        products.length !== 0 ? <ProductsInCart /> : <ProductsNotInCart />
-      }
-    </>
-  )
-}
+  useEffect(() => {
+    setItems(getCartItems());
+  }, []);
+
+  useEffect(() => {
+    const handleCartUpdate = () => setItems(getCartItems());
+    window.addEventListener(CART_UPDATED_EVENT, handleCartUpdate);
+    window.addEventListener("storage", handleCartUpdate);
+
+    return () => {
+      window.removeEventListener(CART_UPDATED_EVENT, handleCartUpdate);
+      window.removeEventListener("storage", handleCartUpdate);
+    };
+  }, []);
+
+  const handleCartChange = useCallback((nextItems) => {
+    setItems(nextItems);
+  }, []);
+
+  if (items.length === 0) {
+    return <ProductsNotInCart />;
+  }
+
+  return <ProductsInCart onCartChange={handleCartChange} />;
+};
 
 export default Cart;

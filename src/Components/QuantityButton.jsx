@@ -1,70 +1,121 @@
-import { useState, useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
+import PropTypes from "prop-types";
+import {
+  adjustCartItemQuantity,
+  getCartItem,
+  upsertCartItem,
+  updateCartItemQuantity,
+} from "../storage/cartStorage";
 
-const QuantityButton = ({ id, onQuantityChange, type }) => {
-  const [a, seta] = useState(() => {
-    const storedQuantity = JSON.parse(localStorage.getItem(`quantities_${id}`));
-    return type === "cart" ? 1 : storedQuantity[1];
-  });
-  const [quantity, setQuantity] = useState(() => {
-    const storedQuantity = JSON.parse(localStorage.getItem(`quantities_${id}`));
-    return type === "cart" ? 1 : storedQuantity[0];
-  });
+const clamp = (value, min, max) => {
+  if (Number.isNaN(Number(value))) {
+    return min;
+  }
+  return Math.min(Math.max(Number(value), min), max);
+};
+
+const QuantityButton = ({
+  productId,
+  shopId,
+  value,
+  defaultValue = 1,
+  min = 1,
+  max = 100,
+  persist = true,
+  onQuantityChange,
+}) => {
+  const initialQuantity = useMemo(() => {
+    if (typeof value === "number") {
+      return clamp(value, min, max);
+    }
+
+    if (persist) {
+      const storedItem = getCartItem(productId);
+      if (storedItem) {
+        return clamp(storedItem.quantity, min, max);
+      }
+    }
+
+    return clamp(defaultValue, min, max);
+  }, [value, persist, productId, min, max, defaultValue]);
+
+  const [quantity, setQuantity] = useState(initialQuantity);
 
   useEffect(() => {
-    const storedQuantity = JSON.parse(localStorage.getItem(`quantities_${id}`));
-    if (type === "cart") {
-      setQuantity(1);
-      seta(1)
-    } else {
-      setQuantity(storedQuantity ? storedQuantity[0] : 1);
-      seta(storedQuantity ? storedQuantity[1] : 1);
+    if (typeof value === "number") {
+      setQuantity(clamp(value, min, max));
     }
-  }, [id, type]);
+  }, [value, min, max]);
 
-  const onDecrease = () => {
-    setQuantity(prev => (prev === 1 ? 1 : prev - 1));
-  };
+  useEffect(() => {
+    if (!persist) {
+      return;
+    }
 
-  const onIncrease = () => {
-    const storedQuantity = JSON.parse(localStorage.getItem(`quantities_${id}`));
-    setQuantity(prev => (type === "cart" ? (prev === 100 ? 100 : prev + 1) : (prev === storedQuantity[1] ? storedQuantity[1] : prev + 1)));
-    seta(prev => type == "cart" ? prev + 1 : prev + 0)
-    console.log(storedQuantity[1])
-    console.log(storedQuantity[0])
-  };
+    const storedItem = getCartItem(productId);
+    if (storedItem) {
+      updateCartItemQuantity(productId, quantity);
+    } else {
+      upsertCartItem({ productId, shopId, quantity });
+    }
+  }, [persist, productId, shopId, quantity]);
 
   useEffect(() => {
     if (onQuantityChange) {
       onQuantityChange(quantity);
-      localStorage.setItem(`quantities_${id}`, JSON.stringify([quantity, a]));
     }
-  }, [quantity, id, onQuantityChange, a]);
+  }, [quantity, onQuantityChange]);
+
+  const handleDecrease = () => {
+    if (persist) {
+      adjustCartItemQuantity(productId, -1);
+    }
+    setQuantity((current) => clamp(current - 1, min, max));
+  };
+
+  const handleIncrease = () => {
+    if (persist) {
+      adjustCartItemQuantity(productId, 1);
+    }
+    setQuantity((current) => clamp(current + 1, min, max));
+  };
 
   return (
-    <div className="add-item button-plus-min">
+    <div className="d-inline-flex align-items-center gap-2">
       <button
         type="button"
-        onClick={onDecrease}
-        style={{ cursor: quantity === 0 ? "not-allowed" : "pointer" }}
-        aria-label="Decrease Quantity"
-        disabled={quantity === 1}
+        className="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center quantity-btn"
+        onClick={handleDecrease}
+        disabled={quantity <= min}
+        aria-label="Kurangi jumlah"
       >
-        {" "}
-        <p>-</p>{" "}
+        &minus;
       </button>
-      <span>{quantity}</span>
+      <span className="fw-semibold fs-6 text-center" style={{ minWidth: "2rem" }}>
+        {quantity}
+      </span>
       <button
         type="button"
-        onClick={onIncrease}
-        style={{ cursor: quantity === 0 ? "not-allowed" : "pointer" }}
-        aria-label="Increase Quantity"
-        disabled={quantity === 100}
+        className="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center quantity-btn"
+        onClick={handleIncrease}
+        disabled={quantity >= max}
+        aria-label="Tambah jumlah"
       >
-        {" "}
-        <p>+</p>{" "}
+        +
       </button>
     </div>
   );
+};
+
+QuantityButton.propTypes = {
+  productId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  shopId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  value: PropTypes.number,
+  defaultValue: PropTypes.number,
+  min: PropTypes.number,
+  max: PropTypes.number,
+  persist: PropTypes.bool,
+  onQuantityChange: PropTypes.func,
 };
 
 export default QuantityButton;
