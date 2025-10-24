@@ -60,6 +60,27 @@ const ProductsInCart = ({ onCartChange }) => {
         return next;
       });
 
+      // Clear checkout payload when cart changes
+      // This ensures checkout data is always fresh
+      const existingPayload = localStorage.getItem("checkout_payload");
+      if (existingPayload) {
+        try {
+          const payload = JSON.parse(existingPayload);
+          // Check if any items in payload are no longer in cart
+          const currentProductIds = new Set(latest.map((item) => item.productId));
+          const payloadHasRemovedItems = payload.groups?.some((group) =>
+            group.items.some((item) => !currentProductIds.has(item.productId))
+          );
+          
+          if (payloadHasRemovedItems || latest.length === 0) {
+            localStorage.removeItem("checkout_payload");
+          }
+        } catch {
+          // If payload is corrupted, remove it
+          localStorage.removeItem("checkout_payload");
+        }
+      }
+
       if (shouldPropagate && onCartChange) {
         onCartChange(latest);
       }
@@ -282,6 +303,8 @@ const ProductsInCart = ({ onCartChange }) => {
 
   const handleRemove = (productId) => {
     removeCartItem(productId);
+    // Clear checkout payload when item is removed
+    localStorage.removeItem("checkout_payload");
     refresh();
   };
 
@@ -347,6 +370,8 @@ const ProductsInCart = ({ onCartChange }) => {
                   size="sm"
                   onClick={() => {
                     selected.forEach((productId) => removeCartItem(productId));
+                    // Clear checkout payload when items are removed
+                    localStorage.removeItem("checkout_payload");
                     refresh();
                   }}
                 >

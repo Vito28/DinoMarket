@@ -53,7 +53,7 @@ const Navigation = () => {
         <Container>
           <Navbar.Brand as={Link} to="/" className="fw-bold text-primary d-flex align-items-center gap-2">
             <img
-              src="/logo.png"
+              src="./logo.png"
               alt="DinoMarket logo"
               className="brand-logo"
               loading="lazy"

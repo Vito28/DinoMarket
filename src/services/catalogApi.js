@@ -46,7 +46,7 @@ const extractCatalog = (payload) => {
 export const catalogApi = createApi({
   reducerPath: "catalogApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "/",
+    baseUrl: "./",
   }),
   keepUnusedDataFor: 3600,
   endpoints: (builder) => ({

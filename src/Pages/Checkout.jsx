@@ -85,7 +85,7 @@ const Checkout = () => {
         return stored;
       }
     } catch {
-      // ignore malformed storage
+      return null;
     }
 
     return null;
@@ -114,11 +114,11 @@ const Checkout = () => {
     }
   }, [checkoutData, shippingMethod]);
 
-  if (!checkoutData) {
-    return null;
-  }
-
   const shippingOptions = useMemo(() => {
+    if (!checkoutData?.summary) {
+      return [];
+    }
+    
     const baseFee = checkoutData.summary.shipping ?? 0;
     const minimumStandardFee = baseFee > 0 ? baseFee : 4.5;
 
@@ -142,7 +142,7 @@ const Checkout = () => {
         fee: 0,
       },
     ];
-  }, [checkoutData.summary.shipping]);
+  }, [checkoutData]);
 
   const shippingSelection = useMemo(
     () => shippingOptions.find((option) => option.id === shippingMethod) ?? shippingOptions[0],
@@ -155,6 +155,17 @@ const Checkout = () => {
   );
 
   const summary = useMemo(() => {
+    if (!checkoutData?.summary) {
+      return {
+        baseSubtotal: 0,
+        basePromoDiscount: 0,
+        shippingFee: 0,
+        paymentFee: 0,
+        paymentDiscount: 0,
+        finalTotal: 0,
+      };
+    }
+
     const baseSubtotal = checkoutData.summary.discountedTotal;
     const basePromoDiscount = checkoutData.summary.promoDiscount;
     const shippingFee = shippingSelection?.fee ?? 0;
@@ -176,7 +187,7 @@ const Checkout = () => {
       paymentDiscount,
       finalTotal,
     };
-  }, [checkoutData.summary, paymentSelection, shippingSelection]);
+  }, [checkoutData, paymentSelection, shippingSelection]);
 
   const isFormComplete = useMemo(
     () =>
@@ -281,6 +292,11 @@ const Checkout = () => {
       navigate("/", { replace: true });
     }, 2500);
   };
+
+  // Early return if no checkout data
+  if (!checkoutData?.summary || !checkoutData?.groups) {
+    return null; 
+  }
 
   return (
     <Container className="py-5">

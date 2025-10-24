@@ -10,6 +10,33 @@ const Home = () => {
   const navigate = useNavigate();
   const { products, shops, isLoading, isError, refetch } = useCatalogData();
 
+  const highlightProduct = useMemo(() => {
+    if (!products || products.length === 0) {
+      return null;
+    }
+    return [...products].sort(
+      (a, b) => b.discount_percentage - a.discount_percentage
+    )[0];
+  }, [products]);
+
+  const hotDeals = useMemo(() => {
+    if (!products || products.length === 0) {
+      return [];
+    }
+    return [...products]
+      .sort((a, b) => b.discount_percentage - a.discount_percentage)
+      .slice(0, 8);
+  }, [products]);
+
+  const editorChoice = useMemo(() => {
+    if (!products || products.length === 0) {
+      return [];
+    }
+    return [...products].sort((a, b) => a.price - b.price).slice(0, 8);
+  }, [products]);
+
+  const curatedVendors = useMemo(() => (shops ? shops.slice(0, 4) : []), [shops]);
+
   if (isLoading) {
     return (
       <main>
@@ -47,27 +74,6 @@ const Home = () => {
       </main>
     );
   }
-
-  const highlightProduct = useMemo(() => {
-    if (!products || products.length === 0) {
-      return null;
-    }
-    return [...products].sort(
-      (a, b) => b.discount_percentage - a.discount_percentage
-    )[0];
-  }, [products]);
-
-  const hotDeals = useMemo(() => {
-    return [...products]
-      .sort((a, b) => b.discount_percentage - a.discount_percentage)
-      .slice(0, 8);
-  }, [products]);
-
-  const editorChoice = useMemo(() => {
-    return [...products].sort((a, b) => a.price - b.price).slice(0, 8);
-  }, [products]);
-
-  const curatedVendors = useMemo(() => shops.slice(0, 4), [shops]);
 
   return (
     <main>
