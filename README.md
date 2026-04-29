@@ -1,18 +1,19 @@
-# 🦕 DinoMarket
+# 🦕 DinoMarket - E-Commerce Platform UAS Semester 2
 
 <div align="center">
 
 ![DinoMarket Logo](https://img.shields.io/badge/DinoMarket-E--Commerce-green?style=for-the-badge&logo=shopping-cart)
 
-**Platform E-Commerce Modern dengan Simulasi Backend menggunakan LocalStorage**
+**Platform E-Commerce Modern dengan Simulasi Backend menggunakan LocalStorage**  
+*Capstone Project: Semester 2 Web Development*
 
 [![React](https://img.shields.io/badge/React-18.3.1-61dafb?style=flat&logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-Latest-646cff?style=flat&logo=vite)](https://vitejs.dev/)
 [![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-2.2.6-764abc?style=flat&logo=redux)](https://redux-toolkit.js.org/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Ready-06b6d4?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.3-7952b3?style=flat&logo=bootstrap)](https://getbootstrap.com/)
+[![Testing](https://img.shields.io/badge/Testing-Vitest-green?style=flat&logo=vitest)](https://vitest.dev/)
 
-[Demo Live](https://vito28.github.io/DinoMarket/) • [Laporkan Bug](https://github.com/Vito28/UAS/issues) • [Request Fitur](https://github.com/Vito28/UAS/issues)
+[🔗 Demo Live](https://vito28.github.io/DinoMarket/) • [🐛 Report Issues](https://github.com/Vito28/UAS/issues) • [💡 Feature Request](https://github.com/Vito28/UAS/issues)
 
 </div>
 
@@ -21,12 +22,15 @@
 ## 📋 Daftar Isi
 
 - [Tentang Proyek](#-tentang-proyek)
+- [Learning Outcomes](#-learning-outcomes)
+- [Konsep & Alur Sistem](#-konsep--alur-sistem)
 - [Fitur Utama](#-fitur-utama)
+- [Sistem Cart (Keranjang Belanja)](#-sistem-cart-keranjang-belanja)
 - [Teknologi](#-teknologi)
+- [Arsitektur Sistem](#-arsitektur-sistem)
 - [Struktur Proyek](#-struktur-proyek)
 - [Instalasi](#-instalasi)
 - [Penggunaan](#-penggunaan)
-- [Arsitektur](#-arsitektur)
 - [Testing](#-testing)
 - [Deployment](#-deployment)
 - [Kontribusi](#-kontribusi)
@@ -36,88 +40,535 @@
 
 ## 🎯 Tentang Proyek
 
-**DinoMarket** adalah aplikasi e-commerce modern yang dibangun dengan React dan Vite, menampilkan sistem pemesanan keranjang belanja yang lengkap dengan **simulasi backend menggunakan LocalStorage**. Proyek ini mendemonstrasikan implementasi clean architecture dalam aplikasi frontend dengan state management yang robust dan design system yang konsisten.
+**DinoMarket** adalah aplikasi e-commerce modern yang dibangun dengan **React 18** dan **Vite**, menampilkan sistem pemesanan keranjang belanja yang lengkap dengan **simulasi backend menggunakan LocalStorage**. Proyek ini dirancang sebagai **Capstone Project (UAS) Semester 2** dan mendemonstrasikan implementasi **clean architecture** dalam aplikasi frontend dengan state management yang robust, component-based architecture, dan design system yang konsisten.
 
 ### 🌟 Kenapa DinoMarket?
 
-- ✅ **Zero Backend Required** - Simulasi lengkap sistem backend di frontend
-- ✅ **Clean Code Architecture** - Struktur folder yang terorganisir dan maintainable
-- ✅ **Modern UI/UX** - Design responsif dengan TailwindCSS & Bootstrap
-- ✅ **State Management** - Redux Toolkit untuk pengelolaan state yang efisien
-- ✅ **Type Safety** - PropTypes untuk validasi komponen
-- ✅ **Accessibility** - A11y compliant dengan semantic HTML
-- ✅ **Testing Ready** - Vitest & Testing Library terintegrasi
-- ✅ **Component Documentation** - Storybook untuk katalog komponen
+- ✅ **Zero Backend Required** - Simulasi lengkap sistem backend menggunakan localStorage dan custom events
+- ✅ **Production-Ready Architecture** - Struktur folder yang terorganisir dan maintainable
+- ✅ **Modern React Patterns** - Hooks, Context, Custom Hooks, dan Component Composition
+- ✅ **State Management** - Redux Toolkit untuk authentication + localStorage untuk cart/persistence
+- ✅ **Responsive UI** - Bootstrap 5.3 dengan mobile-first design
+- ✅ **Data Persistence** - Multi-user support dengan localStorage untuk cart isolation
+- ✅ **Component Testing** - Vitest & Testing Library terintegrasi
+- ✅ **Component Documentation** - Storybook untuk katalog komponen interaktif
+- ✅ **Form Validation** - Sistem checkout dengan validasi real-time
+
+---
+
+## 🎓 Learning Outcomes
+
+Setelah mempelajari proyek ini, Anda akan memahami:
+
+### Frontend Development (React)
+- ✅ Component lifecycle dan React Hooks (useState, useEffect, useCallback, useMemo)
+- ✅ Custom Hooks untuk reusable stateful logic
+- ✅ React Router untuk client-side routing
+- ✅ Context API dan Redux Toolkit untuk state management
+- ✅ Form handling dengan validasi dan persistence
+
+### Architecture & Design Patterns
+- ✅ **Clean Architecture** - Separation of Concerns (Components, Pages, Services, Storage)
+- ✅ **Container/Presentational Pattern** - Smart components vs Dumb components
+- ✅ **Service Layer Pattern** - API abstraction layer
+- ✅ **Storage/Persistence Layer** - Backend simulation dengan localStorage
+- ✅ **Event-Driven Architecture** - Custom events untuk cross-component communication
+
+### Full-Stack Simulation
+- ✅ Frontend-only backend simulation menggunakan localStorage
+- ✅ Data normalization dan deduplication
+- ✅ Multi-user data isolation dan management
+- ✅ Real-time synchronization antar tabs/windows
+- ✅ Legacy data migration strategies
+
+### Development Practices
+- ✅ Component testing dengan Vitest & React Testing Library
+- ✅ Component documentation dengan Storybook
+- ✅ Build optimization dengan Vite
+- ✅ Code quality dengan ESLint & formatting conventions
+- ✅ Deployment automation dengan GitHub Pages
+
+---
+
+## 🔄 Konsep & Alur Sistem
+
+### Alur Umum Aplikasi (User Flow)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      USER JOURNEY                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Landing (Home) → Browse Catalog → Search → Product Detail  │
+│         ↓                                          ↓          │
+│      View Products                            View Details   │
+│         ↓                                          ↓          │
+│      ├─────────────────→ Add to Cart ←──────────────┤       │
+│      │                                              │        │
+│      └─→ View Cart → Update Quantities → Checkout ─┘        │
+│                      (add notes, remove items)               │
+│                                                              │
+│           Checkout Process:                                 │
+│           ├─ Enter Shipping Address                         │
+│           ├─ Choose Shipping Method                         │
+│           ├─ Choose Payment Method                          │
+│           ├─ Review Order Summary                           │
+│           └─ Confirm Order (Save to localStorage)           │
+│                                                              │
+│           Order Confirmation → Order History                │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Data Flow Architecture
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│                     REACT COMPONENT LAYER                        │
+├──────────────────────────────────────────────────────────────────┤
+│  Pages (Home, Shop, Cart, Checkout) ↔ Components (ProductCard)  │
+│                              ↓                                    │
+├──────────────────────────────────────────────────────────────────┤
+│                    STATE MANAGEMENT LAYER                        │
+├──────────────────────────────────────────────────────────────────┤
+│  Redux Store (Auth) + Custom Hooks (useCatalogData)              │
+│                              ↓                                    │
+├──────────────────────────────────────────────────────────────────┤
+│                     SERVICES & API LAYER                         │
+├──────────────────────────────────────────────────────────────────┤
+│  catalogApi (fetch products) | authService (manage auth)         │
+│                              ↓                                    │
+├──────────────────────────────────────────────────────────────────┤
+│               STORAGE & PERSISTENCE LAYER (Backend Simulation)   │
+├──────────────────────────────────────────────────────────────────┤
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐           │
+│  │ cartStorage  │  │ authStorage  │  │ userStorage  │           │
+│  │              │  │              │  │              │           │
+│  │ - CRUD Items │  │ - Login/Auth │  │ - User Data  │           │
+│  │ - Quantity   │  │ - Logout     │  │ - Profile    │           │
+│  │ - Notes      │  │ - State      │  │ - Prefs      │           │
+│  └──────────────┘  └──────────────┘  └──────────────┘           │
+│         ↓                  ↓                  ↓                   │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │         localStorage (Browser Storage)                   │   │
+│  │  - ecom.cart.{userId}     (Cart items per user)          │   │
+│  │  - ecom.auth.status       (Auth state)                   │   │
+│  │  - ecom.user.{userId}     (User profile)                 │   │
+│  │  - ecom.orders.{userId}   (Order history)                │   │
+│  └──────────────────────────────────────────────────────────┘   │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+### Event-Driven Communication
+
+```
+Cart Storage Updates
+        ↓
+   emitCartUpdate()
+        ↓
+CustomEvent: 'cart:updated'
+        ↓
+Window Event Listeners (Cart.jsx, PopupCart.jsx)
+        ↓
+Component Re-render
+```
+
+---
 
 ---
 
 ## ✨ Fitur Utama
 
 ### 🛍️ Shopping Experience
-- **Katalog Produk Dinamis** - Browse produk dengan data JSON
-- **Pencarian Real-time** - Cari produk dengan instant feedback
-- **Filter & Sort** - Organisasi produk yang mudah
-- **Detail Produk** - Informasi lengkap setiap produk
+- **Katalog Produk Dinamis** - Browse produk dengan data JSON dari `/public/product.json`
+- **Pencarian Real-time** - Cari produk dengan instant feedback dan filter
+- **Detail Produk** - Informasi lengkap: harga, diskon, deskripsi
+- **Responsive Gallery** - Foto produk dengan UI interaktif
 
-### 🛒 Cart Management
-- **Add to Cart** - Tambah produk ke keranjang dengan mudah
-- **Quantity Control** - Atur jumlah pembelian (1-100)
-- **Cart Notes** - Tambahkan catatan khusus untuk setiap item
-- **Persistent Cart** - Data keranjang tersimpan di localStorage
-- **Multi-User Support** - Keranjang terpisah per user
+### 🛒 Advanced Cart Management (Sistem Keranjang Belanja)
+- **Add to Cart** - Tambah produk dengan quantity validation (1-100)
+- **Quantity Control** - Atur/tambah/kurang jumlah dengan validasi
+- **Cart Notes per Item** - Tambahkan catatan khusus untuk setiap produk (max 500 chars)
+- **Persistent Cart** - Data tersimpan di localStorage (tidak hilang saat refresh)
+- **Multi-User Support** - Setiap user memiliki cart terpisah
+- **Real-time Sync** - Sinkronisasi antar tabs/windows secara real-time
+- **Deduplication** - Mencegah duplikasi item di cart
+- **Legacy Migration** - Support untuk data cart lama (backward compatibility)
 
-### 💳 Checkout System
-- **Order Summary** - Ringkasan pesanan yang jelas
-- **User Authentication** - Simulasi login/logout
-- **Order History** - Riwayat pembelian tersimpan
-- **Responsive Forms** - Form checkout yang user-friendly
+### 💳 Checkout & Order Management
+- **Order Summary** - Ringkasan pesanan dengan kalkulasi harga otomatis
+- **User Authentication** - Simulasi login/logout dengan data persisten
+- **Shipping Methods** - Pilih metode pengiriman (Standard, Express, Overnight)
+- **Payment Options** - Bank Transfer, E-Wallet (diskon 2%), Credit Card (fee 1.5%)
+- **Form Validation** - Real-time validation untuk semua field checkout
+- **Order History** - Riwayat pembelian tersimpan per user
+- **Order Persistence** - Semua order disimpan di localStorage dengan timestamp
 
 ### 🎨 UI/UX Features
-- **Responsive Design** - Mobile-first approach
-- **Dark Mode Ready** - Support untuk tema gelap
-- **Loading States** - Skeleton loading & spinners
-- **Error Handling** - 404 page & error boundaries
-- **Animations** - Smooth transitions dengan Framer Motion
-- **Icons Library** - React Icons terintegrasi
+- **Responsive Design** - Mobile-first approach, works on semua screen size
+- **Bootstrap Components** - Modal, Card, Form, Button, Badge, etc.
+- **Loading States** - Loading indicators untuk better UX
+- **Error Handling** - 404 page dan error boundaries
+- **Icons Library** - React Icons (50+ icons) untuk UI yang lebih visual
+- **Toast Notifications** - Feedback untuk user actions
+
+---
+
+## 🛒 Sistem Cart (Keranjang Belanja)
+
+Ini adalah **core feature** dari DinoMarket yang mendemonstrasikan backend simulation menggunakan localStorage. Mari kita pelajari bagaimana sistem ini bekerja:
+
+### Cart Data Structure
+
+```javascript
+// Struktur data di localStorage
+{
+  "ecom.cart.user123": {
+    "items": [
+      {
+        "productId": 1,           // ID produk (unique identifier)
+        "shopId": null,           // ID toko (optional)
+        "quantity": 5,            // Jumlah (1-100)
+        "note": "Warna merah"      // Catatan custom (optional)
+      },
+      {
+        "productId": 42,
+        "shopId": 1,
+        "quantity": 2,
+        "note": "Pengiriman cepat"
+      }
+    ]
+  }
+}
+```
+
+### Cart API Functions
+
+#### 1. **Add to Cart** - Menambah item ke keranjang
+```javascript
+upsertCartItem({
+  productId: 1,      // Required: Product ID
+  quantity: 3,       // Optional: Qty (default 1, auto-clamp 1-100)
+  note: "Catatan"    // Optional: Item notes
+})
+// Hasil: Item ditambah, atau jika sudah ada, quantity dijumlah
+```
+
+#### 2. **Update Quantity** - Ubah jumlah item tertentu
+```javascript
+updateCartItemQuantity(productId, newQuantity)
+// Contoh: updateCartItemQuantity(1, 5) → Set qty item ID 1 jadi 5
+// Auto-clamping: jika < 1 menjadi 1, jika > 100 menjadi 100
+```
+
+#### 3. **Adjust Quantity** - Tambah/kurang quantity dengan delta
+```javascript
+adjustCartItemQuantity(productId, delta)
+// Contoh: adjustCartItemQuantity(1, +2) → Tambah 2
+//         adjustCartItemQuantity(1, -1) → Kurang 1
+```
+
+#### 4. **Get Cart Items** - Ambil semua items di cart
+```javascript
+const items = getCartItems()
+// Result: Array of cart items
+```
+
+#### 5. **Get Single Item** - Ambil detail 1 item
+```javascript
+const item = getCartItem(productId)
+// Result: Item object atau null
+```
+
+#### 6. **Add/Update Notes** - Update catatan untuk item
+```javascript
+setCartItemNote(productId, "Catatan baru")
+// Update note untuk item tertentu
+```
+
+#### 7. **Remove Item** - Hapus item dari cart
+```javascript
+removeCartItem(productId)
+// Menghapus item dengan ID tertentu
+```
+
+#### 8. **Clear Cart** - Kosongkan seluruh cart
+```javascript
+clearCart()
+// Hapus semua items (reset ke empty state)
+```
+
+#### 9. **Get Cart Totals** - Hitung total harga
+```javascript
+const totals = getCartTotals(productsCatalog)
+// Result: { count: 5, subtotal: 150000, total: 135000 }
+// count: total items, subtotal: sebelum diskon, total: setelah diskon
+```
+
+### Cart Features - Validation & Safety
+
+#### Quantity Validation
+- **Min**: 1 item (tidak boleh 0 atau negatif)
+- **Max**: 100 items per produk
+- **Type**: Auto-converted ke number, NaN → default 1
+- **Clamping**: Otomatis menyesuaikan jika out of range
+
+```javascript
+sanitiseQuantity(quantity)
+// -5 → 1 (invalid negative)
+// 0 → 1 (zero not allowed)
+// 250 → 100 (exceeds max)
+// 3.7 → 3 (floored to integer)
+// "abc" → 1 (NaN default)
+```
+
+#### Item Deduplication
+- Setiap cart hanya boleh 1 entry per `productId`
+- Jika add item yang sudah ada → quantity dijumlah, bukan duplikat
+- Automatic cleanup saat load dari storage
+
+#### Multi-User Support
+- Cart key: `ecom.cart.{userId}` atau `ecom.cart.guest` untuk anonymous
+- Setiap user memiliki cart terpisah
+- Switching user otomatis switch cart
+
+```javascript
+// Cart key generation
+getCartStorageKey() // → "ecom.cart.user123" atau "ecom.cart.guest"
+```
+
+### Real-Time Synchronization
+
+Cart system menggunakan **custom events** untuk notifikasi real-time:
+
+```javascript
+// Saat ada perubahan cart, emit custom event
+window.dispatchEvent(
+  new CustomEvent('cart:updated', {
+    detail: {
+      key: 'ecom.cart.user123',
+      items: [...items]
+    }
+  })
+)
+
+// Component bisa listen ke event ini
+window.addEventListener('cart:updated', handleCartUpdate)
+```
+
+**Benefit**: 
+- ✅ Antar tab/window sinkronisasi otomatis
+- ✅ Multiple components bisa react terhadap perubahan cart
+- ✅ Tidak perlu prop drilling atau context API
+- ✅ Event-driven architecture yang scalable
+
+### Cart Operations Flow
+
+```
+User Action
+    ↓
+Component calls cartStorage function
+    ↓
+getCartItems() → Read current state from localStorage
+    ↓
+Validate & Normalize data
+    ↓
+Apply changes (add/update/remove)
+    ↓
+Deduplication (ensure no duplicates)
+    ↓
+persistCartState() → Write to localStorage
+    ↓
+emitCartUpdate() → Dispatch custom event
+    ↓
+Component listeners react & re-render
+```
+
+### Legacy Migration (Data Migration Strategy)
+
+System mendukung backward compatibility untuk data cart lama:
+
+```javascript
+migrateLegacyCart()
+// Cek stored_products (old format)
+// Cek ecom.cart (old structured format)
+// Transformasi ke format baru
+// Delete old keys setelah migrate
+// Ini penting untuk smooth upgrade dari versi lama
+```
+
+### Usage Examples
+
+#### Contoh 1: Add Product to Cart
+```javascript
+// File: Components/ProductCard.jsx
+import { upsertCartItem } from '../storage/cartStorage'
+
+const handleAddToCart = () => {
+  upsertCartItem({
+    productId: product.id,
+    quantity: selectedQty,
+    note: userNote
+  })
+  // Cart automatically updated & persisted
+}
+```
+
+#### Contoh 2: Listening to Cart Changes
+```javascript
+// File: Pages/Cart.jsx
+import { CART_UPDATED_EVENT, getCartItems } from '../storage/cartStorage'
+
+useEffect(() => {
+  const handleCartUpdate = () => {
+    setItems(getCartItems()) // Update component state
+  }
+  
+  window.addEventListener(CART_UPDATED_EVENT, handleCartUpdate)
+  window.addEventListener('storage', handleCartUpdate) // Cross-tab sync
+  
+  return () => {
+    window.removeEventListener(CART_UPDATED_EVENT, handleCartUpdate)
+    window.removeEventListener('storage', handleCartUpdate)
+  }
+}, [])
+```
+
+#### Contoh 3: Calculate Checkout Total
+```javascript
+// File: Pages/Checkout.jsx
+import { getCartTotals } from '../storage/cartStorage'
+
+const totals = getCartTotals(productsCatalog)
+// totals.count → 5 items
+// totals.subtotal → Rp 500.000
+// totals.total → Rp 450.000 (after discount)
+```
 
 ---
 
 ## 🚀 Teknologi
 
-### Core Technologies
+### Frontend Core
+| Library | Version | Purpose |
+|---------|---------|---------|
+| **React** | 18.3.1 | UI Library & Component Framework |
+| **Vite** | Latest | Modern build tool dengan HMR super cepat |
+| **React Router** | 6.24.1 | Client-side routing & navigation |
+| **Redux Toolkit** | 2.2.6 | State management (auth state) |
+| **Bootstrap** | 5.3.3 | UI Component framework & styling |
+| **React Bootstrap** | 2.10.4 | Bootstrap components sebagai React components |
 
-| Teknologi | Versi | Kegunaan |
-|-----------|-------|----------|
-| **React** | 18.3.1 | UI Library |
-| **Vite** | Latest | Build Tool & Dev Server |
-| **Redux Toolkit** | 2.2.6 | State Management |
-| **React Router** | 6.24.1 | Client-side Routing |
-| **Bootstrap** | 5.3.3 | CSS Framework |
-| **TailwindCSS** | Ready | Utility-first CSS |
-| **SASS** | 1.77.6 | CSS Preprocessor |
-| **Framer Motion** | 11.2.13 | Animation Library |
+### Development & Testing
+| Tool | Version | Purpose |
+|------|---------|---------|
+| **Vitest** | 3.2.4 | Unit testing framework (super cepat) |
+| **Testing Library** | 16.3.0 | React component testing utilities |
+| **Storybook** | 8.6.14 | Component development & documentation |
+| **ESLint** | 8.57.0 | Code linting & quality |
+| **SASS** | 1.77.6 | CSS preprocessing |
 
-### Development Tools
+### Utilities
+| Package | Purpose |
+|---------|---------|
+| **React Icons** | Icon library (50+ icons) |
+| **React Helmet Async** | Document head management |
+| **Framer Motion** | Animation library (optional, installed) |
+| **gh-pages** | GitHub Pages deployment automation |
 
-- **Vitest** - Unit Testing Framework
-- **Testing Library** - React Component Testing
-- **Storybook** - Component Development & Documentation
-- **ESLint** - Code Linting
-- **Prettier** - Code Formatting
-- **gh-pages** - Static Site Deployment
+---
 
-### Key Dependencies
+## 🏗️ Arsitektur Sistem
 
-```json
-{
-  "react": "^18.3.1",
-  "react-redux": "^9.1.2",
-  "@reduxjs/toolkit": "^2.2.6",
-  "react-router-dom": "^6.24.1",
-  "bootstrap": "^5.3.3",
-  "framer-motion": "^11.2.13",
-  "react-icons": "^5.2.1"
-}
+### Architectural Patterns
+
+#### 1. **Clean Architecture / Clean Code**
+```
+Presentation Layer (Pages, Components)
+           ↓
+Business Logic Layer (Hooks, Services)
+           ↓
+Data Access Layer (Storage, API)
+           ↓
+Infrastructure Layer (localStorage, JSON files)
+```
+
+#### 2. **Container/Presentational Pattern**
+```javascript
+// Container Component (Smart)
+// File: Pages/Cart.jsx
+- Handles state management
+- Calls API/storage functions
+- Passes data to presentational components
+
+// Presentational Component (Dumb)
+// File: Layout/ProductsInCart.jsx
+- Receives props
+- Renders UI
+- Calls callbacks (onDelete, onQuantityChange)
+```
+
+#### 3. **Service Layer Pattern**
+```
+Components
+    ↓
+Services (catalogApi.js, API abstraction)
+    ↓
+External Data (JSON, API calls)
+```
+
+#### 4. **Storage Layer (Backend Simulation)**
+```
+Components/Pages
+    ↓
+Storage Functions (cartStorage, userStorage, authStorage)
+    ↓
+localStorage (Data Persistence)
+```
+
+#### 5. **Event-Driven Architecture**
+```
+Cart Update
+    ↓
+emitCartUpdate() → CustomEvent
+    ↓
+Global Event Listeners (Window)
+    ↓
+Component Re-renders
+```
+
+### Technology Stack Integration
+
+```javascript
+// Redux for Auth State
+store/index.js
+├─ Auth slice (user login state)
+├─ Redux middleware
+└─ Store configuration
+
+// Custom Hooks for Business Logic
+hooks/useCatalogData.js
+├─ Data fetching
+├─ Loading states
+└─ Error handling
+
+// Storage Layer for Persistence
+storage/
+├─ localStorage.js (core layer)
+├─ cartStorage.js (cart operations)
+├─ authStorage.js (auth persistence)
+└─ userStorage.js (user data)
+
+// Services for API Abstraction
+services/catalogApi.js
+├─ Fetch products
+├─ Handle loading states
+└─ Centralized API logic
+
+// React Router for Navigation
+Components/
+├─ Navigation.jsx (route links)
+└─ Pages route definitions in App.jsx
 ```
 
 ---
@@ -127,380 +578,571 @@
 ```
 DinoMarket/
 │
-├── 📂 public/                    # Static assets
-│   ├── product.json              # Data produk utama
-│   ├── note.xsd                  # XML Schema untuk catatan
-│   └── tes.html                  # Testing HTML
+├── 📂 public/                          # Static assets & data
+│   ├── product.json                    # Main product catalog (data source)
+│   ├── CNAME                           # GitHub Pages CNAME config
+│   ├── note.xsd                        # XML Schema (notes validation)
+│   └── tes.html                        # Testing HTML file
 │
-├── 📂 scripts/                   # Python scripts
-│   ├── build_products.py         # Build data produk
-│   └── generate_products.py      # Generate dummy products
+├── 📂 scripts/                         # Utility scripts
+│   ├── build_products.py               # Build products data from source
+│   └── generate_products.py            # Generate dummy/test products
 │
 ├── 📂 src/
-│   ├── 📂 Components/            # Reusable UI Components
-│   │   ├── AuthButton.jsx        # Tombol autentikasi
-│   │   ├── Navigation.jsx        # Navbar komponen
-│   │   ├── Footer.jsx            # Footer komponen
-│   │   ├── ProductCard.jsx       # Card produk
-│   │   ├── QuantityButton.jsx    # Kontrol quantity
-│   │   ├── Search.jsx            # Search bar
-│   │   ├── 📂 Popup/
-│   │   │   ├── PopupCart.jsx     # Cart popup
-│   │   │   └── PopupCart.scss    # Cart styles
-│   │   └── 📂 __tests__/         # Component tests
-│   │       └── ProductCard.test.jsx
 │   │
-│   ├── 📂 Pages/                 # Page Components
-│   │   ├── Home.jsx              # Landing page
-│   │   ├── Shop.jsx              # Product detail page
-│   │   ├── Cart.jsx              # Shopping cart page
-│   │   ├── Checkout.jsx          # Checkout page
-│   │   ├── SearchResults.jsx     # Search results page
-│   │   ├── 404.jsx               # Not found page
+│   ├── 📂 Pages/                       # Page-level components (Full pages)
+│   │   ├── Home.jsx                    # Landing/homepage
+│   │   ├── Shop.jsx                    # Product detail page
+│   │   ├── Cart.jsx                    # Shopping cart page
+│   │   ├── Checkout.jsx                # Checkout & order page
+│   │   ├── SearchResults.jsx           # Search results page
+│   │   ├── 404.jsx                     # Not found page
 │   │   └── 📂 __tests__/
-│   │       └── Checkout.test.jsx
+│   │       └── Checkout.test.jsx       # Checkout page tests
 │   │
-│   ├── 📂 Layout/                # Layout Components
-│   │   ├── ProductsInCart.jsx    # Cart items layout
-│   │   └── ProductsNotInCart.jsx # Empty cart layout
+│   ├── 📂 Components/                  # Reusable UI components
+│   │   ├── AuthButton.jsx              # Auth button (login/logout)
+│   │   ├── Navigation.jsx              # Navbar with routing
+│   │   ├── Footer.jsx                  # Footer component
+│   │   ├── ProductCard.jsx             # Single product card
+│   │   ├── ProductCard.stories.jsx     # Storybook story for ProductCard
+│   │   ├── QuantityButton.jsx          # Quantity selector component
+│   │   ├── QuantityButton.stories.jsx  # Storybook story
+│   │   ├── Search.jsx                  # Search bar component
+│   │   ├── 📂 Popup/
+│   │   │   ├── PopupCart.jsx           # Cart popup modal
+│   │   │   └── PopupCart.scss          # Popup styles
+│   │   └── 📂 __tests__/
+│   │       └── ProductCard.test.jsx    # ProductCard unit tests
 │   │
-│   ├── 📂 storage/               # LocalStorage Layer (Backend Simulation)
-│   │   ├── localStorage.js       # Core storage utilities
-│   │   ├── cartStorage.js        # Cart data management
-│   │   ├── authStorage.js        # Auth state management
-│   │   └── userStorage.js        # User data management
+│   ├── 📂 Layout/                      # Layout components
+│   │   ├── ProductsInCart.jsx          # Layout for cart with items
+│   │   └── ProductsNotInCart.jsx       # Layout for empty cart
 │   │
-│   ├── 📂 store/                 # Redux Store
-│   │   └── index.js              # Store configuration
+│   ├── 📂 storage/                     # Storage layer (Backend Simulation)
+│   │   ├── localStorage.js             # Core storage utilities
+│   │   │   ├─ writeStorage(key, value)
+│   │   │   ├─ readStorage(key, default)
+│   │   │   └─ removeStorage(key)
+│   │   ├── cartStorage.js              # Cart CRUD operations
+│   │   │   ├─ addToCart() / upsertCartItem()
+│   │   │   ├─ getCartItems()
+│   │   │   ├─ updateCartItemQuantity()
+│   │   │   ├─ removeCartItem()
+│   │   │   ├─ getCartTotals()
+│   │   │   └─ Custom events for sync
+│   │   ├── authStorage.js              # Auth state management
+│   │   │   ├─ login() / logout()
+│   │   │   ├─ isAuthenticated()
+│   │   │   └─ loadAuthState()
+│   │   └── userStorage.js              # User data management
+│   │       ├─ getActiveUserId()
+│   │       ├─ setActiveUser()
+│   │       └─ User preferences
 │   │
-│   ├── 📂 services/              # API Services
-│   │   └── catalogApi.js         # Catalog data fetching
+│   ├── 📂 store/                       # Redux store configuration
+│   │   └── index.js
+│   │       ├─ Auth slice (Redux Toolkit)
+│   │       ├─ Store configuration
+│   │       ├─ Actions (setUser, clearUser)
+│   │       └─ CatalogApi middleware
 │   │
-│   ├── 📂 hooks/                 # Custom React Hooks
-│   │   └── useCatalogData.js     # Hook untuk data katalog
+│   ├── 📂 services/                    # API & service layer
+│   │   └── catalogApi.js               # RTK Query for products fetching
+│   │       ├─ getCatalog (query)
+│   │       ├─ Cache management
+│   │       └─ Loading/error states
 │   │
-│   ├── 📂 utils/                 # Utility Functions
-│   │   └── format.js             # Formatting helpers
+│   ├── 📂 hooks/                       # Custom React hooks
+│   │   └── useCatalogData.js           # Hook untuk data katalog
+│   │       ├─ Fetches products
+│   │       ├─ Handles loading states
+│   │       └─ Error handling
 │   │
-│   ├── 📂 data/                  # Local Data
-│   │   └── products.json         # Product data
+│   ├── 📂 utils/                       # Utility functions
+│   │   └── format.js                   # Formatting helpers
+│   │       ├─ formatCurrency()
+│   │       ├─ formatDate()
+│   │       └─ Other formatters
 │   │
-│   ├── 📂 assets/                # Static Assets
-│   │   ├── 📂 Image/             # Images
-│   │   └── 📂 Style/             # Styles
-│   │       ├── _variable.scss    # SASS variables
-│   │       ├── index.css         # Global styles
-│   │       ├── 📂 Components/    # Component styles
-│   │       └── 📂 Pages/         # Page styles
+│   ├── 📂 data/                        # Static data
+│   │   └── products.json               # Product data fallback
 │   │
-│   ├── App.jsx                   # Root component
-│   └── main.jsx                  # Entry point
+│   ├── 📂 assets/                      # Static assets
+│   │   ├── 📂 Image/                   # Product images
+│   │   └── 📂 Style/                   # Global styles
+│   │       ├── _variable.scss          # SASS variables
+│   │       ├── index.css               # Global CSS
+│   │       ├── 📂 Components/          # Component-scoped styles
+│   │       └── 📂 Pages/               # Page-scoped styles
+│   │
+│   ├── App.jsx                         # Root component
+│   │   ├─ Redux provider
+│   │   ├─ Router setup
+│   │   └─ Route definitions
+│   │
+│   └── main.jsx                        # Entry point
+│       ├─ React render
+│       └─ Provider wrapping
 │
-├── 📄 index.html                 # HTML template
-├── 📄 package.json               # Dependencies
-├── 📄 vite.config.js             # Vite configuration
-├── 📄 vitest.setup.js            # Vitest setup
-└── 📄 README.md                  # Dokumentasi
+├── 📄 index.html                       # HTML template
+├── 📄 package.json                     # Dependencies & scripts
+├── 📄 vite.config.js                   # Vite configuration
+├── 📄 vitest.setup.js                  # Vitest test setup
+└── 📄 README.md                        # Documentation (this file)
 ```
+
+### Folder Structure Rationale
+
+| Folder | Purpose | Pattern |
+|--------|---------|---------|
+| `Pages/` | Full page components | Route-level components |
+| `Components/` | Reusable UI components | Single responsibility |
+| `Layout/` | Layout templates | Multiple component composition |
+| `storage/` | Data persistence | Backend simulation layer |
+| `store/` | Redux configuration | Global state management |
+| `services/` | API abstraction | Data fetching layer |
+| `hooks/` | Custom React hooks | Reusable stateful logic |
+| `utils/` | Helper functions | Pure functions |
+| `assets/` | Static files | Images, styles, fonts |
+| `data/` | Static data | JSON data fallback |
 
 ---
 
-## 🔧 Instalasi
+## 🔧 Instalasi & Setup
 
 ### Prerequisites
 
-Pastikan Anda telah menginstall:
-- **Node.js** (v16 atau lebih tinggi)
-- **npm** atau **yarn** atau **pnpm**
+Pastikan Anda memiliki:
+- **Node.js** v16+ (download dari https://nodejs.org)
+- **npm** / **yarn** / **pnpm** (biasanya bundled dengan Node.js)
+- **Git** (untuk clone repository)
+- **Code Editor** (VS Code recommended)
 
-### Langkah Instalasi
+Verify installation:
+```bash
+node --version    # v18.x.x atau lebih tinggi
+npm --version     # 9.x.x atau lebih tinggi
+git --version     # 2.x.x atau lebih tinggi
+```
 
-1. **Clone Repository**
-   ```bash
-   git clone https://github.com/Vito28/UAS.git
-   cd DinoMarket
-   ```
+### Step-by-Step Installation
 
-2. **Install Dependencies**
-   ```bash
-   npm install
-   # atau
-   yarn install
-   # atau
-   pnpm install
-   ```
+#### 1. Clone Repository
+```bash
+git clone https://github.com/Vito28/UAS.git
+cd DinoMarket
+```
 
-3. **Generate Product Data (Opsional)**
-   ```bash
-   python scripts/generate_products.py
-   python scripts/build_products.py
-   ```
+#### 2. Install Dependencies
+```bash
+npm install
+# atau dengan yarn: yarn install
+# atau dengan pnpm: pnpm install
+```
+*Tunggu beberapa saat hingga semua dependencies terinstall*
 
-4. **Jalankan Development Server**
-   ```bash
-   npm run dev
-   ```
+#### 3. (Optional) Generate Product Data
+Jika ingin membuat dummy products:
+```bash
+python scripts/generate_products.py    # Generate products
+python scripts/build_products.py       # Build data
+```
 
-5. **Buka Browser**
-   ```
-   http://localhost:5173
-   ```
+#### 4. Start Development Server
+```bash
+npm run dev
+```
+
+Output akan terlihat seperti:
+```
+  VITE v5.3.1  ready in 200 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Press h + enter to show help
+```
+
+#### 5. Open in Browser
+Navigate to: **http://localhost:5173**
+
+🎉 **Selesai!** Aplikasi sudah siap digunakan
 
 ---
 
-## 💻 Penggunaan
+## 💻 Penggunaan (Development)
 
-### Development
+### Available Scripts
 
 ```bash
-# Jalankan development server
+# Development server dengan HMR
 npm run dev
 
 # Build untuk production
 npm run build
 
-# Preview production build
+# Preview production build secara lokal
 npm run preview
 
-# Linting
-npm run lint
-```
-
-### Testing
-
-```bash
-# Run all tests
+# Run unit tests
 npm run test
 
-# Run tests in watch mode
+# Run tests dalam watch mode
 npm run test:watch
-```
 
-### Storybook
+# Run linting
+npm run lint
 
-```bash
-# Jalankan Storybook
+# Storybook untuk dokumentasi komponen
 npm run storybook
 
-# Build Storybook
+# Build Storybook untuk deployment
 npm run build-storybook
-```
 
-### Deployment
-
-```bash
 # Deploy ke GitHub Pages
 npm run deploy
 ```
 
----
+### Typical Development Workflow
 
-## 🏗️ Arsitektur
+1. **Start dev server**
+   ```bash
+   npm run dev
+   ```
+   - HMR (Hot Module Replacement) otomatis reload
+   - Sangat cepat berkat Vite
 
-### LocalStorage Backend Simulation
+2. **Make changes** - Edit file di `src/`
+   - Auto-reload di browser
+   - Error ditampilkan di overlay
 
-DinoMarket menggunakan arsitektur unik dengan **simulasi backend menggunakan localStorage**:
+3. **Run tests** (in another terminal)
+   ```bash
+   npm run test:watch
+   ```
+   - Run tests saat ada file changes
 
-```javascript
-// storage/localStorage.js - Core Layer
-export const writeStorage = (key, value) => { ... }
-export const readStorage = (key) => { ... }
-export const removeStorage = (key) => { ... }
+4. **Check linting**
+   ```bash
+   npm run lint
+   ```
+   - Sebelum commit/push
 
-// storage/cartStorage.js - Business Logic Layer
-export const addToCart = (item) => { ... }
-export const removeFromCart = (productId) => { ... }
-export const updateCartItemQuantity = (productId, quantity) => { ... }
-export const getCartItems = () => { ... }
-
-// storage/userStorage.js - User Management
-export const getActiveUserId = () => { ... }
-export const setActiveUser = (userId) => { ... }
-
-// storage/authStorage.js - Authentication
-export const isAuthenticated = () => { ... }
-export const login = (credentials) => { ... }
-export const logout = () => { ... }
-```
-
-### State Management Flow
-
-```
-User Action → Component → Redux Action → Reducer → LocalStorage
-                ↑                                        ↓
-                └────────────── State Update ────────────┘
-```
-
-### Data Persistence
-
-- **Cart Data**: `ecom.cart.{userId}`
-- **User Data**: `ecom.user.{userId}`
-- **Auth State**: `ecom.auth.status`
-- **Order History**: `ecom.orders.{userId}`
-
-### Key Design Patterns
-
-1. **Container/Presentational Pattern** - Pemisahan logic dan UI
-2. **Custom Hooks** - Reusable stateful logic
-3. **Service Layer** - API abstraction
-4. **Storage Layer** - Data persistence abstraction
-5. **Lazy Loading** - Code splitting untuk performa
+5. **Build & deploy**
+   ```bash
+   npm run build      # Create dist/
+   npm run deploy     # Push ke GitHub Pages
+   ```
 
 ---
 
 ## 🧪 Testing
 
-### Unit Testing
-
-Proyek ini menggunakan **Vitest** dan **Testing Library**:
+### Unit Testing dengan Vitest
 
 ```bash
-# Run tests
+# Run all tests once
 npm run test
 
-# Watch mode
+# Run tests in watch mode
 npm run test:watch
 
-# Coverage
+# Run specific test file
+npm run test -- ProductCard.test.jsx
+
+# Run with coverage
 npm run test -- --coverage
 ```
 
-### Test Structure
+### Test Examples
 
+#### Component Test - ProductCard.test.jsx
 ```javascript
-// Example: Components/__tests__/ProductCard.test.jsx
+import { render, screen } from '@testing-library/react'
+import ProductCard from '../ProductCard'
+
 describe('ProductCard', () => {
-  it('should render product information', () => {
-    // Test implementation
-  });
+  it('should render product name', () => {
+    const product = { id: 1, name: 'Test', price: 1000 }
+    render(<ProductCard product={product} />)
+    expect(screen.getByText('Test')).toBeInTheDocument()
+  })
   
-  it('should handle add to cart action', () => {
+  it('should handle add to cart click', () => {
     // Test implementation
-  });
-});
+  })
+})
 ```
 
-### Storybook Testing
+### Component Documentation dengan Storybook
 
 ```bash
-# Run Storybook
+# Launch Storybook
 npm run storybook
 
-# Build Storybook
+# Build static Storybook
 npm run build-storybook
 ```
 
-Stories tersedia untuk:
-- ✅ ProductCard
-- ✅ QuantityButton
-- ✅ Dan komponen lainnya
+Access di: **http://localhost:6006**
+
+Tersedia untuk:
+- ✅ ProductCard.stories.jsx
+- ✅ QuantityButton.stories.jsx
+- ✅ Komponen lainnya
 
 ---
 
 ## 🚀 Deployment
 
-### GitHub Pages
+### GitHub Pages Deployment
 
-Proyek ini dapat di-deploy ke GitHub Pages:
+Aplikasi ini sudah dikonfigurasi untuk deployment otomatis ke GitHub Pages:
 
-```bash
-npm run build
-npm run deploy
+#### Step 1: Update `package.json`
+```json
+{
+  "homepage": "https://[YOUR-GITHUB-USERNAME].github.io/DinoMarket"
+}
 ```
 
-### Environment Variables
-
-Tidak ada environment variables yang diperlukan karena menggunakan localStorage.
-
-### Production Build
-
+#### Step 2: Build & Deploy
 ```bash
-npm run build
+npm run build    # Create optimized dist/
+npm run deploy   # Push dist/ ke gh-pages branch
 ```
 
-Output akan berada di folder `dist/`.
+#### Step 3: Enable GitHub Pages
+1. Go to Repository Settings
+2. → Pages section
+3. Source: Deploy from branch
+4. Branch: `gh-pages` / `root`
+5. Save
+
+**URL**: `https://[YOUR-USERNAME].github.io/DinoMarket/`
+
+### Production Build Tips
+
+```bash
+# Build with analysis
+npm run build
+
+# Check build size
+npm run preview    # Preview production build locally
+```
+
+Build output:
+- ✅ Optimized bundle
+- ✅ Code splitting
+- ✅ CSS minification
+- ✅ Asset optimization
 
 ---
 
 ## 🎨 Customization
 
-### Mengubah Tema
+### Mengubah Tema & Style
 
-Edit variabel SASS di `src/assets/Style/_variable.scss`:
+Edit SASS variables di `src/assets/Style/_variable.scss`:
 
 ```scss
-// Colors
-$primary-color: #your-color;
-$secondary-color: #your-color;
+// Color Scheme
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
 
 // Typography
-$font-family: 'Your Font', sans-serif;
+$font-primary: 'Segoe UI', sans-serif;
+$font-size-base: 1rem;
 
 // Spacing
 $spacing-unit: 8px;
+$container-max-width: 1200px;
 ```
 
 ### Menambah Produk
 
-Edit atau generate data produk:
+#### Option 1: Manual Edit
+Edit file `public/product.json` atau `src/data/products.json`:
 
+```json
+{
+  "id": 999,
+  "name": "Produk Baru",
+  "price": 50000,
+  "discount_percentage": 10,
+  "description": "Deskripsi produk"
+}
+```
+
+#### Option 2: Generate dengan Python
 ```bash
-# Edit manual
-src/data/products.json
-
-# Generate dengan Python
 python scripts/generate_products.py
 python scripts/build_products.py
 ```
 
-### Custom Components
+### Membuat Component Baru
 
-Buat komponen baru di `src/Components/`:
-
+#### Structure:
 ```jsx
-// YourComponent.jsx
-import React from 'react';
-import PropTypes from 'prop-types';
+// src/Components/MyComponent.jsx
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const YourComponent = ({ prop1, prop2 }) => {
+const MyComponent = ({ title, onAction }) => {
   return (
-    <div>Your Component</div>
-  );
-};
+    <div className="my-component">
+      <h3>{title}</h3>
+      <button onClick={onAction}>Action</button>
+    </div>
+  )
+}
 
-YourComponent.propTypes = {
-  prop1: PropTypes.string.isRequired,
-  prop2: PropTypes.number,
-};
+MyComponent.propTypes = {
+  title: PropTypes.string.isRequired,
+  onAction: PropTypes.func,
+}
 
-export default YourComponent;
+MyComponent.defaultProps = {
+  onAction: () => {},
+}
+
+export default MyComponent
 ```
+
+#### Add Storybook Story:
+```jsx
+// src/Components/MyComponent.stories.jsx
+import MyComponent from './MyComponent'
+
+export default {
+  title: 'Components/MyComponent',
+  component: MyComponent,
+}
+
+export const Default = {
+  args: {
+    title: 'My Component',
+  },
+}
+```
+
+#### Add Tests:
+```jsx
+// src/Components/__tests__/MyComponent.test.jsx
+import { render, screen } from '@testing-library/react'
+import MyComponent from '../MyComponent'
+
+describe('MyComponent', () => {
+  it('should render title', () => {
+    render(<MyComponent title="Test" />)
+    expect(screen.getByText('Test')).toBeInTheDocument()
+  })
+})
+```
+
+---
+
+## 📚 Learn More
+
+### React Documentation
+- [React Official Docs](https://react.dev)
+- [React Hooks](https://react.dev/reference/react)
+- [React Router](https://reactrouter.com)
+
+### State Management
+- [Redux Toolkit](https://redux-toolkit.js.org)
+- [React Context API](https://react.dev/reference/react/useContext)
+
+### Frontend Tools
+- [Vite Guide](https://vitejs.dev/guide)
+- [Bootstrap Components](https://react-bootstrap.github.io/)
+- [Vitest](https://vitest.dev)
+- [Storybook](https://storybook.js.org)
+
+### Frontend Best Practices
+- Clean Architecture: [Clean Code, Uncle Bob](https://www.oreilly.com/library/view/clean-code-a/9780136083238/)
+- Design Patterns: [Refactoring Guru](https://refactoring.guru/design-patterns)
+- React Patterns: [patterns.dev](https://patterns.dev/react)
 
 ---
 
 ## 🤝 Kontribusi
 
-Kontribusi sangat diterima! Berikut cara berkontribusi:
+Kami menerima kontribusi! Cara berkontribusi:
 
-1. Fork repository
-2. Buat branch fitur (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
+### 1. Fork Repository
+```bash
+# Di GitHub, klik tombol Fork
+```
+
+### 2. Clone Forked Repository
+```bash
+git clone https://github.com/YOUR-USERNAME/DinoMarket.git
+cd DinoMarket
+```
+
+### 3. Create Feature Branch
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+### 4. Make Changes & Commit
+```bash
+git add .
+git commit -m 'Add: Amazing feature description'
+# Commit messages: 'Add:', 'Fix:', 'Refactor:', 'Docs:'
+```
+
+### 5. Push ke Branch
+```bash
+git push origin feature/AmazingFeature
+```
+
+### 6. Create Pull Request
+- Go ke repository
+- Klik "Compare & Pull Request"
+- Describe perubahan Anda
 
 ### Coding Standards
 
-- ✅ Gunakan ESLint configuration yang sudah ada
-- ✅ Tulis tests untuk fitur baru
-- ✅ Tambahkan PropTypes untuk komponen
-- ✅ Dokumentasikan dengan Storybook
-- ✅ Ikuti struktur folder yang ada
+```javascript
+// ✅ DO:
+- Use descriptive variable names
+- Write comments untuk complex logic
+- Add PropTypes untuk semua props
+- Write tests untuk new features
+- Keep functions small & focused
+
+// ❌ DON'T:
+- Don't use `var`, use `const` or `let`
+- Don't commit console.log statements
+- Don't hardcode magic numbers
+- Don't skip PropTypes
+- Don't ignore ESLint warnings
+```
+
+### Pre-commit Checklist
+
+Sebelum push:
+```bash
+# Run linting
+npm run lint
+
+# Run tests
+npm run test
+
+# Build successfully
+npm run build
+
+# No console errors
+```
 
 ---
 
 ## 📝 Lisensi
 
-Proyek ini dibuat untuk keperluan pembelajaran dan portfolio.
+Proyek ini dibuat untuk keperluan pendidikan dan portfolio. Silakan gunakan sebagai referensi pembelajaran.
 
 ---
 
@@ -509,35 +1151,44 @@ Proyek ini dibuat untuk keperluan pembelajaran dan portfolio.
 **Vito28**
 
 - GitHub: [@Vito28](https://github.com/Vito28)
-- Repository: [DinoMarket](https://github.com/Vito28/UAS)
+- Repository: [UAS/DinoMarket](https://github.com/Vito28/UAS)
+- Live Demo: [vito28.github.io/DinoMarket](https://vito28.github.io/DinoMarket/)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- React Team untuk library yang luar biasa
-- Vite untuk build tool yang super cepat
-- Redux Toolkit untuk state management yang mudah
-- Bootstrap & TailwindCSS untuk styling yang fleksibel
-- Komunitas open source untuk semua dependencies yang digunakan
+Terima kasih kepada:
+- **React Team** untuk library yang amazing
+- **Vite Team** untuk build tool yang super cepat
+- **Redux Team** untuk state management yang elegant
+- **Bootstrap Team** untuk UI components yang comprehensive
+- **Community Open Source** untuk semua dependencies & tools
 
 ---
 
-## 📞 Support
+## 📞 Support & Feedback
 
-Jika Anda menemukan bug atau memiliki saran:
+### Report Bugs
+[Open Issue](https://github.com/Vito28/UAS/issues/new?template=bug_report.md)
 
-1. [Buka Issue](https://github.com/Vito28/UAS/issues)
-2. [Diskusi](https://github.com/Vito28/UAS/discussions)
+### Request Features
+[Open Issue](https://github.com/Vito28/UAS/issues/new?template=feature_request.md)
+
+### Diskusi
+[GitHub Discussions](https://github.com/Vito28/UAS/discussions)
 
 ---
 
 <div align="center">
 
-**Dibuat dengan ❤️ menggunakan React & Vite**
+### Made with ❤️ using React & Vite
 
-⭐ Star proyek ini jika Anda merasa terbantu!
+**DinoMarket** - Capstone Project Semester 2  
+Learning Full-Stack Development Simulation in Frontend
 
-[⬆ Kembali ke atas](#-dinomarket)
+⭐ **Star this repository** if you find it helpful!
+
+[⬆ Back to top](#-dinomarket---e-commerce-platform-uas-semester-2)
 
 </div>
