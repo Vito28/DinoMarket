@@ -29,7 +29,8 @@ const sanitizeUser = (user) => {
     return null;
   }
 
-  const { passwordHash, ...safeUser } = user;
+  const safeUser = { ...user };
+  delete safeUser.passwordHash;
   return safeUser;
 };
 
