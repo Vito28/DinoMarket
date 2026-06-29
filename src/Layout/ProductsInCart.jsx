@@ -13,6 +13,7 @@ import {
 } from "react-bootstrap";
 import PropTypes from "prop-types";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { useSelector } from "react-redux";
 import QuantityButton from "../Components/QuantityButton";
 import {
   getCartItems,
@@ -33,9 +34,11 @@ const PROMO_OPTIONS = [
 const ProductsInCart = ({ onCartChange }) => {
   const { products, shops, isLoading, isError, refetch } = useCatalogData();
   const navigate = useNavigate();
+  const { currentUser } = useSelector((state) => state.auth);
   const [items, setItems] = useState(() => getCartItems());
   const [selected, setSelected] = useState(() => new Set(items.map((item) => item.productId)));
   const [noteState, setNoteState] = useState({ show: false, productId: null, text: "" });
+  const [showLoginRequired, setShowLoginRequired] = useState(false);
   const [selectedPromo, setSelectedPromo] = useState("");
 
   const refresh = useCallback(
@@ -262,8 +265,15 @@ const ProductsInCart = ({ onCartChange }) => {
     };
 
     localStorage.setItem("checkout_payload", JSON.stringify(checkoutPayload));
+    localStorage.setItem("checkout_intent", JSON.stringify({ from: "/cart", timestamp: new Date().toISOString() }));
+
+    if (!currentUser) {
+      setShowLoginRequired(true);
+      return;
+    }
+
     navigate("/checkout", { state: checkoutPayload });
-  }, [buildCheckoutPayload, checkoutSummary, navigate, selectedPromo]);
+  }, [buildCheckoutPayload, checkoutSummary, currentUser, navigate, selectedPromo]);
 
   const toggleSelectAll = () => {
     if (allSelected) {
@@ -569,6 +579,33 @@ const ProductsInCart = ({ onCartChange }) => {
           </Button>
           <Button variant="primary" onClick={saveNote}>
             Simpan Catatan
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal show={showLoginRequired} onHide={() => setShowLoginRequired(false)} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Checkout membutuhkan login</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Silakan masuk terlebih dahulu untuk melanjutkan checkout.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="outline-secondary" onClick={() => setShowLoginRequired(false)}>
+            Nanti Dulu
+          </Button>
+          <Button
+            variant="primary"
+            onClick={() =>
+              navigate("/login", {
+                state: {
+                  from: "/checkout",
+                  message: "Silakan masuk terlebih dahulu untuk melanjutkan checkout.",
+                },
+              })
+            }
+          >
+            Masuk Sekarang
           </Button>
         </Modal.Footer>
       </Modal>

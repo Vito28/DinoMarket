@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
+  Alert,
   Button,
   Card,
   Col,
@@ -9,9 +10,12 @@ import {
   ListGroup,
   Row,
 } from "react-bootstrap";
+import { useSelector } from "react-redux";
 import { FiCheckCircle } from "react-icons/fi";
 import { formatCurrency } from "../utils/format";
 import { clearCart } from "../storage/cartStorage";
+import { getCheckoutAutofill, upsertAddress } from "../storage/accountStorage";
+import { saveOrderForUser } from "../storage/orderStorage";
 
 const FORM_STORAGE_KEY = "checkout_form_state";
 
@@ -50,6 +54,7 @@ const PAYMENT_OPTIONS = [
 const Checkout = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { currentUser } = useSelector((state) => state.auth);
   const [showSuccess, setShowSuccess] = useState(false);
   const [errors, setErrors] = useState({});
   const [shippingMethod, setShippingMethod] = useState("standard");
@@ -71,7 +76,10 @@ const Checkout = () => {
       // ignore malformed cache
     }
 
-    return INITIAL_FORM_STATE;
+    return {
+      ...INITIAL_FORM_STATE,
+      ...getCheckoutAutofill(currentUser),
+    };
   });
 
   const checkoutData = useMemo(() => {
@@ -98,11 +106,41 @@ const Checkout = () => {
   }, [checkoutData, navigate]);
 
   useEffect(() => {
+    if (checkoutData && !currentUser) {
+      navigate("/login", {
+        replace: true,
+        state: {
+          from: "/checkout",
+          message: "Silakan masuk terlebih dahulu untuk melanjutkan checkout.",
+        },
+      });
+    }
+  }, [checkoutData, currentUser, navigate]);
+
+  useEffect(() => {
     if (typeof window === "undefined") {
       return;
     }
     localStorage.setItem(FORM_STORAGE_KEY, JSON.stringify(formState));
   }, [formState]);
+
+  useEffect(() => {
+    const hasTypedAddress = REQUIRED_FIELDS.some((field) => formState[field]?.trim());
+    if (!currentUser || hasTypedAddress) {
+      return;
+    }
+
+    const autofill = getCheckoutAutofill(currentUser);
+    const hasAutofill = REQUIRED_FIELDS.some((field) => autofill[field]?.trim());
+    if (!hasAutofill) {
+      return;
+    }
+
+    setFormState((prev) => ({
+      ...prev,
+      ...autofill,
+    }));
+  }, [currentUser, formState]);
 
   useEffect(() => {
     if (!checkoutData) {
@@ -284,12 +322,39 @@ const Checkout = () => {
       return;
     }
 
+    upsertAddress(currentUser, {
+      label: "Alamat Checkout",
+      recipientName: formState.fullName,
+      phone: formState.phone,
+      addressLine: formState.addressLine,
+      city: formState.city,
+      postalCode: formState.postalCode,
+      isPrimary: true,
+    });
+
+    saveOrderForUser(currentUser.id, {
+      groups: checkoutData.groups,
+      summary: {
+        ...checkoutData.summary,
+        finalTotal: summary.finalTotal,
+        shippingFee: summary.shippingFee,
+        paymentFee: summary.paymentFee,
+        paymentDiscount: summary.paymentDiscount,
+      },
+      shippingAddress: { ...formState },
+      shippingMethod: shippingSelection,
+      paymentMethod: paymentSelection,
+      promoCode: checkoutData.promoCode,
+      promoMessage: checkoutData.promoMessage,
+    });
+
     clearCart();
     localStorage.removeItem("checkout_payload");
     localStorage.removeItem(FORM_STORAGE_KEY);
+    localStorage.removeItem("checkout_intent");
     setShowSuccess(true);
     setTimeout(() => {
-      navigate("/", { replace: true });
+      navigate("/orders", { replace: true });
     }, 2500);
   };
 
@@ -312,6 +377,11 @@ const Checkout = () => {
             </Card.Body>
           </Card>
         </div>
+      )}
+      {!currentUser && (
+        <Alert variant="warning" className="mb-4">
+          Silakan masuk terlebih dahulu untuk melanjutkan checkout.
+        </Alert>
       )}
       <Row className="mb-4">
         <Col>
