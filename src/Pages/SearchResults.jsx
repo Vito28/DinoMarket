@@ -60,7 +60,7 @@ const SearchResults = () => {
               : "Menampilkan semua produk di katalog kami."}
           </p>
         </div>
-        <Button variant="outline-secondary" href="/DinoMarket/">
+        <Button variant="outline-secondary" href="/">
           Kembali ke Beranda
         </Button>
       </div>
