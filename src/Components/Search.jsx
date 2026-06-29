@@ -4,7 +4,7 @@ import { Button, Form, InputGroup } from "react-bootstrap";
 import { FiSearch } from "react-icons/fi";
 import PropTypes from "prop-types";
 
-const Search = ({ placeholder = "Cari produk teknologi..." }) => {
+const Search = ({ placeholder = "Cari produk di DinoMarket..." }) => {
   const navigate = useNavigate();
   const inputRef = useRef(null);
 
@@ -16,13 +16,13 @@ const Search = ({ placeholder = "Cari produk teknologi..." }) => {
     }
 
     const value = current.value.trim().toLowerCase();
-    navigate(value ? `search/${value}` : "search/notFound");
+    navigate(value ? `/search/${value}` : "/search/notFound");
   };
 
   return (
     <Form className="w-100" role="search" onSubmit={handleSubmit}>
-      <InputGroup>
-        <InputGroup.Text className="bg-white border-end-0">
+      <InputGroup className="search-box">
+        <InputGroup.Text className="bg-white border-end-0 search-icon">
           <FiSearch />
         </InputGroup.Text>
         <Form.Control
@@ -30,6 +30,7 @@ const Search = ({ placeholder = "Cari produk teknologi..." }) => {
           type="search"
           placeholder={placeholder}
           aria-label="Kolom pencarian produk"
+          className="border-start-0"
         />
         <Button type="submit" variant="primary">
           Cari
