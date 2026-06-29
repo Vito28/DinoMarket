@@ -12,6 +12,12 @@ const Cart = lazy(() => import("./Pages/Cart"));
 const Checkout = lazy(() => import("./Pages/Checkout"));
 const Shop = lazy(() => import("./Pages/Shop"));
 const NotFound = lazy(() => import("./Pages/404"));
+const Orders = lazy(() => import("./Pages/Orders"));
+const Settings = lazy(() => import("./Pages/Settings"));
+const Help = lazy(() => import("./Pages/Help"));
+const Terms = lazy(() => import("./Pages/Terms"));
+const Privacy = lazy(() => import("./Pages/Privacy"));
+const AuthPage = lazy(() => import("./Pages/AuthPage"));
 
 const PageLoader = () => (
   <div className="py-5 text-center" role="status" aria-live="polite">
@@ -36,6 +42,13 @@ const App = () => {
                 <Route path="/shop/:id" element={<Shop />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/checkout" element={<Checkout />} />
+                <Route path="/orders" element={<Orders />} />
+                <Route path="/settings" element={<Settings />} />
+                <Route path="/help" element={<Help />} />
+                <Route path="/terms" element={<Terms />} />
+                <Route path="/privacy" element={<Privacy />} />
+                <Route path="/login" element={<AuthPage mode="signin" />} />
+                <Route path="/register" element={<AuthPage mode="signup" />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
