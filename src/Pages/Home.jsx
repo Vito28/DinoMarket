@@ -1,4 +1,3 @@
-
 import { useMemo } from "react";
 import { Badge, Button, Card, Col, Container, Nav, Placeholder, Row, Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
