@@ -1,963 +1,903 @@
 [
   {
     "id": 1,
-    "price": 159.34,
-    "title": "Aurora 60% Mechanical Keyboard",
-    "description": "Aurora 60% Mechanical Keyboard dari ByteHub Electronics menghadirkan switch mekanikal hot-swappable. Dibuat dengan plate polycarbonate presisi sehingga membuat meja kerja terlihat lebih rapi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 1499.00,
+    "title": "ASUS ROG Strix G16 Gaming Laptop",
+    "description": "ASUS ROG Strix G16 menghadirkan performa gaming tingkat tinggi dengan prosesor generasi terbaru dan arsitektur GPU mutakhir. Didukung layar refresh rate tinggi dan sistem pendingin pintar untuk menangani beban kerja komputasi berat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1585079542156-2755d9c8a094?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
+      "id": 402,
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 10
+  },
+  {
+    "id": 2,
+    "price": 1099.50,
+    "title": "ASUS Zenbook 14 OLED Ultraportable",
+    "description": "ASUS Zenbook 14 OLED mengombinasikan desain super tipis dengan panel layar visual yang luar biasa jernih dan kaya warna. Pilihan tepat untuk mobilitas tinggi dengan daya tahan baterai yang andal sepanjang hari. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 402,
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 5
+  },
+  {
+    "id": 3,
+    "price": 899.00,
+    "title": "ASUS Vivobook Pro 15 Creator Laptop",
+    "description": "ASUS Vivobook Pro 15 dirancang khusus untuk memenuhi kebutuhan para kreator konten dan developer. Dilengkapi spesifikasi bertenaga untuk rendering cepat dan akurasi warna tinggi pada layarnya. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1496181130204-7552cc145423?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 402,
+      "name": "Nexus Tech Forge"
     },
     "discount_percentage": 12
   },
   {
-    "id": 2,
-    "price": 113.55,
-    "title": "Nimbus 60% Mechanical Keyboard",
-    "description": "Nimbus 60% Mechanical Keyboard dari ByteHub Electronics menghadirkan peredam suara bawaan untuk suara yang bersih. Dibuat dengan keycap PBT double-shot anti pudar sehingga meningkatkan kenyamanan mengetik sepanjang hari. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1585079542156-2755d9c8a094?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
-    },
-    "discount_percentage": 25
-  },
-  {
-    "id": 3,
-    "price": 98.56,
-    "title": "Nova 60% Mechanical Keyboard",
-    "description": "Nova 60% Mechanical Keyboard dari ByteHub Electronics menghadirkan pencahayaan RGB yang dapat dikustomisasi. Dibuat dengan housing aluminium anodized sehingga meningkatkan kenyamanan mengetik sepanjang hari. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1585079542156-2755d9c8a094?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
-    },
-    "discount_percentage": 7
-  },
-  {
     "id": 4,
-    "price": 113.05,
-    "title": "Pulse 60% Mechanical Keyboard",
-    "description": "Pulse 60% Mechanical Keyboard dari ByteHub Electronics menghadirkan peredam suara bawaan untuk suara yang bersih. Dibuat dengan housing aluminium anodized sehingga membuat meja kerja terlihat lebih rapi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 799.00,
+    "title": "ASUS TUF Gaming A15 Durable Laptop",
+    "description": "ASUS TUF Gaming A15 menawarkan durabilitas berstandar militer berpadu dengan ketangguhan performa pemrosesan grafis terkini. Solusi andal untuk komputasi harian dan sesi permainan intensif tanpa kendala. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1585079542156-2755d9c8a094?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
+      "id": 402,
+      "name": "Nexus Tech Forge"
     },
-    "discount_percentage": 25
+    "discount_percentage": 15
   },
   {
     "id": 5,
-    "price": 110.87,
-    "title": "Lumen 60% Mechanical Keyboard",
-    "description": "Lumen 60% Mechanical Keyboard dari ByteHub Electronics menghadirkan peredam suara bawaan untuk suara yang bersih. Dibuat dengan keycap PBT double-shot anti pudar sehingga membuat meja kerja terlihat lebih rapi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 1899.00,
+    "title": "Acer Predator Helios Neo 16 AI Laptop",
+    "description": "Acer Predator Helios Neo 16 mengintegrasikan teknologi kecerdasan buatan (AI) optimal dengan prosesor performa ekstrem dan kartu grafis seri tertinggi. Siap menangani kompilasi kode besar hingga rendering 3D kompleks secara instan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1585079542156-2755d9c8a094?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
+      "id": 403,
+      "name": "ByteHub Electronics"
+    },
+    "discount_percentage": 8
+  },
+  {
+    "id": 6,
+    "price": 849.00,
+    "title": "Acer Nitro V 15 Gaming Laptop",
+    "description": "Acer Nitro V 15 memberikan efisiensi daya luar biasa tanpa mengorbankan kecepatan pemrosesan grafis harian Anda. Desain modern berpadu portabilitas tinggi menjadikannya pilihan seimbang bagi mahasiswa maupun profesional. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1629429408209-1f912961dbd8?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 403,
       "name": "ByteHub Electronics"
     },
     "discount_percentage": 20
   },
   {
-    "id": 6,
-    "price": 113.25,
-    "title": "Quantum 60% Mechanical Keyboard",
-    "description": "Quantum 60% Mechanical Keyboard dari ByteHub Electronics menghadirkan peredam suara bawaan untuk suara yang bersih. Dibuat dengan housing aluminium anodized sehingga memberikan respon cepat bagi gamer kompetitif. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 7,
+    "price": 699.00,
+    "title": "Acer Swift Go 14 Slim Laptop",
+    "description": "Acer Swift Go 14 hadir dengan bobot super ringan dan sasis aluminium kokoh. Menawarkan kenyamanan mengetik maksimal dan manajemen daya optimal guna menunjang produktivitas luar ruangan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1585079542156-2755d9c8a094?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
+      "id": 403,
       "name": "ByteHub Electronics"
     },
     "discount_percentage": 10
   },
   {
-    "id": 7,
-    "price": 115.8,
-    "title": "Aurora Ergonomic Wireless Mouse",
-    "description": "Aurora Ergonomic Wireless Mouse dari ByteHub Electronics menghadirkan latensi nirkabel sub-1ms. Dibuat dengan shell ABS bertekstur lembut sehingga mengurangi kelelahan tangan saat sesi kerja panjang. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
-    },
-    "discount_percentage": 12
-  },
-  {
     "id": 8,
-    "price": 144.29,
-    "title": "Nimbus Ergonomic Wireless Mouse",
-    "description": "Nimbus Ergonomic Wireless Mouse dari ByteHub Electronics menghadirkan latensi nirkabel sub-1ms. Dibuat dengan shell ABS bertekstur lembut sehingga memberi kendali presisi di setiap permukaan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 499.00,
+    "title": "Acer Aspire 5 Slim Everyday Laptop",
+    "description": "Acer Aspire 5 Slim menyediakan konfigurasi esensial terbaik untuk kebutuhan belajar, administrasi data, hingga penjelajahan web dengan respons cepat. Solusi ekonomis dengan kinerja komputasi stabil. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1496181130204-7552cc145423?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
+      "id": 403,
       "name": "ByteHub Electronics"
     },
-    "discount_percentage": 20
+    "discount_percentage": 15
   },
   {
     "id": 9,
-    "price": 49.64,
-    "title": "Nova Ergonomic Wireless Mouse",
-    "description": "Nova Ergonomic Wireless Mouse dari ByteHub Electronics menghadirkan latensi nirkabel sub-1ms. Dibuat dengan switch Omron tahan 50 juta klik sehingga meningkatkan performa dalam permainan FPS. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 1649.00,
+    "title": "Lenovo Legion Pro 5i High-End Laptop",
+    "description": "Lenovo Legion Pro 5i menetapkan standar baru untuk manajemen termal tingkat lanjut dan eksekusi instruksi data berkecepatan tinggi. Panel keyboard taktil yang presisi memberikan respons instan di setiap ketikan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
-    },
-    "discount_percentage": 5
-  },
-  {
-    "id": 10,
-    "price": 119.27,
-    "title": "Pulse Ergonomic Wireless Mouse",
-    "description": "Pulse Ergonomic Wireless Mouse dari ByteHub Electronics menghadirkan baterai tahan hingga 80 jam pemakaian. Dibuat dengan switch Omron tahan 50 juta klik sehingga memberi kendali presisi di setiap permukaan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
+      "id": 404,
+      "name": "Prime Computer Medan"
     },
     "discount_percentage": 7
   },
   {
+    "id": 10,
+    "price": 1199.00,
+    "title": "Lenovo Yoga Slim 7i Premium Touch",
+    "description": "Lenovo Yoga Slim 7i menggabungkan estetika premium minimalis dengan performa cerdas. Fleksibilitas layar sentuh beresolusi tinggi mempermudah navigasi pengerjaan desain grafis maupun presentasi interaktif. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 404,
+      "name": "Prime Computer Medan"
+    },
+    "discount_percentage": 11
+  },
+  {
     "id": 11,
-    "price": 99.72,
-    "title": "Lumen Ergonomic Wireless Mouse",
-    "description": "Lumen Ergonomic Wireless Mouse dari ByteHub Electronics menghadirkan baterai tahan hingga 80 jam pemakaian. Dibuat dengan switch Omron tahan 50 juta klik sehingga meningkatkan performa dalam permainan FPS. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 649.00,
+    "title": "Lenovo IdeaPad Flex 5i Convertible",
+    "description": "Lenovo IdeaPad Flex 5i menghadirkan fleksibilitas engsel multi-mode yang dapat ditekuk hingga 360 derajat. Mendukung produktivitas pengerjaan tugas kuliah maupun operasional bisnis ritel secara portabel. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
-    },
-    "discount_percentage": 12
-  },
-  {
-    "id": 12,
-    "price": 116.5,
-    "title": "Quantum Ergonomic Wireless Mouse",
-    "description": "Quantum Ergonomic Wireless Mouse dari ByteHub Electronics menghadirkan sensor optik hingga 26K DPI. Dibuat dengan shell ABS bertekstur lembut sehingga meningkatkan performa dalam permainan FPS. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
-    },
-    "discount_percentage": 15
-  },
-  {
-    "id": 13,
-    "price": 127.52,
-    "title": "Aurora 7-in-1 USB-C Hub",
-    "description": "Aurora 7-in-1 USB-C Hub dari ByteHub Electronics menghadirkan port USB-C Power Delivery hingga 100W. Dibuat dengan kabel braided anti kusut sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
-    },
-    "discount_percentage": 15
-  },
-  {
-    "id": 14,
-    "price": 74.34,
-    "title": "Nimbus 7-in-1 USB-C Hub",
-    "description": "Nimbus 7-in-1 USB-C Hub dari ByteHub Electronics menghadirkan output HDMI yang mendukung 4K 60Hz. Dibuat dengan kabel braided anti kusut sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
+      "id": 404,
+      "name": "Prime Computer Medan"
     },
     "discount_percentage": 18
   },
   {
-    "id": 15,
-    "price": 49.95,
-    "title": "Nova 7-in-1 USB-C Hub",
-    "description": "Nova 7-in-1 USB-C Hub dari ByteHub Electronics menghadirkan output HDMI yang mendukung 4K 60Hz. Dibuat dengan pendinginan pasif tanpa kipas sehingga mempermudah transfer data berkecepatan tinggi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 12,
+    "price": 429.00,
+    "title": "Lenovo IdeaPad Slim 3 Entry Laptop",
+    "description": "Lenovo IdeaPad Slim 3 andal dikelasnya untuk menunjang pengerjaan dokumen, virtual meeting, dan manajemen basis data dasar. Ringkas, fungsional, dan memiliki efisiensi daya komputasi harian. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1496181130204-7552cc145423?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
+      "id": 404,
+      "name": "Prime Computer Medan"
     },
-    "discount_percentage": 7
+    "discount_percentage": 5
   },
   {
-    "id": 16,
-    "price": 89.91,
-    "title": "Pulse 7-in-1 USB-C Hub",
-    "description": "Pulse 7-in-1 USB-C Hub dari ByteHub Electronics menghadirkan port USB-C Power Delivery hingga 100W. Dibuat dengan pendinginan pasif tanpa kipas sehingga mempermudah transfer data berkecepatan tinggi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 13,
+    "price": 699.99,
+    "title": "ASUS ROG Swift 27\" QHD Gaming Monitor",
+    "description": "ASUS ROG Swift menyajikan visualiasasi pergerakan super mulus berkat refresh rate ekstrem dan panel IPS warna akurat. Sempurna untuk kebutuhan gaming kompetitif maupun akurasi review multimedia. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1551645121-d1034da75057?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
+      "id": 402,
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 10
+  },
+  {
+    "id": 14,
+    "price": 849.00,
+    "title": "Acer Predator XB323QK 32\" 4K Monitor",
+    "description": "Acer Predator XB323QK memanjakan mata dengan resolusi ultra tajam 4K pada bentang layar 32 inci yang megah. Pilihan mutakhir untuk setup workstation premium dan manajemen detail objek visual tingkat tinggi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1547119957-637f8679db1e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1551645121-d1034da75057?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 403,
       "name": "ByteHub Electronics"
     },
     "discount_percentage": 12
   },
   {
-    "id": 17,
-    "price": 28.8,
-    "title": "Aurora XL Desk Mat",
-    "description": "Aurora XL Desk Mat dari ByteHub Electronics menghadirkan tepi dijahit anti-fray. Dibuat dengan kulit vegan yang mudah dibersihkan sehingga memberi kenyamanan ekstra saat bekerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 15,
+    "price": 249.00,
+    "title": "MSI Optix 24\" Curved Gaming Monitor",
+    "description": "MSI Optix menghadirkan sudut kelengkungan ergonomis yang meminimalkan kelelahan mata saat menatap layar berjam-jam. Memberikan kedalaman kontras terbaik untuk kenyamanan membaca baris kode maupun gaming terfokus. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1547119957-637f8679db1e?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
+      "id": 402,
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 20
+  },
+  {
+    "id": 16,
+    "price": 319.00,
+    "title": "Gigabyte G27Q 27\" 144Hz Monitor",
+    "description": "Gigabyte G27Q menawarkan resolusi tajam WQHD berpadu akurasi spektrum warna tinggi untuk menunjang pengerjaan desain arsitektur grafis. Desain minimalis yang selaras dengan kerapian meja kerja modern Anda. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1551645121-d1034da75057?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 404,
+      "name": "Prime Computer Medan"
+    },
+    "discount_percentage": 15
+  },
+  {
+    "id": 17,
+    "price": 179.00,
+    "title": "Apex Pro TKL Mechanical Keyboard",
+    "description": "Apex Pro TKL dilengkapi switch magnetik responsif dengan jarak aktivasi yang dapat dikustomisasi secara presisi. Memberikan keunggulan mutlak bagi performa komputasi super cepat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 403,
       "name": "ByteHub Electronics"
     },
-    "discount_percentage": 25
+    "discount_percentage": 10
   },
   {
     "id": 18,
-    "price": 32.18,
-    "title": "Nimbus XL Desk Mat",
-    "description": "Nimbus XL Desk Mat dari ByteHub Electronics menghadirkan tepi dijahit anti-fray. Dibuat dengan kain poliester tahan noda sehingga menjaga meja tetap rapi dan terlindungi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 139.50,
+    "title": "Logitech G Pro X Superlight 2 Mouse",
+    "description": "Logitech G Pro X Superlight 2 menawarkan desain ergonomis nirkabel ultra ringan tanpa mengorbankan ketahanan sensor. Akurasi pergerakan sub-milidetik mendukung kestabilan kontrol navigasi tingkat tinggi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1629429408209-1f912961dbd8?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
+      "id": 403,
       "name": "ByteHub Electronics"
     },
     "discount_percentage": 5
   },
   {
     "id": 19,
-    "price": 101.45,
-    "title": "Aurora Tactile Switch Set",
-    "description": "Aurora Tactile Switch Set dari ByteHub Electronics menghadirkan housing transparan kompatibel dengan RGB. Dibuat dengan housing polycarbonate berkualitas sehingga menghadirkan pengalaman modding yang menyenangkan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 199.00,
+    "title": "Keychron Q1 Pro Custom Keyboard",
+    "description": "Keychron Q1 Pro menghadirkan bodi aluminium full CNC berstruktur gasket premium untuk sensasi suara ketikan akustik yang bersih dan padat. Dilengkapi konektivitas nirkabel stabil untuk produktivitas multi-device. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1612810806695-30ba02c3c5ef?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1618005198919-d3d4b5a92eee?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1612810806584-6b6d21942763?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
+      "id": 404,
+      "name": "Prime Computer Medan"
     },
-    "discount_percentage": 12
+    "discount_percentage": 8
   },
   {
     "id": 20,
-    "price": 111.18,
-    "title": "Nimbus Tactile Switch Set",
-    "description": "Nimbus Tactile Switch Set dari ByteHub Electronics menghadirkan spring stainless steel yang responsif. Dibuat dengan stem POM halus sehingga meningkatkan akustik keyboard custom. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 149.00,
+    "title": "Razer DeathAdder V3 Pro Wireless Mouse",
+    "description": "Razer DeathAdder V3 Pro dirancang dengan lengkungan bodi ergonomis mutakhir yang pas di tangan untuk mengurangi ketegangan otot pergelangan. Menyediakan responsivitas nirkabel performa tinggi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1618005198919-d3d4b5a92eee?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1612810806584-6b6d21942763?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1612810806695-30ba02c3c5ef?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1629429408209-1f912961dbd8?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 401,
-      "name": "ByteHub Electronics"
+      "id": 402,
+      "name": "Nexus Tech Forge"
     },
     "discount_percentage": 12
   },
   {
     "id": 21,
-    "price": 161.1,
-    "title": "Aurora 60% Mechanical Keyboard",
-    "description": "Aurora 60% Mechanical Keyboard dari Pixel Peripherals menghadirkan pencahayaan RGB yang dapat dikustomisasi. Dibuat dengan plate polycarbonate presisi sehingga membuat meja kerja terlihat lebih rapi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 349.00,
+    "title": "Sony WH-1000XM5 Wireless Headphones",
+    "description": "Sony WH-1000XM5 menghadirkan teknologi Active Noise Cancelling (ANC) terdepan di industri yang memblokir suara bising lingkungan secara presisi. Desain ringan dan bantalan telinga super lembut memastikan kenyamanan mendengarkan musik sepanjang hari. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1585079542156-2755d9c8a094?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 402,
-      "name": "Pixel Peripherals"
+      "name": "Nexus Tech Forge"
     },
     "discount_percentage": 10
   },
   {
     "id": 22,
-    "price": 118.14,
-    "title": "Nimbus 60% Mechanical Keyboard",
-    "description": "Nimbus 60% Mechanical Keyboard dari Pixel Peripherals menghadirkan switch mekanikal hot-swappable. Dibuat dengan keycap PBT double-shot anti pudar sehingga membuat meja kerja terlihat lebih rapi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 299.00,
+    "title": "Sennheiser Momentum 4 Wireless",
+    "description": "Sennheiser Momentum 4 menawarkan kualitas audio audiophile dengan baterai tahan hingga 60 jam non-stop. Tampilan elegan berbalut material kain premium pada headband menjadikannya aksesori fungsional yang stylish. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1585079542156-2755d9c8a094?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 25
-  },
-  {
-    "id": 23,
-    "price": 117.9,
-    "title": "Nova 60% Mechanical Keyboard",
-    "description": "Nova 60% Mechanical Keyboard dari Pixel Peripherals menghadirkan peredam suara bawaan untuk suara yang bersih. Dibuat dengan keycap PBT double-shot anti pudar sehingga memberikan respon cepat bagi gamer kompetitif. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1585079542156-2755d9c8a094?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 20
-  },
-  {
-    "id": 24,
-    "price": 128.82,
-    "title": "Pulse 60% Mechanical Keyboard",
-    "description": "Pulse 60% Mechanical Keyboard dari Pixel Peripherals menghadirkan switch mekanikal hot-swappable. Dibuat dengan plate polycarbonate presisi sehingga membuat meja kerja terlihat lebih rapi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1585079542156-2755d9c8a094?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 7
-  },
-  {
-    "id": 25,
-    "price": 122.14,
-    "title": "Aurora Ergonomic Wireless Mouse",
-    "description": "Aurora Ergonomic Wireless Mouse dari Pixel Peripherals menghadirkan sensor optik hingga 26K DPI. Dibuat dengan kaki PTFE ultra-glide sehingga memberi kendali presisi di setiap permukaan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 10
-  },
-  {
-    "id": 26,
-    "price": 126.13,
-    "title": "Nimbus Ergonomic Wireless Mouse",
-    "description": "Nimbus Ergonomic Wireless Mouse dari Pixel Peripherals menghadirkan latensi nirkabel sub-1ms. Dibuat dengan shell ABS bertekstur lembut sehingga meningkatkan performa dalam permainan FPS. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 20
-  },
-  {
-    "id": 27,
-    "price": 80.98,
-    "title": "Nova Ergonomic Wireless Mouse",
-    "description": "Nova Ergonomic Wireless Mouse dari Pixel Peripherals menghadirkan latensi nirkabel sub-1ms. Dibuat dengan switch Omron tahan 50 juta klik sehingga meningkatkan performa dalam permainan FPS. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 25
-  },
-  {
-    "id": 28,
-    "price": 133.69,
-    "title": "Pulse Ergonomic Wireless Mouse",
-    "description": "Pulse Ergonomic Wireless Mouse dari Pixel Peripherals menghadirkan sensor optik hingga 26K DPI. Dibuat dengan kaki PTFE ultra-glide sehingga meningkatkan performa dalam permainan FPS. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 7
-  },
-  {
-    "id": 29,
-    "price": 147.62,
-    "title": "Aurora Single Monitor Arm",
-    "description": "Aurora Single Monitor Arm dari Pixel Peripherals menghadirkan dukungan monitor hingga 32 inci. Dibuat dengan finish powder coat anti gores sehingga membebaskan ruang meja kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1587613864521-5111b23b8363?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 18
-  },
-  {
-    "id": 30,
-    "price": 73.5,
-    "title": "Nimbus Single Monitor Arm",
-    "description": "Nimbus Single Monitor Arm dari Pixel Peripherals menghadirkan manajemen kabel terintegrasi. Dibuat dengan clamp baja tebal sehingga memberi fleksibilitas posisi layar ideal. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1587613864521-5111b23b8363?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
+      "id": 403,
+      "name": "ByteHub Electronics"
     },
     "discount_percentage": 5
   },
   {
-    "id": 31,
-    "price": 183.0,
-    "title": "Nova Single Monitor Arm",
-    "description": "Nova Single Monitor Arm dari Pixel Peripherals menghadirkan dukungan monitor hingga 32 inci. Dibuat dengan finish powder coat anti gores sehingga membebaskan ruang meja kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 23,
+    "price": 99.00,
+    "title": "HyperX Cloud III Gaming Headset",
+    "description": "HyperX Cloud III memberikan kejernihan suara mikrofon yang telah ditingkatkan dan driver audio 53mm bersudut untuk imersi gaming maksimal. Rangka aluminium tangguh menjamin keawetan untuk penggunaan harian yang intensif. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1587613864521-5111b23b8363?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1599669500515-b3e1ddfa686c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1606220588913-b3aec9c923ce?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 404,
+      "name": "Prime Computer Medan"
+    },
+    "discount_percentage": 15
+  },
+  {
+    "id": 24,
+    "price": 349.99,
+    "title": "SteelSeries Arctis Nova Pro Wireless",
+    "description": "SteelSeries Arctis Nova Pro dilengkapi sistem dual-baterai hot-swappable agar kamu tidak pernah kehabisan daya di tengah sesi penting. Audio spasial 360 derajat memberikan keuntungan taktis bagi gamer profesional. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1606220588913-b3aec9c923ce?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1599669500515-b3e1ddfa686c?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 402,
-      "name": "Pixel Peripherals"
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 8
+  },
+  {
+    "id": 25,
+    "price": 249.00,
+    "title": "Logitech G Pro X 2 Lightspeed",
+    "description": "Logitech G Pro X 2 menggunakan driver Graphene inovatif untuk meminimalisir distorsi dan menghasilkan profil suara yang luar biasa akurat. Dirancang langsung atas kolaborasi dengan atlet esports terkemuka. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 403,
+      "name": "ByteHub Electronics"
+    },
+    "discount_percentage": 12
+  },
+  {
+    "id": 26,
+    "price": 1099.00,
+    "title": "Apple iPhone 15 Pro 256GB",
+    "description": "iPhone 15 Pro hadir dengan material titanium aerospace-grade yang luar biasa kuat namun sangat ringan. Chipset A17 Pro siap melibas berbagai aplikasi berat hingga rendering video resolusi tinggi langsung di genggamanmu. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 402,
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 5
+  },
+  {
+    "id": 27,
+    "price": 1299.00,
+    "title": "Samsung Galaxy S24 Ultra 512GB",
+    "description": "Samsung Galaxy S24 Ultra membawa revolusi kecerdasan buatan terintegrasi untuk produktivitas tak terbatas. Dilengkapi S Pen bawaan dan layar Dynamic AMOLED cerah untuk pengerjaan desain kasual di mana saja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 404,
+      "name": "Prime Computer Medan"
+    },
+    "discount_percentage": 7
+  },
+  {
+    "id": 28,
+    "price": 899.00,
+    "title": "Google Pixel 8 Pro 128GB",
+    "description": "Google Pixel 8 Pro mengandalkan komputasi fotografi mutakhir dan chip Tensor generasi terbaru untuk performa AI super pintar. Tampilan antarmuka yang bersih memberikan pengalaman Android paling mulus. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 403,
+      "name": "ByteHub Electronics"
     },
     "discount_percentage": 10
   },
   {
-    "id": 32,
-    "price": 125.0,
-    "title": "Pulse Single Monitor Arm",
-    "description": "Pulse Single Monitor Arm dari Pixel Peripherals menghadirkan sistem gas spring halus. Dibuat dengan clamp baja tebal sehingga meningkatkan ergonomi saat bekerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 29,
+    "price": 1099.00,
+    "title": "ASUS ROG Phone 8 Pro Edition",
+    "description": "ASUS ROG Phone 8 Pro didesain khusus menembus batas performa mobile gaming dengan sistem pendingin termal ruang uap ekstra besar. Tombol trigger bahu kapasitif memberikan kontrol bagai konsol sungguhan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1587613864521-5111b23b8363?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 25
-  },
-  {
-    "id": 33,
-    "price": 34.53,
-    "title": "Aurora Starter Cable Organizer Bundle",
-    "description": "Aurora Starter Cable Organizer Bundle dari Pixel Peripherals menghadirkan port USB-C Power Delivery hingga 100W. Dibuat dengan casing aluminium brushed sehingga mengurangi adaptor tambahan di setup kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 25
-  },
-  {
-    "id": 34,
-    "price": 47.28,
-    "title": "Nimbus Starter Cable Organizer Bundle",
-    "description": "Nimbus Starter Cable Organizer Bundle dari Pixel Peripherals menghadirkan slot kartu SD dan microSD berkecepatan tinggi. Dibuat dengan pendinginan pasif tanpa kipas sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 18
-  },
-  {
-    "id": 35,
-    "price": 30.08,
-    "title": "Nova Starter Cable Organizer Bundle",
-    "description": "Nova Starter Cable Organizer Bundle dari Pixel Peripherals menghadirkan port USB-C Power Delivery hingga 100W. Dibuat dengan kabel braided anti kusut sehingga mengurangi adaptor tambahan di setup kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
+      "name": "Nexus Tech Forge"
     },
     "discount_percentage": 12
   },
   {
-    "id": 36,
-    "price": 14.14,
-    "title": "Pulse Starter Cable Organizer Bundle",
-    "description": "Pulse Starter Cable Organizer Bundle dari Pixel Peripherals menghadirkan slot kartu SD dan microSD berkecepatan tinggi. Dibuat dengan casing aluminium brushed sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 30,
+    "price": 39.99,
+    "title": "Spigen Tough Armor Case iPhone 15 Pro",
+    "description": "Spigen Tough Armor mengkombinasikan lapisan ganda TPU lentur dan Polikarbonat kaku untuk perlindungan benturan ekstrem. Dilengkapi kickstand tersembunyi yang praktis untuk menonton video atau review materi secara hands-free. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 22
-  },
-  {
-    "id": 37,
-    "price": 67.96,
-    "title": "Aurora XL Desk Mat",
-    "description": "Aurora XL Desk Mat dari Pixel Peripherals menghadirkan lapisan busa memori yang empuk. Dibuat dengan kain poliester tahan noda sehingga menjaga meja tetap rapi dan terlindungi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
-    },
-    "discount_percentage": 22
-  },
-  {
-    "id": 38,
-    "price": 75.81,
-    "title": "Nimbus XL Desk Mat",
-    "description": "Nimbus XL Desk Mat dari Pixel Peripherals menghadirkan permukaan mikro-tekstur anti selip. Dibuat dengan kulit vegan yang mudah dibersihkan sehingga memberi kenyamanan ekstra saat bekerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 402,
-      "name": "Pixel Peripherals"
+      "id": 403,
+      "name": "ByteHub Electronics"
     },
     "discount_percentage": 20
   },
   {
-    "id": 39,
-    "price": 76.86,
-    "title": "Nova XL Desk Mat",
-    "description": "Nova XL Desk Mat dari Pixel Peripherals menghadirkan lapisan busa memori yang empuk. Dibuat dengan kulit vegan yang mudah dibersihkan sehingga melengkapi estetika setup minimalis. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 31,
+    "price": 59.00,
+    "title": "UAG Monarch Kevlar Case Galaxy S24 Ultra",
+    "description": "UAG Monarch Kevlar dibangun dengan 5 lapisan perlindungan bersertifikasi militer yang mampu meredam bantingan keras. Material Kevlar asli di bagian belakang memberikan aksen premium dan daya tahan tak tertandingi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 404,
+      "name": "Prime Computer Medan"
+    },
+    "discount_percentage": 5
+  },
+  {
+    "id": 32,
+    "price": 49.95,
+    "title": "Nomad Rugged Leather Case Pixel 8 Pro",
+    "description": "Nomad Rugged Case membalut ponsel pintarmu dengan kulit asli Horween yang akan mengembangkan patina unik seiring waktu. Bingkai polikarbonat yang kokoh menjaga perangkat dari goresan tanpa menambah ketebalan berlebih. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 402,
-      "name": "Pixel Peripherals"
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 10
+  },
+  {
+    "id": 33,
+    "price": 69.99,
+    "title": "Pitaka MagEZ Case 4 Aramid Fiber",
+    "description": "Pitaka MagEZ Case dirajut dari serat Aramid aerospace-grade super tipis yang tak akan mengganggu sinyal gawai. Desain ultra-slim ini kompatibel penuh dengan berbagai aksesoris magnetik ekosistem MagSafe modern. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 403,
+      "name": "ByteHub Electronics"
+    },
+    "discount_percentage": 15
+  },
+  {
+    "id": 34,
+    "price": 149.99,
+    "title": "Elgato Stream Deck MK.2",
+    "description": "Elgato Stream Deck MK.2 menyediakan 15 tombol LCD presisi yang dapat disesuaikan untuk meluncurkan aplikasi, mengatur audio, hingga mengeksekusi makro kompleks. Alat kendali wajib bagi konten kreator maupun produktivitas studio rumahan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 402,
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 10
+  },
+  {
+    "id": 35,
+    "price": 199.99,
+    "title": "Elgato Stream Deck+",
+    "description": "Elgato Stream Deck+ memadukan tombol taktil cerdas dengan kenop putar intuitif dan strip sentuh responsif. Mengatur volume mikrofon, pencahayaan ruang kerja, hingga transisi scene studio menjadi jauh lebih presisi dan mulus. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 404,
+      "name": "Prime Computer Medan"
+    },
+    "discount_percentage": 8
+  },
+  {
+    "id": 36,
+    "price": 269.00,
+    "title": "Loupedeck Live S Creation Controller",
+    "description": "Loupedeck Live S adalah konsol kustomisasi ringkas yang dioptimalkan untuk navigasi perangkat lunak kreatif dan streaming siaran langsung. Menawarkan profil pengaturan tanpa batas untuk meningkatkan alur kerja digital harianmu. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 403,
+      "name": "ByteHub Electronics"
     },
     "discount_percentage": 12
   },
   {
-    "id": 40,
-    "price": 61.78,
-    "title": "Pulse XL Desk Mat",
-    "description": "Pulse XL Desk Mat dari Pixel Peripherals menghadirkan tepi dijahit anti-fray. Dibuat dengan kulit vegan yang mudah dibersihkan sehingga melengkapi estetika setup minimalis. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 37,
+    "price": 79.99,
+    "title": "Elgato Stream Deck Mini",
+    "description": "Elgato Stream Deck Mini menghadirkan kendali studio instan dalam form factor yang sangat hemat ruang. Enam tombol LCD cerdas cukup untuk menangani automasi esensial meja kerjamu tanpa mengorbankan fungsionalitas. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 402,
-      "name": "Pixel Peripherals"
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 5
+  },
+  {
+    "id": 38,
+    "price": 269.99,
+    "title": "Razer Stream Controller",
+    "description": "Razer Stream Controller memberimu akses tak terbatas ke shortcut, perintah makro, dan kontrol aplikasi dengan antarmuka yang sangat visual. Ideal bagi para kreator yang membutuhkan efisiensi tinggi saat multitasking layar ganda. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 403,
+      "name": "ByteHub Electronics"
+    },
+    "discount_percentage": 15
+  },
+  {
+    "id": 39,
+    "price": 429.00,
+    "title": "Bose QuietComfort Ultra Headphones",
+    "description": "Bose QuietComfort Ultra memanjakan telinga dengan audio imersif spasial dan peredaman bising paling hening di kelasnya. Desain lipat premium dan material sintesis tahan lama cocok untuk teman perjalanan jauh. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 404,
+      "name": "Prime Computer Medan"
+    },
+    "discount_percentage": 10
+  },
+  {
+    "id": 40,
+    "price": 34.99,
+    "title": "Casetify Impact Case iPhone 15 Pro",
+    "description": "Casetify Impact Case menyerap guncangan dari jatuh berkat material EcoShock ramah lingkungan di sekeliling sisinya. Tersedia dalam beragam motif trendi yang mewakili gaya personal sekaligus melindungi gawaimu. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 402,
+      "name": "Nexus Tech Forge"
     },
     "discount_percentage": 18
   },
   {
     "id": 41,
-    "price": 72.81,
-    "title": "Aurora 7-in-1 USB-C Hub",
-    "description": "Aurora 7-in-1 USB-C Hub dari Circuit Central menghadirkan slot kartu SD dan microSD berkecepatan tinggi. Dibuat dengan casing aluminium brushed sehingga mengurangi adaptor tambahan di setup kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 399.00,
+    "title": "Apple Watch Series 9",
+    "description": "Apple Watch Series 9 menghadirkan chip S9 SiP yang bertenaga dengan fitur double tap intuitif. Dibuat dengan layar Retina yang dua kali lebih cerah, memudahkan pemantauan metrik kebugaran di bawah terik matahari. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 403,
-      "name": "Circuit Central"
-    },
-    "discount_percentage": 12
-  },
-  {
-    "id": 42,
-    "price": 51.47,
-    "title": "Nimbus 7-in-1 USB-C Hub",
-    "description": "Nimbus 7-in-1 USB-C Hub dari Circuit Central menghadirkan output HDMI yang mendukung 4K 60Hz. Dibuat dengan pendinginan pasif tanpa kipas sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 403,
-      "name": "Circuit Central"
-    },
-    "discount_percentage": 25
-  },
-  {
-    "id": 43,
-    "price": 52.01,
-    "title": "Nova 7-in-1 USB-C Hub",
-    "description": "Nova 7-in-1 USB-C Hub dari Circuit Central menghadirkan port USB-C Power Delivery hingga 100W. Dibuat dengan casing aluminium brushed sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 403,
-      "name": "Circuit Central"
+      "id": 402,
+      "name": "Nexus Tech Forge"
     },
     "discount_percentage": 5
   },
   {
-    "id": 44,
-    "price": 51.89,
-    "title": "Pulse 7-in-1 USB-C Hub",
-    "description": "Pulse 7-in-1 USB-C Hub dari Circuit Central menghadirkan port USB-C Power Delivery hingga 100W. Dibuat dengan casing aluminium brushed sehingga mengurangi adaptor tambahan di setup kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 42,
+    "price": 799.00,
+    "title": "Garmin Fenix 7 Sapphire Solar",
+    "description": "Garmin Fenix 7 menawarkan lensa pengisi daya surya Sapphire yang memaksimalkan ketahanan baterai untuk aktivitas outdoor ekstrem. Dilengkapi sensor navigasi dan pelacakan stamina real-time yang akurat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 403,
-      "name": "Circuit Central"
+      "name": "ByteHub Electronics"
     },
-    "discount_percentage": 25
+    "discount_percentage": 10
   },
   {
-    "id": 45,
-    "price": 50.42,
-    "title": "Aurora 65W GaN Charger",
-    "description": "Aurora 65W GaN Charger dari Circuit Central menghadirkan slot kartu SD dan microSD berkecepatan tinggi. Dibuat dengan casing aluminium brushed sehingga mengurangi adaptor tambahan di setup kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 43,
+    "price": 349.99,
+    "title": "Samsung Galaxy Watch 6 Classic",
+    "description": "Samsung Galaxy Watch 6 Classic membawa kembali rotating bezel ikonik untuk navigasi mulus. Sensor kesehatan canggihnya siap memantau kualitas tidur dan komposisi tubuh dengan presisi tinggi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 403,
-      "name": "Circuit Central"
-    },
-    "discount_percentage": 25
-  },
-  {
-    "id": 46,
-    "price": 40.91,
-    "title": "Nimbus 65W GaN Charger",
-    "description": "Nimbus 65W GaN Charger dari Circuit Central menghadirkan slot kartu SD dan microSD berkecepatan tinggi. Dibuat dengan kabel braided anti kusut sehingga mempermudah transfer data berkecepatan tinggi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 403,
-      "name": "Circuit Central"
+      "id": 404,
+      "name": "Prime Computer Medan"
     },
     "discount_percentage": 12
   },
   {
-    "id": 47,
-    "price": 99.62,
-    "title": "Nova 65W GaN Charger",
-    "description": "Nova 65W GaN Charger dari Circuit Central menghadirkan output HDMI yang mendukung 4K 60Hz. Dibuat dengan casing aluminium brushed sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 44,
+    "price": 699.00,
+    "title": "Sony ZV-E10 Mirrorless Camera",
+    "description": "Sony ZV-E10 dirancang khusus untuk vlogger dengan sistem autofokus cepat dan layar vari-angle. Sensor APS-C besarnya menangkap cahaya lebih banyak untuk hasil video 4K yang memukau tanpa noise. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 402,
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 8
+  },
+  {
+    "id": 45,
+    "price": 1699.00,
+    "title": "Fujifilm X-T5 Mirrorless",
+    "description": "Fujifilm X-T5 menghadirkan sensor 40MP dan desain dial klasik retro yang memanjakan pecinta fotografi murni. Dilengkapi stabilisasi gambar dalam bodi untuk ketajaman foto street dan portrait terbaik. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 403,
-      "name": "Circuit Central"
+      "name": "ByteHub Electronics"
+    },
+    "discount_percentage": 5
+  },
+  {
+    "id": 46,
+    "price": 399.00,
+    "title": "GoPro HERO12 Black",
+    "description": "GoPro HERO12 Black menawarkan stabilisasi HyperSmooth 6.0 pemenang Emmy dengan daya tahan baterai ekstra lama. Siap diajak menyelam, mendaki, dan merekam aksi adrenalin dalam format video HDR. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 404,
+      "name": "Prime Computer Medan"
+    },
+    "discount_percentage": 15
+  },
+  {
+    "id": 47,
+    "price": 759.00,
+    "title": "DJI Mini 4 Pro Drone",
+    "description": "DJI Mini 4 Pro adalah drone mungil dengan sensor rintangan omnidirectional. Bobotnya di bawah 250 gram menjadikannya sangat portabel untuk merekam sinematik vertikal dan 4K HDR saat liburan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1507580461464-07d0ee0d1ce0?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 402,
+      "name": "Nexus Tech Forge"
     },
     "discount_percentage": 7
   },
   {
     "id": 48,
-    "price": 88.31,
-    "title": "Pulse 65W GaN Charger",
-    "description": "Pulse 65W GaN Charger dari Circuit Central menghadirkan output HDMI yang mendukung 4K 60Hz. Dibuat dengan kabel braided anti kusut sehingga mengurangi adaptor tambahan di setup kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 149.00,
+    "title": "DJI Osmo Mobile 6 Gimbal",
+    "description": "DJI Osmo Mobile 6 menyajikan stabilisasi 3-sumbu pintar untuk smartphone kamu. Fitur ActiveTrack memastikan subjek tetap di tengah frame secara otomatis, cocok untuk konten vertikal TikTok dan Reels. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 403,
-      "name": "Circuit Central"
+      "name": "ByteHub Electronics"
     },
-    "discount_percentage": 22
+    "discount_percentage": 10
   },
   {
     "id": 49,
-    "price": 43.96,
-    "title": "Aurora Starter Cable Organizer Bundle",
-    "description": "Aurora Starter Cable Organizer Bundle dari Circuit Central menghadirkan port USB-C Power Delivery hingga 100W. Dibuat dengan pendinginan pasif tanpa kipas sehingga mempermudah transfer data berkecepatan tinggi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 169.99,
+    "title": "Marshall Emberton II Bluetooth Speaker",
+    "description": "Marshall Emberton II menghantarkan audio 360 derajat yang kaya dan keras dalam balutan desain vintage ikonik. Sertifikasi IP67 membuatnya tahan air dan debu untuk petualangan musik di luar ruangan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1608223666673-982c76eec4d5?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1589003071536-419eb5068641?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 403,
-      "name": "Circuit Central"
-    },
-    "discount_percentage": 7
-  },
-  {
-    "id": 50,
-    "price": 14.24,
-    "title": "Nimbus Starter Cable Organizer Bundle",
-    "description": "Nimbus Starter Cable Organizer Bundle dari Circuit Central menghadirkan slot kartu SD dan microSD berkecepatan tinggi. Dibuat dengan casing aluminium brushed sehingga mengurangi adaptor tambahan di setup kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 403,
-      "name": "Circuit Central"
+      "id": 404,
+      "name": "Prime Computer Medan"
     },
     "discount_percentage": 12
   },
   {
-    "id": 51,
-    "price": 19.09,
-    "title": "Nova Starter Cable Organizer Bundle",
-    "description": "Nova Starter Cable Organizer Bundle dari Circuit Central menghadirkan slot kartu SD dan microSD berkecepatan tinggi. Dibuat dengan casing aluminium brushed sehingga mengurangi adaptor tambahan di setup kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "id": 50,
+    "price": 129.95,
+    "title": "JBL Charge 5 Portable Speaker",
+    "description": "JBL Charge 5 memompa suara bass dalam dengan daya tahan baterai 20 jam non-stop. Dilengkapi fungsi powerbank built-in untuk mengisi daya gawaimu sambil tetap memutar playlist favorit. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1589003071536-419eb5068641?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1608223666673-982c76eec4d5?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 402,
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 20
+  },
+  {
+    "id": 51,
+    "price": 499.99,
+    "title": "Sony PlayStation 5 Console",
+    "description": "PlayStation 5 mengubah standar gaming dengan SSD berkecepatan kilat dan controller DualSense inovatif. Umpan balik haptic dan trigger adaptif memberikan pengalaman bermain yang jauh lebih imersif. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 403,
-      "name": "Circuit Central"
+      "name": "ByteHub Electronics"
     },
-    "discount_percentage": 20
+    "discount_percentage": 5
   },
   {
     "id": 52,
-    "price": 18.79,
-    "title": "Pulse Starter Cable Organizer Bundle",
-    "description": "Pulse Starter Cable Organizer Bundle dari Circuit Central menghadirkan output HDMI yang mendukung 4K 60Hz. Dibuat dengan casing aluminium brushed sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 349.99,
+    "title": "Nintendo Switch OLED Model",
+    "description": "Nintendo Switch OLED menampilkan layar 7 inci beresolusi cerah dengan warna pekat dan kontras tinggi. Stand lebar yang dapat disesuaikan membuat sesi bermain mode tabletop bersama teman menjadi lebih nyaman. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 403,
-      "name": "Circuit Central"
+      "id": 404,
+      "name": "Prime Computer Medan"
     },
-    "discount_percentage": 22
+    "discount_percentage": 10
   },
   {
     "id": 53,
-    "price": 109.03,
-    "title": "Aurora 2x1 HDMI Switch",
-    "description": "Aurora 2x1 HDMI Switch dari Circuit Central menghadirkan slot kartu SD dan microSD berkecepatan tinggi. Dibuat dengan casing aluminium brushed sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 499.00,
+    "title": "Xbox Series X Console",
+    "description": "Xbox Series X adalah konsol Microsoft paling bertenaga yang mendukung gaming 4K sejati hingga 120 FPS. Arsitektur pendinginan yang senyap memastikannya tetap dingin meski memuat game generasi terbaru secara instan. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1621259182978-fbf93132e53d?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 403,
-      "name": "Circuit Central"
+      "id": 402,
+      "name": "Nexus Tech Forge"
     },
-    "discount_percentage": 25
+    "discount_percentage": 5
   },
   {
     "id": 54,
-    "price": 111.95,
-    "title": "Nimbus 2x1 HDMI Switch",
-    "description": "Nimbus 2x1 HDMI Switch dari Circuit Central menghadirkan port USB-C Power Delivery hingga 100W. Dibuat dengan casing aluminium brushed sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 499.99,
+    "title": "Meta Quest 3 VR Headset",
+    "description": "Meta Quest 3 membawa mixed reality menakjubkan yang menggabungkan elemen virtual ke dalam ruang nyatamu. Lensa pancake ramping dan prosesor Snapdragon terbaru menjamin pengalaman VR nirkabel paling jernih. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1593508512255-81edbc347348?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 403,
-      "name": "Circuit Central"
+      "name": "ByteHub Electronics"
     },
-    "discount_percentage": 20
+    "discount_percentage": 8
   },
   {
     "id": 55,
-    "price": 75.51,
-    "title": "Nova 2x1 HDMI Switch",
-    "description": "Nova 2x1 HDMI Switch dari Circuit Central menghadirkan port USB-C Power Delivery hingga 100W. Dibuat dengan casing aluminium brushed sehingga mengurangi adaptor tambahan di setup kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 899.00,
+    "title": "Roborock S8 Pro Ultra Robot Vacuum",
+    "description": "Roborock S8 Pro Ultra menghadirkan pembersihan lantai otonom sepenuhnya. Sistem dock pintar dapat mencuci mop, mengosongkan debu, hingga mengeringkan secara otomatis tanpa campur tangan manual. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 403,
-      "name": "Circuit Central"
+      "id": 404,
+      "name": "Prime Computer Medan"
     },
     "discount_percentage": 10
   },
   {
     "id": 56,
-    "price": 64.41,
-    "title": "Pulse 2x1 HDMI Switch",
-    "description": "Pulse 2x1 HDMI Switch dari Circuit Central menghadirkan output HDMI yang mendukung 4K 60Hz. Dibuat dengan kabel braided anti kusut sehingga mengurangi adaptor tambahan di setup kerja. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 749.99,
+    "title": "Dyson V15 Detect Cordless Vacuum",
+    "description": "Dyson V15 Detect menggunakan teknologi laser iluminasi untuk memperlihatkan partikel debu tak kasat mata di lantai keras. Layar LCD pintar menampilkan metrik hisapan debu secara real-time. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80"
+    ],
+    "shop": {
+      "id": 402,
+      "name": "Nexus Tech Forge"
+    },
+    "discount_percentage": 12
+  },
+  {
+    "id": 57,
+    "price": 99.99,
+    "title": "Google Nest Hub (2nd Gen)",
+    "description": "Google Nest Hub (Gen 2) adalah pusat komando rumah pintar dengan asisten suara responsif. Fitur Sleep Sensing bawaannya melacak pola tidurmu dari meja nakas tanpa memerlukan perangkat tambahan di tubuh. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "images": [
+      "https://images.unsplash.com/photo-1557313886-f40445d31548?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 403,
-      "name": "Circuit Central"
+      "name": "ByteHub Electronics"
     },
     "discount_percentage": 15
   },
   {
-    "id": 57,
-    "price": 44.38,
-    "title": "Aurora USB-C Ethernet Adapter",
-    "description": "Aurora USB-C Ethernet Adapter dari Circuit Central menghadirkan slot kartu SD dan microSD berkecepatan tinggi. Dibuat dengan pendinginan pasif tanpa kipas sehingga mempermudah transfer data berkecepatan tinggi. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
-    "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
-    ],
-    "shop": {
-      "id": 403,
-      "name": "Circuit Central"
-    },
-    "discount_percentage": 22
-  },
-  {
     "id": 58,
-    "price": 28.29,
-    "title": "Nimbus USB-C Ethernet Adapter",
-    "description": "Nimbus USB-C Ethernet Adapter dari Circuit Central menghadirkan output HDMI yang mendukung 4K 60Hz. Dibuat dengan casing aluminium brushed sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 199.99,
+    "title": "Philips Hue White & Color Ambiance Starter Kit",
+    "description": "Philips Hue Starter Kit mentransformasi atmosfer ruanganmu dengan 16 juta pilihan warna cahaya pintar. Sinkronkan pencahayaan dengan film, game, atau musik lewat aplikasi untuk pengalaman hiburan maksimal. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1557313886-f40445d31548?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 403,
-      "name": "Circuit Central"
+      "id": 404,
+      "name": "Prime Computer Medan"
     },
-    "discount_percentage": 25
+    "discount_percentage": 20
   },
   {
     "id": 59,
-    "price": 22.66,
-    "title": "Nova USB-C Ethernet Adapter",
-    "description": "Nova USB-C Ethernet Adapter dari Circuit Central menghadirkan output HDMI yang mendukung 4K 60Hz. Dibuat dengan casing aluminium brushed sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 189.99,
+    "title": "Kindle Paperwhite Signature Edition",
+    "description": "Kindle Paperwhite Signature hadir dengan penyimpanan 32GB, pengisian daya nirkabel, dan layar anti-silau penyesuaian otomatis. Menawarkan sensasi membaca buku fisik dengan kepraktisan digital di genggamanmu. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1592496001020-d312428c94e9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
-      "id": 403,
-      "name": "Circuit Central"
+      "id": 402,
+      "name": "Nexus Tech Forge"
     },
-    "discount_percentage": 22
+    "discount_percentage": 5
   },
   {
     "id": 60,
-    "price": 49.17,
-    "title": "Pulse USB-C Ethernet Adapter",
-    "description": "Pulse USB-C Ethernet Adapter dari Circuit Central menghadirkan slot kartu SD dan microSD berkecepatan tinggi. Dibuat dengan casing aluminium brushed sehingga membuat laptop siap terhubung ke berbagai perangkat. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
+    "price": 799.00,
+    "title": "Xiaomi Mi Electric Scooter 4 Pro",
+    "description": "Xiaomi Mi Electric Scooter 4 Pro menawarkan mobilitas urban yang ramah lingkungan dengan ban 10 inci penyegel otomatis. Motor listrik bertenaga mampu menaklukkan tanjakan tajam dan jarak tempuh hingga 55km. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1595822317424-69db3cb27f8a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1572973711910-c0529d2f2115?auto=format&fit=crop&w=900&q=80"
     ],
     "shop": {
       "id": 403,
-      "name": "Circuit Central"
+      "name": "ByteHub Electronics"
     },
-    "discount_percentage": 25
+    "discount_percentage": 10
   },
   {
     "id": 61,
