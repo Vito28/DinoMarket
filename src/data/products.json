@@ -1109,9 +1109,9 @@
     "title": "Nimbus Motion Smart Sensor",
     "description": "Nimbus Motion Smart Sensor dari Gadget Grove menghadirkan jadwal otomatis dan mode away. Dibuat dengan modul Wi-Fi terintegrasi sehingga mempermudah kontrol perangkat dari smartphone. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1580894906472-c92e05f2a3b3?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517059224940-d4af9eec41e5?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=900&q=80"
+      "https://loremflickr.com/900/900/motion,sensor?lock=7001",
+      "https://loremflickr.com/900/900/smart,home,sensor?lock=7002",
+      "https://loremflickr.com/900/900/security,sensor?lock=7003"
     ],
     "shop": {
       "id": 404,
@@ -1541,9 +1541,9 @@
     "title": "Aurora Essentials Keyboard Toolkit",
     "description": "Aurora Essentials Keyboard Toolkit dari Board & Switch menghadirkan profil tactile dan linear yang telah dilumasi. Dibuat dengan stem POM halus sehingga meningkatkan akustik keyboard custom. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1612810806695-30ba02c3c5ef?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1618005198919-d3d4b5a92eee?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1612810806584-6b6d21942763?auto=format&fit=crop&w=900&q=80"
+      "https://loremflickr.com/900/900/mechanical,keyboard,tools?lock=9701",
+      "https://loremflickr.com/900/900/keyboard,switches?lock=9702",
+      "https://loremflickr.com/900/900/keycap,keyboard?lock=9703"
     ],
     "shop": {
       "id": 405,
@@ -8885,9 +8885,9 @@
     "title": "Pure Cellulose Sponge Set",
     "description": "Pure Cellulose Sponge Set dari Clean Living Supplies menghadirkan pad microfiber berdaya serap tinggi. Dibuat dengan botol refillable sehingga efektif mengangkat noda membandel. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1598514982901-6c09ccec8272?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1584634731339-aadc5385d1b9?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?auto=format&fit=crop&w=900&q=80"
+      "https://loremflickr.com/900/900/cellulose,sponge?lock=5561",
+      "https://loremflickr.com/900/900/cleaning,sponge?lock=5562",
+      "https://loremflickr.com/900/900/kitchen,sponge?lock=5563"
     ],
     "shop": {
       "id": 428,
@@ -8901,9 +8901,9 @@
     "title": "Spark Cellulose Sponge Set",
     "description": "Spark Cellulose Sponge Set dari Clean Living Supplies menghadirkan formula biodegradable. Dibuat dengan enzim pembersih alami sehingga efektif mengangkat noda membandel. Setiap produk telah melalui proses kurasi dan siap mendukung aktivitas harianmu.",
     "images": [
-      "https://images.unsplash.com/photo-1584634731339-aadc5385d1b9?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1598514982901-6c09ccec8272?auto=format&fit=crop&w=900&q=80"
+      "https://loremflickr.com/900/900/dish,sponge?lock=5571",
+      "https://loremflickr.com/900/900/cleaning,supplies,sponge?lock=5572",
+      "https://loremflickr.com/900/900/kitchen,cleaning,sponge?lock=5573"
     ],
     "shop": {
       "id": 428,
